@@ -351,7 +351,7 @@ body[dir="rtl"]{
 }
 
 
-@media (max-width: 380px){
+@media (max-width: 390px){
     .top-page-info-container{
 
         height: 35px;
@@ -387,6 +387,24 @@ body[dir="rtl"]{
     }
 }
 
+
+@media (max-width: 377px) {
+    .top-page-info-container{
+
+        height: 35px;
+        padding: 0px 3px;
+
+        .icon{
+            font-size: 7px;
+        }
+    
+        p{
+            font-size: 8px;
+            gap: 2px;
+        }
+        
+    }
+}
 
 
 @media (max-width: 344px){
