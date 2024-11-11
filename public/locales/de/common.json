@@ -17,6 +17,41 @@
     },
       "styled-link": "Unsere Produkte"
   },
+
+  "footer": {
+    "topFooter": {
+      "left": {
+        "description": "Flennor Parts bietet eine große Auswahl an hochwertigen Autoersatzteilen, die Qualität und Langlebigkeit gewährleisten. Von Riemen und Filtern bis hin zu Bremssystemen und mehr bieten wir zuverlässige Lösungen für alle Ihre Fahrzeugwartungsanforderungen.",
+        "socialHeadline": "Folgen Sie uns"
+      },
+
+      "middle": {
+        "headline": "Nützlich",
+        "links": {
+          "linkOne": "Startseite",
+          "linkTwo": "Über uns",
+          "linkThree": "Kontaktieren Sie uns",
+          "linkFour": "Produkte"
+        }
+      },
+
+      "right": {
+        "headline": "Kontaktieren Sie uns",
+        "info": {
+          "addressOne": "Adersstraße 29-31 · 40215 Düsseldorf - Deutschland",
+          "addressTwo": "Mai Tower – 6. Etage – Al Nahda 1 – Dubai – Vereinigte Arabische Emirate",
+          "addressThree": "Esentepe Mah., 34870 Kartal – Istanbul – Türkei",
+          "addressFour": "11015 Cavendish Blvd Suite 410 – Montreal – Quebec – Kanada"
+        }
+      }
+    },
+
+    "bottomFooter": {
+      "headline": "Alle Urheberrechte liegen bei Flennor-Parts"
+    }
+  },
+
+
   "homepage": {
       "intro": {
         "firstTitle": "Machen Sie sich bereit mit",

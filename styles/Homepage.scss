@@ -354,6 +354,7 @@ body[dir="rtl"]{
     justify-content: center;
     flex-direction: column;
     margin: 100px 0px;
+    overflow-x: hidden;
 
     .categories-homepage-header{
         display: flex;
@@ -2973,6 +2974,17 @@ body[dir="rtl"]{
             }
         }
     }
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-img{
+                height: 50vh;
+            }
+
+        }
+    }
 }
 
 
@@ -3019,6 +3031,18 @@ body[dir="rtl"]{
     }
                 }
             }
+        }
+    }
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+            gap: 35px;
+            .map-img{
+                height: 30vh;
+                width: 100%;
+            }
+
         }
     }
 }

@@ -78,7 +78,7 @@ header{
         .bars-icon{
             cursor: pointer;
             color: #131313;
-            font-size: 25px;
+            font-size: 20px;
             outline: none;
             display: none;
         }
@@ -223,7 +223,7 @@ header{
         .inner-mobile-menu{
             background-color: black;
             height: 100%;
-            width: 50%;
+            width: 70%;
 
             .top-inner-mobile-menu{
                 height: 90%;
@@ -817,7 +817,7 @@ header{
 
         .header-content{
 
-            
+            gap: 20px;
             .navs-container{
                 display: none;
             }
@@ -830,7 +830,7 @@ header{
             .styled-link{
                 width: auto;
                 height: auto;
-                padding: 10px;
+                padding: 7px;
               
                 .title-link{
                     display: none;
@@ -838,8 +838,8 @@ header{
               
                 
                 .icon-container{
-                    width: 28px;
-                    height: 28px;
+                    width: 23px;
+                    height: 23px;
                 }
             }
             
