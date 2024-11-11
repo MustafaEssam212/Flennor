@@ -1,0 +1,102 @@
+{
+
+  "topInfo": {
+    "addressOne": "Deutschland",
+    "addressTwo": "Kanada",
+    "addressThree": "Truthahn",
+    "addressFour": "Vereinigte Arabische Emirate",
+    "addressFive": "Ägypten",
+    "firstPhone": "+1 514-571-4054"
+  },
+
+  "header": {
+    "navs": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "contact": "Kontaktieren Sie uns"
+    },
+      "styled-link": "Unsere Produkte"
+  },
+  "homepage": {
+      "intro": {
+        "firstTitle": "Machen Sie sich bereit mit",
+        "mainTitle": "Flennor",
+        "secondTitle": "Parts",
+        "inputPlaceholder": "Suchen Sie nach Produktnamen, Flennor-Teilecode und OEM-Code.",
+        "btn": "Anruf"
+      },
+      "categories": {
+        "productOne": {
+          "name": "Bremssattel und Rotor",
+          "description": "Hochleistungsbremssattel mit gebohrtem Rotor zur Kühlung."
+        },
+        "productTwo": {
+          "name": "Querlenkerbuchse",
+          "description": "Langlebige Querlenkerbuchse für sanfte Federung und Stabilität."
+        },
+        "productThree": {
+          "name": "Kugellager",
+          "description": "Langlebige Präzisionskugellager für eine sanfte, effiziente Bewegung."
+        },
+        "productFour": {
+          "name": "Bremsscheibe",
+          "description": "Hochwertiger belüfteter Bremsscheibenrotor für optimale Kühlung."
+        },
+        "btn": "Jetzt erkunden",
+        "mainTitle": "Beliebte Kategorien",
+        "subTitle": "Wir präsentieren eine Auswahl der beliebten Kategorien, die wir bei Fleenor Parts anbieten."
+      },
+      "brands": {
+        "Volkswagen": "Volkswagen",
+        "Ford": "Ford",
+        "Volvo": "Volvo",
+        "Renault": "Renault",
+        "Opel": "Opel",
+        "MB": "MB",
+        "BMW": "BMW"
+      },
+      "carImages": {
+        "imgOne": {
+          "firstHeadline": "Ford-Teile",
+          "secondHeadline": "Sie finden Ford-Ersatzteile ganz einfach."
+        },
+        "imgTwo": {
+          "firstHeadline": "BMW Pflege",
+          "secondHeadline": "BMW liegt uns immer am Herzen"
+        },
+        "imgThree": {
+          "firstHeadline": "Unsere Qualität",
+          "secondHeadline": "Liefern Sie immer hochwertige Teile."
+        },
+        "imgFour": {
+          "firstHeadline": "Einfache Suche",
+          "secondHeadline": "Hochleistungssuche in Flennor."
+        },
+
+        "link": "Jetzt erkunden"
+      },
+      "aboutFlennor": {
+        "title": "Ein wenig über Flennor Parts",
+        "firstAbout": "Flennor wurde 1935 gegründet und hat eine reiche Tradition, die in Düsseldorf im Herzen Deutschlands verwurzelt ist. Ursprünglich gegründet, um den wachsenden Bedarf der Automobilindustrie zu decken, haben wir uns zu einer Marke entwickelt, die für Qualität und Zuverlässigkeit bei Autoersatzteilen steht. Unser Engagement für Spitzenqualität hat uns dazu bewogen, unsere Reichweite weltweit auszuweiten und sicherzustellen, dass wir unseren internationalen Kunden erstklassige Produkte anbieten.",
+        "secondTitle": "Globale Präsenz",
+        "secondAbout": "Flennor ist global aufgestellt und stellt sicher, dass unsere kompetenten Dienstleistungen und hochwertigen Produkte weltweit verfügbar sind. Unsere regionalen Vertriebsbüros sind strategisch günstig gelegen, um einen effizienten und zuverlässigen Service zu gewährleisten:",
+        "list": {
+          "firstList": "Düsseldorf, Deutschland: Unser Hauptsitz bleibt ein Zentrum der Innovation und führend im Bereich hochwertiger Autoteile.",
+          "secondList": "Dubai, Vereinigte Arabische Emirate: Unser Büro in Dubai liegt an einem Handelsknotenpunkt und erweitert unsere Reichweite auf die florierenden Märkte des Nahen Ostens.",
+          "thirdList": "Istanbul, Türkei: Unser Büro in Istanbul fungiert als Tor zwischen Europa und Asien und stärkt unsere Fähigkeit, die Anforderungen dieser wichtigen Regionen zu erfüllen."
+        }
+      },
+      "counter": {
+        "clients": "Kunden",
+        "products": "Produkte",
+        "experienceYears": "Erfahrungsjahre",
+        "employees": "Mitarbeiter",
+        "quality": "Qualität",
+        "countries": "Länder"
+      },
+      "map": {
+        "title": "Haben Sie unsere Verbreitung bemerkt?",
+        "subTitle": "Wir sind auf der ganzen Welt vertreten"
+      }
+    }
+}

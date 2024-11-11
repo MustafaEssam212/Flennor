@@ -1,0 +1,3217 @@
+
+body[dir="rtl"]{
+    .intro-homepage-container{
+        .layer-on-intro{
+            .inner-layer-on-intro{
+                .great-headline{
+                    font-family: 'Cairo-Extra-Light';
+                }
+
+                .more-great-headline{
+                    font-family: 'Cairo-Black';
+                    font-size: 120px;
+                    line-height: 130px;
+                }
+
+                .greater-headline{
+                    font-family: 'Cairo-Black';
+                    line-height: 100px;
+                    margin: 25px 0px;
+                }
+
+                .input-container{
+                    input{
+                        font-family: 'Cairo-Regular';
+                    }
+
+                    button{
+                        font-family: 'Cairo-Medium';
+                    }
+                }
+            }
+        }
+    }
+    .categories-homepage-container{
+     
+    
+        .categories-homepage-header{
+               h1{
+                font-family: 'Cairo-Bold';
+            }
+    
+            h3{
+                font-family: 'Cairo-Medium';
+                font-weight: 400;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+    
+            .category-section{
+
+                .category-info{
+                
+                    h1{
+                        font-family: 'Cairo-Medium';
+                    }
+    
+                    h2{
+                        font-family: 'Cairo-Regular';
+                        font-weight: 400;
+                    }
+    
+                    a{
+                        font-family: 'Cairo-Bold';
+                        
+                        .icon{
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+}
+                    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+    .brands-homepage-container{
+      
+        .layer-on-brands{
+
+            flex-direction: row-reverse;
+          
+
+            .inner-layer-on-brands{
+              
+                .car-brand{
+                 
+    
+                 
+                    h1{
+    
+                        font-family: 'Cairo-Black';
+
+                    }
+                }
+    
+
+    
+    
+            }
+        }
+    }
+
+    .cars-images-homepage-container{
+
+    
+        .inner-cars-container{
+
+            .car-container{
+
+                .car-img-container img{
+                    transform: scaleX(-1);
+                    -webkit-transform: scaleX(-1);
+                    -moz-transform: scaleX(-1);
+                    -ms-transform: scaleX(-1);
+                    -o-transform: scaleX(-1);
+                }
+
+    
+                .layer-on-car{
+                    right: 0;
+                    background-image: linear-gradient(to left, black, transparent);
+    
+                    h3{
+                        font-family: 'Cairo-Bold';
+                    }
+    
+                    h1{
+                        font-family: 'Cairo-Bold';
+                        font-size: 37px;
+                        line-height: 50px;
+                    }
+    
+                    a{
+                        margin-top: 5px;
+                        padding: 17px 45px;
+                        font-family: 'Cairo-Bold';
+                        font-size: 17px;
+
+                        .icon{
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+}
+
+                        }
+                }
+            }
+        }
+    }
+
+    .about-flennor-homepage-container{
+
+     
+        .inner-about-flennor-homepage{
+        
+    
+         
+            .right-about-flennor{
+              
+                h1{
+                    font-family: 'Cairo-Bold';
+                    font-size: 50px;
+                }
+    
+                h2{
+                    font-family: 'Cairo-Medium';
+                }
+
+            }
+        }
+    
+    
+    
+    }
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            .counter{
+               
+    
+                h1{
+                    font-family: 'Cairo-Bold';
+                }
+    
+                h3{
+                    font-family: 'Cairo-Bold';
+                }
+    }
+        }
+    }
+
+    .map-homepage-container{
+
+
+
+        .map-homepage-header{
+          
+            h1{
+                font-family: 'Cairo-Bold';
+              
+ 
+            }
+    
+            h3{
+                font-family: 'Cairo-Regular';
+                font-weight: 400;
+            }
+    
+    
+        }
+    
+
+    }
+}
+
+
+.intro-homepage-container{
+    position: relative;
+    height: 90vh;
+
+    .layer-on-intro{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .inner-layer-on-intro{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1{
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .great-headline{
+                font-family: 'Roboto-Thin';
+                font-size: 45px;
+                font-weight: 400;
+            }
+
+            .more-great-headline{
+                font-family: 'Benzin-Semi-Bold';
+                font-size: 80px;
+                margin-top: 25px;
+            }
+
+            .greater-headline{
+                font-family: 'Benzin-Semi-Bold';
+                font-size: 150px;
+                color: var(--Primary-Color);
+                line-height: 100px;
+            }
+
+
+            .input-container{
+                background-color: white;
+                margin-top: 50px;
+                height: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 40px;
+                width: 100%;
+                .icon{
+                    font-size: 35px;
+                }
+       
+                button{
+                    font-family: 'Roboto-Medium';
+                    text-transform: uppercase;
+                    background-color: var(--Primary-Color);
+                    outline: none;
+                    border: none;
+                    width: 150px;
+                    height: 60%;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                }
+       
+                input{
+                    flex-grow: 1;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 21px;
+                    padding: 0px 25px;
+                }
+            }
+
+            .icons-intro-container{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 25px;
+                .icon-bg{
+                    background-color: #242829;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .2s all linear;
+                    -webkit-transition: .2s all linear;
+                    -moz-transition: .2s all linear;
+                    -ms-transition: .2s all linear;
+                    -o-transition: .2s all linear;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: rgb(10, 10, 10);
+                    }
+}
+            }
+        }
+    }
+}
+
+.categories-homepage-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px 0px;
+
+    .categories-homepage-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-family: 'Benzin-Semi-Bold';
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .svg-headline{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        h3{
+            font-family: 'Roboto-Regular';
+            color: #646a7c;
+            margin-top: 10px;
+        }
+
+
+    }
+
+
+    .categries-section{
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .category-section{
+            width: 850px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+
+            .category-img{
+                position: relative;
+                height: 100%;
+                width: 45%;
+                flex-shrink: 0;
+            }
+
+            .category-info{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .five-stars-svg{
+                    width: 140px;
+                    height: 30px;
+                }
+
+                h1{
+                    font-family: 'Roboto-Medium';
+                    font-weight: 600;
+                    margin-top: 5px;
+                }
+
+                h2{
+                    font-family: 'Roboto-Regular';
+                    color:  #646a7c;
+                    font-size: 22px;
+                    margin: 25px 5px 25px 0px;
+                }
+
+                a{
+                    font-family: 'Roboto-Black';
+                    text-transform: uppercase;
+                    background-color: var(--Primary-Color);
+                    width: fit-content;
+                    padding: 15px 35px;
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+                    font-size: 20px;
+                    color: black;
+                    font-weight: 700;
+}
+            }
+}
+
+    }
+
+
+   
+}
+
+
+.brands-homepage-container{
+    height: 550px;
+    position: relative;
+
+    .barnds-img-container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .layer-on-brands{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffce08d4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+
+
+
+        .arrow-forward, .arrow-back{
+            background-color: transparent;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(39, 39, 39);
+            transition: .2s all linear;
+            -webkit-transition: .2s all linear;
+            -moz-transition: .2s all linear;
+            -ms-transition: .2s all linear;
+            -o-transition: .2s all linear;
+            cursor: pointer;
+            .arrow-icon{
+                font-size: 28px;
+                color: rgb(39, 39, 39);
+                transition: .2s all linear;
+                -webkit-transition: .2s all linear;
+                -moz-transition: .2s all linear;
+                -ms-transition: .2s all linear;
+                -o-transition: .2s all linear;
+            }
+
+            &:hover{
+                background-color: rgb(39, 39, 39);
+
+                .arrow-icon{
+                    color: white;
+                }
+            }
+}
+
+        .inner-layer-on-brands{
+            width: 80%;
+            height: 100%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            
+            .car-brand{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                width: calc(100% / 5);
+                position: relative;
+                height: 100%;
+                justify-content: center;
+                flex-shrink: 0;
+                user-select: none; 
+
+                .layer-on-car-brand{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+
+                .car-brand-img{
+                    width: 150px;
+                    height: 150px;
+                    position: relative;
+                    pointer-events: none;
+                }
+
+                h1{
+                    text-transform: uppercase;
+                    font-family: 'Roboto-Black';
+                    color: black;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+
+        }
+    }
+}
+
+
+.cars-images-homepage-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .inner-cars-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+
+        .car-container{
+            width: 850px;
+            height: 360px;
+            position: relative;
+
+            .car-img-container{
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .layer-on-car{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to right, black, transparent);
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                padding: 0px 50px;
+
+                h3{
+                    text-transform: uppercase;
+                    color: #fbb71c;
+                    font-family: 'Roboto-Bold';
+                }
+
+                h1{
+                    color: white;
+                    font-family: 'Roboto-Bold';
+                    font-size: 37px;
+                }
+
+                a{
+                    background-color: var(--Primary-Color);
+                    color: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+                    padding: 17px 27px;
+                    width: fit-content;
+                    border-radius: 25px;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                    font-family: 'Roboto-Bold';
+                    text-transform: uppercase;
+                    font-size: 17px;
+
+                    .icon{
+                        font-size: 20px;
+                    }
+}
+            }
+        }
+    }
+}
+
+
+.about-flennor-homepage-container{
+
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 100px;
+
+    .inner-about-flennor-homepage{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+
+        .left-about-flennor{
+            width: 35%;
+            position: relative;
+            height: fit-content;
+            align-self: center;
+            
+        }
+    
+        .right-about-flennor{
+            width: 40%;
+
+            h1{
+                font-family: 'Uni-Sans-Bold-Italic';
+                font-size: 55px;
+                text-transform: uppercase;
+            }
+
+            h2{
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                margin: 30px 0px;
+            }
+
+            ul{
+                list-style: circle;
+                
+            }
+        }
+    }
+
+
+
+}
+
+
+.counter-homepage-container{
+
+
+
+    .counters-inner-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 25px;
+        background-color: white;
+        height: 500px;
+        align-items: center;
+        .counter{
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+            h1{
+                font-family: 'Roboto-Bold';
+            }
+
+            h3{
+                font-family: 'Roboto-Bold';
+                color: #646a7c;
+            }
+}
+    }
+}
+
+
+.map-homepage-container{
+
+
+
+    .map-homepage-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        h1{
+            font-family: 'Benzin-Semi-Bold';
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: black;
+
+            .svg-headline{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        h3{
+            font-family: 'Roboto-Regular';
+            color: rgb(61, 61, 61);
+            margin-top: 10px;
+        }
+
+
+    }
+
+    .inner-map-homepage-container{
+
+        width: 100%;
+        position: relative;
+        background-color: var(--Primary-Color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+        .map-img{
+            height: 75vh;
+            width: 75%;
+            position: relative;
+        }
+    }
+}
+
+
+@media (max-width: 2048px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 50%;
+             
+    
+    
+                .great-headline{
+                    font-size: 40px;
+                }
+    
+                .more-great-headline{
+                    font-size: 70px;
+                }
+    
+                .greater-headline{
+                    font-size: 130px;
+                    line-height: 80px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 50px;
+                    height: 120px;
+                    padding: 0px 37px;
+                    .icon{
+                        font-size: 30px;
+                    }
+           
+                    button{
+                        width: 135px;
+                        font-size: 16px;
+                    }
+           
+                    input{
+                        font-size: 19px;
+                    }
+                }
+    
+                .icons-intro-container{
+                
+                    .icon-bg{
+                        width: 90px;
+                        height: 90px;
+                        
+                        img{
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 28px;
+                .svg-headline{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+    
+            h3{
+                font-size: 18px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 750px;
+                height: 350px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 120px;
+                        height: 25px;
+                    }
+    
+                    h1{
+                       font-size: 28px;
+                    }
+    
+                    h2{
+                       font-size: 19px;
+                    }
+    
+                    a{
+                       
+                        padding: 13px 32px;
+                        
+                        font-size: 18px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+
+    .brands-homepage-container{
+        height: 500px;
+       
+
+    
+        .layer-on-brands{
+            gap: 75px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 65px;
+                height: 65px;
+                
+                .arrow-icon{
+                    font-size: 26px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 80%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 5);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 140px;
+                        height: 140px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 40px;
+          
+    
+            .car-container{
+                width: 750px;
+                height: 310px;
+
+    
+                .layer-on-car{
+                 
+                    width: 50%;
+                   
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 17px;
+                    }
+    
+                    h1{
+
+                        font-size: 31px;
+                    }
+    
+                    a{
+                       
+                        gap: 7px;
+                        padding: 15px 21px;
+                   
+                        
+                        font-size: 15px;
+    
+                        .icon{
+                            font-size: 18px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+
+    .about-flennor-homepage-container{
+
+       
+    
+        .inner-about-flennor-homepage{
+       
+            .left-about-flennor{
+                width: 34%;
+            }
+
+        
+            .right-about-flennor{
+                width: 40%;
+    
+                h1{
+                    font-size: 50px;
+                }
+    
+                h2{
+                    margin: 30px 0px;
+                    font-size: 22px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: 450px;
+            .counter{
+             
+                gap: 15px;
+
+                img{
+                    width: 110px;
+                    height: 110px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 30px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 18px;
+                }
+    }
+        }
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                h1{
+                    font-size: 28px;
+                }
+        
+                h3{
+                    font-size: 18px;
+                }
+        
+        
+            }
+            
+            gap: 100px;
+
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 120px;
+                        font-size: 100px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 90px;
+                    }
+    
+                }
+            }
+        }
+
+        .cars-images-homepage-container{
+
+    
+            .inner-cars-container{
+    
+                .car-container{
+    
+        
+                    .layer-on-car{
+    
+        
+                        h3{
+                            font-family: 'Cairo-Bold';
+                        }
+        
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+        
+                        a{
+             
+                            padding: 12px 37px;
+                            font-family: 'Cairo-Bold';
+                            font-size: 16px;
+                            
+                            .icon{
+                                font-size: 17px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1921px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 50%;
+             
+    
+    
+                .great-headline{
+                    font-size: 38px;
+                }
+    
+                .more-great-headline{
+                    font-size: 65px;
+                }
+    
+                .greater-headline{
+                    font-size: 120px;
+                    line-height: 70px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 45px;
+                    height: 110px;
+                    padding: 0px 34px;
+                    .icon{
+                        font-size: 28px;
+                    }
+           
+                    button{
+                        width: 120px;
+                        font-size: 15px;
+                    }
+           
+                    input{
+                        font-size: 18px;
+                    }
+                }
+    
+                .icons-intro-container{
+                
+                    .icon-bg{
+                        width: 80px;
+                        height: 80px;
+                        
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 26px;
+                .svg-headline{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+    
+            h3{
+                font-size: 17px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 700px;
+                height: 300px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 110px;
+                        height: 22px;
+                    }
+    
+                    h1{
+                       font-size: 26px;
+                    }
+    
+                    h2{
+                       font-size: 18px;
+                    }
+    
+                    a{
+                       
+                        padding: 13px 30px;
+                        
+                        font-size: 17px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+
+    .brands-homepage-container{
+        height: 450px;
+       
+
+    
+        .layer-on-brands{
+            gap: 70px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 60px;
+                height: 60px;
+                
+                .arrow-icon{
+                    font-size: 24px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 80%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 5);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 130px;
+                        height: 130px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 26px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 40px;
+          
+    
+            .car-container{
+                width: 700px;
+                height: 285px;
+
+    
+                .layer-on-car{
+                 
+                    width: 50%;
+                   
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 15px;
+                    }
+    
+                    h1{
+
+                        font-size: 29px;
+                    }
+    
+                    a{
+                       
+                        gap: 7px;
+                        padding: 14px 18px;
+                   
+                        
+                        font-size: 15px;
+    
+                        .icon{
+                            font-size: 15px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+
+    .about-flennor-homepage-container{
+
+       
+    
+        .inner-about-flennor-homepage{
+       
+            .left-about-flennor{
+                width: 33%;
+            }
+        
+            .right-about-flennor{
+                width: 40%;
+    
+                h1{
+                    font-size: 48px;
+                }
+    
+                h2{
+                    margin: 30px 0px;
+                    font-size: 20px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: 400px;
+            .counter{
+             
+                gap: 15px;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 28px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 17px;
+                }
+    }
+        }
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                h1{
+                    font-size: 26px;
+                }
+        
+                h3{
+                    font-size: 17px;
+                }
+        
+        
+            }
+            
+            gap: 100px;
+
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 100px;
+                        font-size: 92px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 90px;
+                    }
+    
+                }
+            }
+        }
+
+        .cars-images-homepage-container{
+
+    
+            .inner-cars-container{
+    
+                .car-container{
+    
+        
+                    .layer-on-car{
+    
+        
+                        h3{
+                            font-family: 'Cairo-Bold';
+                        }
+        
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            font-size: 30px;
+                            line-height: 38px;
+                        }
+        
+                        a{
+             
+                            padding: 11px 34px;
+                            font-family: 'Cairo-Bold';
+                            font-size: 15px;
+                            
+                            .icon{
+                                font-size: 16px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1707px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 50%;
+             
+    
+    
+                .great-headline{
+                    font-size: 32px;
+                }
+    
+                .more-great-headline{
+                    font-size: 55px;
+                }
+    
+                .greater-headline{
+                    font-size: 100px;
+                    line-height: 60px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 40px;
+                    height: 100px;
+                    padding: 0px 32px;
+                    .icon{
+                        font-size: 25px;
+                    }
+           
+                    button{
+                        width: 105px;
+                        font-size: 14px;
+                    }
+           
+                    input{
+                        font-size: 17px;
+                    }
+                }
+    
+                .icons-intro-container{
+                
+                    .icon-bg{
+                        width: 70px;
+                        height: 70px;
+                        
+                        img{
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 24px;
+                .svg-headline{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+    
+            h3{
+                font-size: 16px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 600px;
+                height: 250px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 95px;
+                        height: 22px;
+                    }
+    
+                    h1{
+                       font-size: 22px;
+                    }
+    
+                    h2{
+                       font-size: 16px;
+                    }
+    
+                    a{
+                       
+                        padding: 11px 26px;
+                        
+                        font-size: 15px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+    .brands-homepage-container{
+        height: 400px;
+       
+
+    
+        .layer-on-brands{
+            gap: 65px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 55px;
+                height: 55px;
+                
+                .arrow-icon{
+                    font-size: 22px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 80%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 5);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 120px;
+                        height: 120px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 24px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 40px;
+          
+    
+            .car-container{
+                width: 620px;
+                height: 255px;
+
+    
+                .layer-on-car{
+                 
+                    width: 50%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 13px;
+                    }
+    
+                    h1{
+
+                        font-size: 24px;
+                    }
+    
+                    a{
+                       
+                        gap: 7px;
+                        padding: 13px 17px;
+                        margin-top: 5px;
+                        
+                        font-size: 13px;
+    
+                        .icon{
+                            font-size: 13px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+    .about-flennor-homepage-container{
+
+       
+    
+        .inner-about-flennor-homepage{
+       
+            .left-about-flennor{
+                width: 32%;
+            }
+
+        
+            .right-about-flennor{
+                width: 40%;
+    
+                h1{
+                    font-size: 44px;
+                }
+    
+                h2{
+                    margin: 30px 0px;
+                    font-size: 18px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: 350px;
+            .counter{
+             
+                gap: 15px;
+
+                img{
+                    width: 90px;
+                    height: 90px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 26px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 16px;
+                }
+    }
+        }
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                h1{
+                    font-size: 24px;
+                }
+        
+                h3{
+                    font-size: 16px;
+                }
+        
+        
+            }
+            
+            gap: 100px;
+
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 80px;
+                        font-size: 80px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 80px;
+                    }
+    
+                }
+            }
+        }
+
+        .cars-images-homepage-container{
+
+    
+            .inner-cars-container{
+    
+                .car-container{
+    
+        
+                    .layer-on-car{
+    
+        
+                        h3{
+                            font-family: 'Cairo-Bold';
+                        }
+        
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            font-size: 26px;
+                            line-height: 34px;
+                        }
+        
+                        a{
+             
+                            padding: 10px 30px;
+                            font-family: 'Cairo-Bold';
+                            font-size: 14px;
+                            
+                            .icon{
+                                font-size: 15px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1537px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 50%;
+             
+    
+    
+                .great-headline{
+                    font-size: 28px;
+                }
+    
+                .more-great-headline{
+                    font-size: 50px;
+                }
+    
+                .greater-headline{
+                    font-size: 90px;
+                    line-height: 50px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 35px;
+                    height: 90px;
+                    padding: 0px 30px;
+                    .icon{
+                        font-size: 22px;
+                    }
+           
+                    button{
+                        width: 90px;
+                        font-size: 13px;
+                    }
+           
+                    input{
+                        font-size: 16px;
+                    }
+                }
+    
+                .icons-intro-container{
+                
+                    .icon-bg{
+                        width: 65px;
+                        height: 65px;
+                        
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 22px;
+                .svg-headline{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+            h3{
+                font-size: 15px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 520px;
+                height: 230px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 85px;
+                        height: 20px;
+                    }
+    
+                    h1{
+                       font-size: 20px;
+                    }
+    
+                    h2{
+                       font-size: 14px;
+                    }
+    
+                    a{
+                       
+                        padding: 11px 22px;
+                        
+                        font-size: 13px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+
+    .brands-homepage-container{
+        height: 350px;
+       
+
+    
+        .layer-on-brands{
+            gap: 60px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 50px;
+                height: 50px;
+                
+                .arrow-icon{
+                    font-size: 20px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 80%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 5);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 110px;
+                        height: 110px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+          
+    
+            .car-container{
+                width: 560px;
+                height: 225px;
+
+    
+                .layer-on-car{
+                 
+                    width: 50%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 12px;
+                    }
+    
+                    h1{
+
+                        font-size: 21px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 13px 15px;
+                        margin-top: 5px;
+                        
+                        font-size: 11px;
+    
+                        .icon{
+                            font-size: 12px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+
+    .about-flennor-homepage-container{
+
+       
+    
+        .inner-about-flennor-homepage{
+       
+    
+            .left-about-flennor{
+                width: 31%;
+            }
+        
+            .right-about-flennor{
+                width: 40%;
+    
+                h1{
+                    font-size: 39px;
+                }
+    
+                h2{
+                    margin: 30px 0px;
+                    font-size: 16px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: 300px;
+            .counter{
+             
+                gap: 15px;
+
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 24px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 14px;
+                }
+    }
+        }
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                h1{
+                    font-size: 22px;
+                }
+        
+                h3{
+                    font-size: 15px;
+                }
+        
+        
+            }
+            
+            gap: 100px;
+
+        }
+    }
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 70px;
+                        font-size: 70px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 70px;
+                    }
+    
+                }
+            }
+        }
+
+        .cars-images-homepage-container{
+
+    
+            .inner-cars-container{
+    
+                .car-container{
+    
+        
+                    .layer-on-car{
+    
+        
+                        h3{
+                            font-family: 'Cairo-Bold';
+                        }
+        
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            font-size: 22px;
+                            line-height: 30px;
+                        }
+        
+                        a{
+             
+                            padding: 9px 26px;
+                            font-family: 'Cairo-Bold';
+                            font-size: 12px;
+                            
+                            .icon{
+                                font-size: 13px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1260px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 50%;
+             
+    
+    
+                .great-headline{
+                    font-size: 25px;
+                }
+    
+                .more-great-headline{
+                    font-size: 45px;
+                }
+    
+                .greater-headline{
+                    font-size: 80px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 30px;
+                    height: 80px;
+                    padding: 0px 28px;
+                    .icon{
+                        font-size: 20px;
+                    }
+           
+                    button{
+                        width: 80px;
+                        font-size: 11px;
+                    }
+           
+                    input{
+                        font-size: 14px;
+                    }
+                }
+    
+                .icons-intro-container{
+                
+                    .icon-bg{
+                        width: 60px;
+                        height: 60px;
+                        
+                        img{
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 18px;
+                gap: 5px;
+                .svg-headline{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+    
+            h3{
+                font-size: 12px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 480px;
+                height: 210px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 75px;
+                        height: 17px;
+                    }
+    
+                    h1{
+                       font-size: 18px;
+                    }
+    
+                    h2{
+                       font-size: 12px;
+                       margin: 15px 5px 15px 0px;
+                    }
+    
+                    a{
+                       
+                        padding: 9px 20px;
+                        
+                        font-size: 11px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+    .brands-homepage-container{
+        height: 300px;
+       
+
+    
+        .layer-on-brands{
+            gap: 50px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 40px;
+                height: 40px;
+                
+                .arrow-icon{
+                    font-size: 18px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 80%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 5);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 90px;
+                        height: 90px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 18px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+          
+    
+            .car-container{
+                width: 500px;
+                height: 200px;
+
+    
+                .layer-on-car{
+                 
+                    width: 50%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 11px;
+                    }
+    
+                    h1{
+
+                        font-size: 17px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 10px 13px;
+                        margin-top: 5px;
+                        
+                        font-size: 10px;
+    
+                        .icon{
+                            font-size: 11px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+
+    .about-flennor-homepage-container{
+
+       
+    
+        .inner-about-flennor-homepage{
+       
+            gap: 30px;
+
+            .left-about-flennor{
+                width: 31%;
+            }
+        
+            .right-about-flennor{
+                width: 40%;
+    
+                h1{
+                    font-size: 31px;
+                }
+    
+                h2{
+                    margin: 15px 0px;
+                    font-size: 13px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: 250px;
+            .counter{
+             
+                gap: 15px;
+
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 20px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 12px;
+                }
+    }
+        }
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                margin-top: 50px;
+                h1{
+                    font-size: 18px;
+                    gap: 5px;
+                }
+        
+                h3{
+                    font-size: 12px;
+                }
+        
+        
+            }
+            
+            gap: 50px;
+
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 50px;
+                        font-size: 60px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 50px;
+                    }
+    
+                }
+            }
+        }
+
+        .cars-images-homepage-container{
+
+    
+            .inner-cars-container{
+    
+                .car-container{
+    
+        
+                    .layer-on-car{
+    
+        
+                        h3{
+                            font-family: 'Cairo-Bold';
+                        }
+        
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+        
+                        a{
+             
+                            padding: 9px 24px;
+                            font-family: 'Cairo-Bold';
+                            font-size: 11px;
+                            
+                            .icon{
+                                font-size: 12px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 930px) {
+    .counter-homepage-container{
+
+
+    
+        .counters-inner-container{
+
+            height: fit-content;
+            justify-content: center;
+            padding: 50px 0px;
+            gap: 20px;
+            .counter{
+             
+                gap: 15px;
+                width: calc(100% /4);
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                h1{
+                    font-family: 'Roboto-Bold';
+                    font-size: 16px;
+                }
+    
+                h3{
+                    font-family: 'Roboto-Bold';
+                    font-size: 10px;
+                }
+    }
+        }
+    }
+}
+
+
+@media (max-width: 900px){
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+                width: 90%;
+             
+    
+    
+                .great-headline{
+                    font-size: 20px;
+                }
+    
+                .more-great-headline{
+                    font-size: 35px;
+                }
+    
+                .greater-headline{
+                    font-size: 60px;
+                    line-height: 40px;
+                }
+    
+    
+                .input-container{
+                 
+                    margin-top: 30px;
+                    height: 80px;
+                    padding: 0px 5px;
+                    .icon{
+                       display: none;
+                    }
+           
+                    button{
+                        font-size: 11px;
+                        flex-shrink: 0;
+                        width: 25%;
+                    }
+           
+                    input{
+                        font-size: 14px;
+                        width: calc(100% - 25%);
+                    }
+                }
+    
+                .icons-intro-container{
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 15px;
+                    justify-content: center;
+                    .icon-bg{
+                        width: 60px;
+                        height: 60px;
+                        
+                        img{
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .categories-homepage-container{
+        
+        .categories-homepage-header{
+            h1{
+                font-size: 16px;
+                gap: 5px;
+                .svg-headline{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+    
+            h3{
+                font-size: 11px;
+            }
+    
+    
+        }
+    
+    
+        .categries-section{
+         
+            .category-section{
+                width: 90%;
+                height: 250px;
+              
+               
+                .category-info{
+                 
+                    .five-stars-svg{
+                        width: 70px;
+                        height: 16px;
+                    }
+    
+                    h1{
+                       font-size: 16px;
+                    }
+    
+                    h2{
+                       font-size: 11px;
+                       margin: 15px 5px 15px 0px;
+                    }
+    
+                    a{
+                       
+                        padding: 9px 20px;
+                        
+                        font-size: 11px;
+    }
+                }
+    }
+    
+        }
+    
+    
+       
+    }
+
+
+    .brands-homepage-container{
+        height: 200px;
+       
+
+    
+        .layer-on-brands{
+            gap: 30px;
+    
+    
+    
+            .arrow-forward, .arrow-back{
+              
+                width: 35px;
+                height: 35px;
+                
+                .arrow-icon{
+                    font-size: 16px;
+                }
+    
+               
+    }
+    
+            .inner-layer-on-brands{
+                width: 60%;
+                height: 100%;
+               
+                .car-brand{
+                   
+                    width: calc(100% / 3);
+                 
+                   
+    
+                    .car-brand-img{
+                        width: 70px;
+                        height: 70px;
+                       
+                    }
+    
+                    h1{
+                        font-size: 16px;
+                    }
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+            
+            width: 100%;
+    
+            .car-container{
+                width: 95%;
+                height: 250px;
+
+    
+                .layer-on-car{
+                 
+                    width: 30%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 11px;
+                    }
+    
+                    h1{
+
+                        font-size: 17px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 10px 13px;
+                        margin-top: 5px;
+                        
+                        font-size: 10px;
+    
+                        .icon{
+                            font-size: 11px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+
+    .about-flennor-homepage-container{
+
+        padding: 100px 0px;
+    
+        .inner-about-flennor-homepage{
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+
+            .left-about-flennor{
+                width: 50%;
+            }
+        
+            .right-about-flennor{
+                width: 90%;
+    
+                h1{
+                    font-size: 31px;
+                    text-align: center;
+                }
+    
+                h2{
+                    margin: 15px 0px;
+                    font-size: 13px;
+                }
+    
+
+            }
+        }
+    
+    
+    
+    }
+
+
+    .map-homepage-container{
+ 
+        .inner-map-homepage-container{
+
+            .map-homepage-header{
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    margin: 0px 20px;
+                }
+        
+                h3{
+                    font-size: 11px;
+                    text-align: center;
+                    margin: 0px 20px;
+                }
+        
+        
+            }
+            
+            gap: 50px;
+
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 40px;
+                        font-size: 50px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 30px;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 852px) {
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+            
+            width: 100%;
+    
+            .car-container{
+                width: 95%;
+                height: 250px;
+
+    
+                .layer-on-car{
+                 
+                    width: 70%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 11px;
+                    }
+    
+                    h1{
+
+                        font-size: 17px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 10px 13px;
+                        margin-top: 5px;
+                        
+                        font-size: 10px;
+    
+                        .icon{
+                            font-size: 11px;
+                        }
+    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 567px) {
+    .cars-images-homepage-container{
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+            
+            width: 100%;
+    
+            .car-container{
+                width: 95%;
+                height: 200px;
+
+    
+                .layer-on-car{
+                 
+                    width: 70%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 11px;
+                    }
+    
+                    h1{
+
+                        font-size: 17px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 10px 13px;
+                        margin-top: 5px;
+                        
+                        font-size: 10px;
+    
+                        .icon{
+                            font-size: 11px;
+                        }
+    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .categories-homepage-container{
+
+        .categories-homepage-header{
+            h3{
+                text-align: center;
+            }
+        }
+    
+        .categries-section{
+         
+            .category-section{
+                width: 90%;
+                height: 210px;
+
+                .category-img{
+                    width: 50%;
+                }
+
+    }
+    
+        }
+    
+    
+       
+    }
+
+    .brands-homepage-container{
+     
+       
+
+    
+        .layer-on-brands{
+      
+
+    
+            .inner-layer-on-brands{
+                width: 60%;
+
+               
+                .car-brand{
+                   
+                    width: calc(100% / 2);
+       
+                  
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+
+    .about-flennor-homepage-container{
+
+    
+        .inner-about-flennor-homepage{
+
+
+            .left-about-flennor{
+                width: 60%;
+
+            }
+
+        }
+    
+    
+    
+    }
+}
+
+
+@media (max-width: 442px) {
+    .brands-homepage-container{
+     
+       
+        height: 160px;
+    
+        .layer-on-brands{
+      
+
+    
+            .inner-layer-on-brands{
+                width: 60%;
+
+               
+                .car-brand{
+                   
+                    width: calc(100% / 2);
+       
+                  
+                }
+    
+               
+    
+    
+            }
+        }
+    }
+}
+
+
+@media (max-width: 398px) {
+
+    .categories-homepage-container{
+
+    
+        .categries-section{
+         
+            .category-section{
+                width: 90%;
+                height: 200px;
+
+
+    }
+    
+        }
+    
+    
+       
+    }
+
+
+    .cars-images-homepage-container{
+
+   
+     
+        .inner-cars-container{
+         
+            gap: 30px;
+            
+            width: 100%;
+    
+            .car-container{
+                width: 95%;
+                height: 160px;
+
+    
+                .layer-on-car{
+                 
+                    width: 90%;
+                    gap: 7px;
+                    padding: 0px 50px;
+    
+                    h3{
+                        font-size: 11px;
+                    }
+    
+                    h1{
+
+                        font-size: 17px;
+                    }
+    
+                    a{
+                       
+                        gap: 5px;
+                        padding: 10px 13px;
+                        margin-top: 5px;
+                        
+                        font-size: 10px;
+    
+                        .icon{
+                            font-size: 11px;
+                        }
+    }
+                }
+            }
+        }
+    }
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 30px;
+                        font-size: 40px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 20px;
+                        font-size: 50px;
+                    }
+    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+  {
+
+    "topInfo": {
+      "addressOne": "Germany",
+      "addressTwo": "Canada",
+      "addressThree": "Turkey",
+      "addressFour": "UAE",
+      "addressFive": "Egypt",
+      "firstPhone": "+1 514-571-4054"
+    },
+
+    "header": {
+      "navs": {
+        "home": "Homepage",
+        "about": "About us",
+        "contact": "Contact us"
+      },
+      "styled-link": "Our Products"
+    },
+
+    "homepage": {
+      "intro": {
+        "firstTitle": "get ready with",
+        "mainTitle": "Flennor",
+        "secondTitle": "Parts",
+        "inputPlaceholder": "Search by product name, Flennor parts code and OEM code.",
+        "btn": "Search"
+      },
+      "categories": {
+        "productOne": {
+          "name": "Brake Caliper and Rotor",
+          "description": "High-performance brake caliper with drilled rotor for cooling."
+        },
+        "productTwo": {
+          "name": "Control Arm Bushing",
+          "description": "Durable control arm bushing for smooth suspension and stability."
+        },
+        "productThree": {
+          "name": "Ball Bearing",
+          "description": "Durable precision ball bearings for smooth, efficient motion."
+        },
+        "productFour": {
+          "name": "Brake Rotor",
+          "description": "High-quality ventilated disc brake rotor for optimal cooling."
+        },
+        "btn": "Explore Now",
+        "mainTitle": "Popular Categories",
+        "subTitle": "We present a selection of the popular categories we offer at Fleenor Parts."
+      },
+      "brands": {
+        "Volkswagen": "Volkswagen",
+        "Ford": "Ford",
+        "Volvo": "Volvo",
+        "Renault": "Renault",
+        "Opel": "Opel",
+        "MB": "MB",
+        "BMW": "BMW"
+      },
+      "carImages": {
+        "imgOne": {
+          "firstHeadline": "Ford Parts",
+          "secondHeadline": "You Will Find Ford Spare Parts Easily."
+        },
+        "imgTwo": {
+          "firstHeadline": "BMW Care",
+          "secondHeadline": "We Always Care About BMW"
+        },
+        "imgThree": {
+          "firstHeadline": "Our Quality",
+          "secondHeadline": "Always Provide High-Quality Parts."
+        },
+        "imgFour": {
+          "firstHeadline": "Easy Search",
+          "secondHeadline": "High-Performance Search in Flennor."
+        },
+
+        "link": "Explore Now"
+      },
+      "aboutFlennor": {
+        "title": "A little about Flennor parts",
+        "firstAbout": "Founded in 1935, Flennor has a rich heritage rooted in the heart of Germany in Düsseldorf. Initially established to meet the burgeoning needs of the automotive industry, we have grown into a brand synonymous with quality and reliability in automotive spare parts. Our commitment to excellence has propelled us to expand our reach globally, ensuring we bring top-tier products to our international clientele.",
+        "secondTitle": "Global Presence",
+        "secondAbout": "Flennor operates with a strategic global footprint, ensuring our expert services and high-quality products are available worldwide. Our regional sales offices are strategically located to facilitate efficient and reliable service:",
+        "list": {
+          "firstList": "Düsseldorf, Germany: Our headquarters remains a hub of innovation and leadership in quality automotive parts.",
+          "secondList": "Dubai, United Arab Emirates: Positioned at the crossroads of trade, our Dubai office expands our reach into the thriving Middle Eastern markets.",
+          "thirdList": "Istanbul, Turkey: Serving as the gateway between Europe and Asia, our Istanbul office strengthens our ability to meet the demands of these critical regions."
+        }
+      },
+      "counter": {
+        "clients": "Clients",
+        "products": "Products",
+        "experienceYears": "Experience Years",
+        "employees": "Employees",
+        "quality": "Quality",
+        "countries": "Countries"
+      },
+      "map": {
+        "title": "Have you noticed our spread?",
+        "subTitle": "We exist all over the world"
+      }
+    }
+  }

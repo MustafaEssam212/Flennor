@@ -1,0 +1,380 @@
+
+@use './Header.scss';
+@use './Homepage.scss';
+@use './Footer.scss';
+
+
+
+
+
+@font-face {
+    font-family: 'Uni-Sans-Bold-Italic';
+    src: url('/fonts/Uni\ Sans\ Italic.otf') format('opentype');
+}
+
+
+
+@font-face {
+    font-family: 'Benzin-Extra-Bold';
+    src: url('/fonts/Benzin-ExtraBold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Benzin-Bold';
+    src: url('/fonts/Benzin-Bold.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'Benzin-Semi-Bold';
+    src: url('/fonts/Benzin-Semibold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Benzin-Medium';
+    src: url('/fonts/Benzin-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Benzin-Regular';
+    src: url('/fonts/Benzin-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('/fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Readex';
+    src: url('/fonts/ReadexPro-VariableFont_HEXP,wght.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Cairo-Extra-Light';
+    src: url('/fonts/Cairo-ExtraLight.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('/fonts/Cairo-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('/fonts/Cairo-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Cairo-Medium';
+    src: url('/fonts/Cairo-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('/fonts/Cairo-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Cairo-Black';
+    src: url('/fonts/Cairo-Black.ttf') format('truetype');
+}
+
+:root{
+    --Original-BG: #EFEFEF;
+    --White-BG: #f7f7f7;
+    --Primary-Color: #ffcc08;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+  
+
+body{
+    overflow-x: hidden;
+    background-color: #F7F7F7;
+    height: 200vh;
+}
+
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+
+.loading-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        background-color: var(--Primary-Color);
+        border-radius: 50%;
+        animation: jump 0.6s infinite ease-in-out;
+      }
+}
+  
+
+body[dir="rtl"]{
+    .top-page-info-container{
+       
+        .phone-icon{
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+}
+
+       p{
+        font-family: 'Cairo-medium';
+       }
+    }
+}
+  
+.top-page-info-container{
+    background-color: #111111;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto-Medium';
+    padding: 0px 25px;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .icon{
+        color: var(--Primary-Color);
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    
+}
+
+
+
+@media (max-width: 2048px){
+    .top-page-info-container{
+
+        height: 62px;
+
+    
+        .icon{
+            font-size: 15px;
+        }
+    
+        p{
+            font-size: 15px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1921px){
+    .top-page-info-container{
+
+        height: 58px;
+
+    
+        .icon{
+            font-size: 14px;
+        }
+    
+        p{
+            font-size: 14px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1707px){
+    .top-page-info-container{
+
+        height: 52px;
+
+    
+        .icon{
+            font-size: 13px;
+        }
+    
+        p{
+            font-size: 13px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1537px){
+    .top-page-info-container{
+
+        height: 47px;
+
+    
+        .icon{
+            font-size: 12px;
+        }
+    
+        p{
+            font-size: 12px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1260px){
+    .top-page-info-container{
+
+        height: 42px;
+
+    
+        .icon{
+            font-size: 11px;
+        }
+    
+        p{
+            font-size: 11px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 1107px){
+    .top-page-info-container{
+
+        height: 35px;
+
+    
+        .icon{
+            font-size: 10px;
+        }
+    
+        p{
+            font-size: 10px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 445px){
+    .top-page-info-container{
+
+        height: 35px;
+        padding: 0px 15px;
+        
+        .icon{
+            font-size: 9px;
+        }
+    
+        p{
+            font-size: 9px;
+            gap: 4px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 365px){
+    .top-page-info-container{
+
+        height: 35px;
+        padding: 0px 5px;
+        
+        .icon{
+            font-size: 9px;
+        }
+    
+        p{
+            font-size: 9px;
+            gap: 2px;
+        }
+        
+    }
+}
+
+
+
+@media (max-width: 344px){
+    .top-page-info-container{
+
+        display: none;
+        
+    }
+}
