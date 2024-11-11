@@ -351,44 +351,10 @@ body[dir="rtl"]{
 }
 
 
-@media (max-width: 390px){
-    .top-page-info-container{
-
-        height: 35px;
-        padding: 0px 5px;
-
-        .icon{
-            font-size: 9px;
-        }
-    
-        p{
-            font-size: 9px;
-            gap: 2px;
-        }
-        
-    }
-
-    body[dir="rtl"]{
-        .top-page-info-container{
-
-            height: 35px;
-            padding: 0px 5px;
-    
-            .icon{
-                font-size: 8px;
-            }
-        
-            p{
-                font-size: 8px;
-                gap: 2px;
-            }
-            
-        }
-    }
-}
 
 
-@media (max-width: 377px) {
+
+@media (max-width: 394px) {
     .top-page-info-container{
 
         height: 35px;
