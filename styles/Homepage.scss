@@ -234,6 +234,8 @@ body[dir="rtl"]{
 .intro-homepage-container{
     position: relative;
     height: 90vh;
+    overflow: hidden;
+  
 
     .layer-on-intro{
         position: absolute;
@@ -2593,7 +2595,7 @@ body[dir="rtl"]{
 
             height: fit-content;
             justify-content: center;
-            padding: 50px 0px;
+            padding: 0px 0px 50px 0px;
             gap: 20px;
             .counter{
              
@@ -2689,8 +2691,10 @@ body[dir="rtl"]{
 
 
     .categories-homepage-container{
+        margin: 50px 0px;
         
         .categories-homepage-header{
+            margin: 0px 20px;
             h1{
                 font-size: 16px;
                 gap: 5px;
@@ -2749,7 +2753,7 @@ body[dir="rtl"]{
 
     .brands-homepage-container{
         height: 200px;
-       
+
 
     
         .layer-on-brands{
@@ -2799,7 +2803,9 @@ body[dir="rtl"]{
 
 
     .cars-images-homepage-container{
-     
+        
+        margin-top: 50px;
+
         .inner-cars-container{
          
             gap: 30px;
@@ -2845,8 +2851,8 @@ body[dir="rtl"]{
 
 
     .about-flennor-homepage-container{
-
-        padding: 100px 0px;
+        margin-top: 50px;
+        padding: 50px 0px;
     
         .inner-about-flennor-homepage{
             flex-direction: column;
@@ -2859,15 +2865,15 @@ body[dir="rtl"]{
         
             .right-about-flennor{
                 width: 90%;
-    
                 h1{
                     font-size: 31px;
                     text-align: center;
                 }
     
                 h2{
-                    margin: 15px 0px;
+                    margin: 15px 10px;
                     font-size: 13px;
+                    
                 }
     
 
