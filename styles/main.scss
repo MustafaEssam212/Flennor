@@ -356,7 +356,7 @@ body[dir="rtl"]{
 
         height: 35px;
         padding: 0px 5px;
-        g
+
         .icon{
             font-size: 9px;
         }
@@ -366,6 +366,24 @@ body[dir="rtl"]{
             gap: 2px;
         }
         
+    }
+
+    body[dir="rtl"]{
+        .top-page-info-container{
+
+            height: 35px;
+            padding: 0px 5px;
+    
+            .icon{
+                font-size: 8px;
+            }
+        
+            p{
+                font-size: 8px;
+                gap: 2px;
+            }
+            
+        }
     }
 }
 
