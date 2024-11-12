@@ -3,7 +3,7 @@
 @use './Homepage.scss';
 @use './Footer.scss';
 @use './about.scss';
-
+@use './contact.scss';
 
 
 
@@ -145,7 +145,6 @@ a{
 body{
     overflow-x: hidden;
     background-color: #F7F7F7;
-    height: 200vh;
 }
 
 
