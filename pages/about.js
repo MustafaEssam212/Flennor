@@ -14,7 +14,6 @@ import { useTranslation } from 'next-i18next';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-
 export async function getStaticProps({ locale }) {
     return {
         props: {
@@ -23,8 +22,13 @@ export async function getStaticProps({ locale }) {
     };
 }
 
-const About = () => {
+const useAnimateInView = () => {
+    const ref = useRef(null);
+    const inView = useInView(ref, { once: true });
+    return { ref, inView };
+};
 
+const About = () => {
     const { t } = useTranslation('common');
 
     const fadeInUp = {
@@ -32,17 +36,20 @@ const About = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     };
 
+    const sectionsData = [
+        { image: ThunderPic, title: 'sectionOne', subtitle: 'sectionOne' },
+        { image: TaskPic, title: 'sectionTwo', subtitle: 'sectionTwo' },
+        { image: MegaphonePic, title: 'sectionThree', subtitle: 'sectionThree' },
+        { image: Excellence, title: 'sectionFour', subtitle: 'sectionFour' },
+        { image: HonestyPic, title: 'sectionFive', subtitle: 'sectionFive' },
+        { image: Innovation, title: 'sectionSix', subtitle: 'sectionSix' },
+    ];
 
-    const useAnimateInView = () => {
-        const ref = useRef(null);
-        const inView = useInView(ref, { once: false });
-        return { ref, inView };
-    };
+    const sectionRefs = sectionsData.map(() => useAnimateInView());
 
     return (
         <div className="about-page-container">
-
-
+            {/* Header Section */}
             <motion.div
                 className="about-page-header"
                 initial="hidden"
@@ -64,15 +71,15 @@ const About = () => {
                 </div>
             </motion.div>
 
-
-            <div className='about-sections-container'>
+            {/* Sections */}
+            <div className="about-sections-container">
                 <motion.h1
                     className="main-headline"
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
                 >
-                    <YellowShape classname={'svg-headline'} /> {t('about.sections.headlineOne')}
+                    <YellowShape classname="svg-headline" /> {t('about.sections.headlineOne')}
                 </motion.h1>
                 <motion.h1
                     className="main-headline"
@@ -81,19 +88,13 @@ const About = () => {
                     whileInView="visible"
                 >
                     {t('about.sections.headlineTwo')}
-                    <YellowShape classname={'svg-headline'} />
+                    <YellowShape classname="svg-headline" />
                 </motion.h1>
 
+                {/* Individual Sections with Animation */}
                 <div className="sections-container">
-                    {[
-                        { image: ThunderPic, title: 'sectionOne', subtitle: 'sectionOne' },
-                        { image: TaskPic, title: 'sectionTwo', subtitle: 'sectionTwo' },
-                        { image: MegaphonePic, title: 'sectionThree', subtitle: 'sectionThree' },
-                        { image: Excellence, title: 'sectionFour', subtitle: 'sectionFour' },
-                        { image: HonestyPic, title: 'sectionFive', subtitle: 'sectionFive' },
-                        { image: Innovation, title: 'sectionSix', subtitle: 'sectionSix' },
-                    ].map(({ image, title, subtitle }, index) => {
-                        const { ref, inView } = useAnimateInView();
+                    {sectionsData.map(({ image, title, subtitle }, index) => {
+                        const { ref, inView } = sectionRefs[index];
                         return (
                             <motion.div
                                 className="section"
@@ -104,7 +105,13 @@ const About = () => {
                                 transition={{ duration: 0.5 }}
                             >
                                 <div className="top-section">
-                                    <Image src={image} width={100} height={100} alt="Flennor Parts" title="Flennor Parts" />
+                                    <Image
+                                        src={image}
+                                        width={100}
+                                        height={100}
+                                        alt="Flennor Parts"
+                                        title="Flennor Parts"
+                                    />
                                     <h1>{t(`about.sections.sectionsContainer.${title}.title`)}</h1>
                                 </div>
                                 <div className="bottom-section">
@@ -114,9 +121,9 @@ const About = () => {
                         );
                     })}
                 </div>
-
             </div>
 
+            {/* Numbers Section */}
             <motion.div
                 className="about-numbers-container"
                 initial="hidden"
@@ -125,8 +132,8 @@ const About = () => {
             >
                 <div className="about-numbers-header">
                     <h1>
-                        <YellowShape classname={'svg-headline'} /> {t('about.numbers.headline')}
-                        <YellowShape classname={'svg-headline'} />
+                        <YellowShape classname="svg-headline" /> {t('about.numbers.headline')}
+                        <YellowShape classname="svg-headline" />
                     </h1>
                     <h3>{t('about.numbers.sub')}</h3>
                 </div>
@@ -135,47 +142,56 @@ const About = () => {
                 </div>
             </motion.div>
 
-            <div className='global-presence-container'>
-
-                <div className='global-presence-header'>
-                    <motion.h1 variants={fadeInUp}
+            {/* Global Presence Section */}
+            <div className="global-presence-container">
+                <div className="global-presence-header">
+                    <motion.h1
+                        variants={fadeInUp}
                         initial="hidden"
-                        whileInView="visible"><YellowShape classname={'svg-headline'} />  {t('about.global.headline')} <YellowShape classname={'svg-headline'} /></motion.h1>
-                    <motion.h3 variants={fadeInUp}
+                        whileInView="visible"
+                    >
+                        <YellowShape classname="svg-headline" /> {t('about.global.headline')}
+                        <YellowShape classname="svg-headline" />
+                    </motion.h1>
+                    <motion.h3
+                        variants={fadeInUp}
                         initial="hidden"
-                        whileInView="visible">{t('about.global.subHeadline')}</motion.h3>
+                        whileInView="visible"
+                    >
+                        {t('about.global.subHeadline')}
+                    </motion.h3>
                 </div>
 
-                <div className='map-container'>
-                    <div className='img-container'>
-                        <Image src={Map} fill alt='Flennor Parts Map' title='Flennor Parts Map' />
+                <div className="map-container">
+                    <div className="img-container">
+                        <Image src={Map} fill alt="Flennor Parts Map" title="Flennor Parts Map" />
                     </div>
-
-                    <div className='layer-on-map'>
-                        <div className='inner-layer-on-map'>
-                            <div className='headline-on-map'>
-                                <span className='circle-span'></span>
-                                <h1> {t('about.global.map.one.headline')} <span>{t('about.global.map.one.sub')}</span></h1>
+                    <div className="layer-on-map">
+                        <div className="inner-layer-on-map">
+                            <div className="headline-on-map">
+                                <span className="circle-span"></span>
+                                <h1>{t('about.global.map.one.headline')}
+                                    <span>{t('about.global.map.one.sub')}</span>
+                                </h1>
                             </div>
-
-                            <div className='headline-on-map'>
-                                <span className='circle-span'></span>
-                                <h1> {t('about.global.map.two.headline')} <span>{t('about.global.map.two.sub')}</span></h1>
+                            <div className="headline-on-map">
+                                <span className="circle-span"></span>
+                                <h1>{t('about.global.map.two.headline')}
+                                    <span>{t('about.global.map.two.sub')}</span>
+                                </h1>
                             </div>
-
-                            <div className='headline-on-map'>
-                                <span className='circle-span'></span>
-                                <h1> {t('about.global.map.three.headline')} <span>{t('about.global.map.three.sub')}</span></h1>
+                            <div className="headline-on-map">
+                                <span className="circle-span"></span>
+                                <h1>{t('about.global.map.three.headline')}
+                                    <span>{t('about.global.map.three.sub')}</span>
+                                </h1>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-    )
-}
-
+    );
+};
 
 export default About;
