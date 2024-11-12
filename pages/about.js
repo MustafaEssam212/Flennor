@@ -11,8 +11,7 @@ import Excellence from '../public/excellence.png';
 import Counter from '@/components/HomePage/Counter';
 import Map from '../public/map2.png';
 import { useTranslation } from 'next-i18next';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -22,18 +21,12 @@ export async function getStaticProps({ locale }) {
     };
 }
 
-const useAnimateInView = () => {
-    const ref = useRef(null);
-    const inView = useInView(ref, { once: true });
-    return { ref, inView };
-};
-
 const About = () => {
     const { t } = useTranslation('common');
 
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    const fadeInBottomToTop = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
     };
 
     const sectionsData = [
@@ -45,8 +38,6 @@ const About = () => {
         { image: Innovation, title: 'sectionSix', subtitle: 'sectionSix' },
     ];
 
-    const sectionRefs = sectionsData.map(() => useAnimateInView());
-
     return (
         <div className="about-page-container">
             {/* Header Section */}
@@ -54,7 +45,7 @@ const About = () => {
                 className="about-page-header"
                 initial="hidden"
                 animate="visible"
-                variants={fadeInUp}
+                variants={fadeInBottomToTop}
             >
                 <div className="img-container">
                     <Image
@@ -75,7 +66,7 @@ const About = () => {
             <div className="about-sections-container">
                 <motion.h1
                     className="main-headline"
-                    variants={fadeInUp}
+                    variants={fadeInBottomToTop}
                     initial="hidden"
                     whileInView="visible"
                 >
@@ -83,7 +74,7 @@ const About = () => {
                 </motion.h1>
                 <motion.h1
                     className="main-headline"
-                    variants={fadeInUp}
+                    variants={fadeInBottomToTop}
                     initial="hidden"
                     whileInView="visible"
                 >
@@ -93,33 +84,30 @@ const About = () => {
 
                 {/* Individual Sections with Animation */}
                 <div className="sections-container">
-                    {sectionsData.map(({ image, title, subtitle }, index) => {
-                        const { ref, inView } = sectionRefs[index];
-                        return (
-                            <motion.div
-                                className="section"
-                                ref={ref}
-                                key={index}
-                                initial={{ opacity: 0, y: 50 }}
-                                animate={inView ? { opacity: 1, y: 0 } : {}}
-                                transition={{ duration: 0.5 }}
-                            >
-                                <div className="top-section">
-                                    <Image
-                                        src={image}
-                                        width={100}
-                                        height={100}
-                                        alt="Flennor Parts"
-                                        title="Flennor Parts"
-                                    />
-                                    <h1>{t(`about.sections.sectionsContainer.${title}.title`)}</h1>
-                                </div>
-                                <div className="bottom-section">
-                                    <h2>{t(`about.sections.sectionsContainer.${subtitle}.subTitle`)}</h2>
-                                </div>
-                            </motion.div>
-                        );
-                    })}
+                    {sectionsData.map(({ image, title, subtitle }, index) => (
+                        <motion.div
+                            className="section"
+                            key={index}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: false, amount: 0.5 }}
+                            variants={fadeInBottomToTop}
+                        >
+                            <div className="top-section">
+                                <Image
+                                    src={image}
+                                    width={100}
+                                    height={100}
+                                    alt="Flennor Parts"
+                                    title="Flennor Parts"
+                                />
+                                <h1>{t(`about.sections.sectionsContainer.${title}.title`)}</h1>
+                            </div>
+                            <div className="bottom-section">
+                                <h2>{t(`about.sections.sectionsContainer.${subtitle}.subTitle`)}</h2>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
 
@@ -128,7 +116,8 @@ const About = () => {
                 className="about-numbers-container"
                 initial="hidden"
                 whileInView="visible"
-                variants={fadeInUp}
+                viewport={{ once: false }}
+                variants={fadeInBottomToTop}
             >
                 <div className="about-numbers-header">
                     <h1>
@@ -146,7 +135,7 @@ const About = () => {
             <div className="global-presence-container">
                 <div className="global-presence-header">
                     <motion.h1
-                        variants={fadeInUp}
+                        variants={fadeInBottomToTop}
                         initial="hidden"
                         whileInView="visible"
                     >
@@ -154,7 +143,7 @@ const About = () => {
                         <YellowShape classname="svg-headline" />
                     </motion.h1>
                     <motion.h3
-                        variants={fadeInUp}
+                        variants={fadeInBottomToTop}
                         initial="hidden"
                         whileInView="visible"
                     >
