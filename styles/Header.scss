@@ -12,6 +12,22 @@ body[dir="rtl"]{
             .styled-link{
                 font-family: 'Cairo-Black'
             }
+            
+            .languages{
+                .main-languages-div{
+                    p{
+                        font-family: 'Cairo-Regular'; 
+                    }
+                }
+            }
+
+            .lang-menu{
+                .lang-choice{
+                    p{
+                        font-family: 'Cairo-Regular';
+                    }
+                }
+            }
         }
 
         .mobile-menu{

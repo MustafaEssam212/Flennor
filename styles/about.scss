@@ -1,0 +1,1943 @@
+
+body[dir='rtl']{
+    .about-page-container{
+
+        .about-page-header{
+         
+    
+            .layer-on-image{
+             
+                h1{
+                    font-family: 'Cairo-Bold';
+                 
+                }
+    
+                h2{
+                    font-family: 'Cairo-Regular';
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+          
+    
+            .main-headline{
+                font-family: 'Cairo-Bold';
+
+            }
+    
+    
+            .sections-container{
+             
+                
+                .section{
+                  
+                    .top-section{
+
+                        img:not(.not-rotated){
+                            transform: scaleX(-1);
+                            -webkit-transform: scaleX(-1);
+                            -moz-transform: scaleX(-1);
+                            -ms-transform: scaleX(-1);
+                            -o-transform: scaleX(-1);
+                        }
+
+                        h1{
+                            font-family: 'Cairo-Bold';
+                        }
+                    }
+    
+                    .bottom-section{
+  
+    
+                        h2{
+                            font-family: 'Cairo-Regular';
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+        
+            .about-numbers-header{
+           
+                h1{
+                    font-family: 'Cairo-Bold';
+                }
+        
+                h3{
+                    font-family: 'Cairo-Regular';
+                }
+        
+            }
+    
+        }
+    
+    
+        .global-presence-container{
+            .global-presence-header{
+              h1{
+                    font-family: 'Cairo-Bold';
+                 
+                }
+        
+                h3{
+                    font-family: 'Cairo-Regular';
+                }
+        
+            }
+    
+            .map-container{
+
+    
+                .layer-on-map{
+
+                    direction: ltr;
+                 
+                    .inner-layer-on-map{
+                       
+                        .headline-on-map{
+                            flex-direction: row-reverse;
+
+                            .circle-span{
+                                margin-top: 27px;
+                            }
+                          
+                           
+    
+                            h1{
+                                font-family: 'Cairo-Bold';
+                                text-align: right;
+    
+                                span{
+                                    font-family: 'Cairo-Regular';
+                                }
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+}
+
+
+.about-page-container{
+
+    .about-page-header{
+        width: 90%;
+        height: 550px;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        overflow: hidden;
+
+        .img-container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .layer-on-image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.641);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            h1{
+                font-family: 'Benzin-Semi-Bold';
+                text-transform: uppercase;
+                font-size: 45px;
+                color: var(--Primary-Color);
+            }
+
+            h2{
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                color: white;
+                width: 70%;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .about-sections-container{
+        margin-top: 100px;
+
+        .main-headline{
+            font-family: 'Benzin-Semi-Bold';
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+
+
+            .svg-headline{
+                width: 50px;
+                height: 50px;
+            }
+
+
+        }
+
+
+        .sections-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            
+            .section{
+                background-color: white;
+                width: 600px;
+                padding: 30px 50px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                box-shadow: 0px 0px 10px #bebebe21;
+
+                .top-section{
+                    h1{
+                        font-family: 'Cairo-Bold';
+                        font-size: 35px;
+                        color: rgb(45, 45, 45);
+                    }
+                }
+
+                .bottom-section{
+                    margin-top: 25px;
+
+                    h2{
+                        font-family: 'Roboto-Regular';
+                        font-weight: 400;
+                        color: #646a7c;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    .about-numbers-container{
+
+        margin-top: 100px;
+
+        .about-numbers-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            h1{
+                font-family: 'Benzin-Semi-Bold';
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                .svg-headline{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+    
+            h3{
+                font-family: 'Roboto-Regular';
+                color: #646a7c;
+                margin-top: 10px;
+            }
+    
+        }
+
+        .about-counter{
+            margin-top: 50px;
+        }
+    }
+
+
+    .global-presence-container{
+        margin-top: 100px;
+
+
+        .global-presence-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            h1{
+                font-family: 'Benzin-Semi-Bold';
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                .svg-headline{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+    
+            h3{
+                font-family: 'Roboto-Regular';
+                color: #646a7c;
+                margin-top: 10px;
+                width: 50%;
+                text-align: center;
+            }
+    
+        }
+
+        .map-container{
+            margin-top: 50px;
+            height: 750px;
+            position: relative;
+
+            .img-container{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            .layer-on-map{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                .inner-layer-on-map{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    padding: 0px 50px;
+                    gap: 35px;
+
+                    .headline-on-map{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 10px;
+
+                        .circle-span{
+                            display: block;
+                            width: 12px;
+                            height: 12px;
+                            background-color: var(--Primary-Color);
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            flex-shrink: 0;
+                            margin-top: 13px;
+                        }
+
+                        h1{
+                            font-family: 'Roboto-Bold';
+                            font-weight: 400;
+
+                            span{
+                                font-family: 'Roboto-Regular';
+                            }
+                        }
+                    }
+
+                    
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+@media (max-width: 2048px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 490px;
+           
+    
+            .layer-on-image{
+              
+                h1{
+                    font-size: 40px;
+                }
+    
+                h2{
+                    font-size: 21.5px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 100px;
+    
+            .main-headline{
+                font-size: 28px;
+                .svg-headline{
+                    width: 45px;
+                    height: 45px;
+                }
+
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 45px;
+               
+                .section{
+                    width: 540px;
+                    padding: 30px 45px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 95px;
+                            height: 95px;
+                        }
+
+                        h1{
+                           
+                            font-size: 30px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+    
+                        h2{
+                           
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 100px;
+    
+            .about-numbers-header{
+                h1{
+                    font-size: 28px;
+                    .svg-headline{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+        
+                h3{
+                    font-size: 18px;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 100px;
+    
+    
+            .global-presence-header{
+                h1{
+                    font-size: 28px;
+                    .svg-headline{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+        
+                h3{
+                    font-size: 18px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 700px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 35px;
+    
+                        .headline-on-map{
+                          .circle-span{
+                                width: 12px;
+                                height: 12px;
+                              
+                                margin-top: 13px;
+                            }
+    
+                            h1{
+                                font-size: 30px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+
+}
+
+
+@media (max-width: 1921px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 457px;
+           
+    
+            .layer-on-image{
+                gap: 19px;
+                h1{
+                    font-size: 37.5px;
+                }
+    
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 100px;
+    
+            .main-headline{
+
+                    font-size: 26px;
+                    .svg-headline{
+                        width: 40px;
+                        height: 40px;
+                    }
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 45px;
+               
+                .section{
+                    width: 510px;
+                    padding: 28px 45px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 90px;
+                            height: 90px;
+                        }
+
+                        h1{
+                           
+                            font-size: 28px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+    
+                        h2{
+                           
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 100px;
+    
+            .about-numbers-header{
+                h1{
+                    font-size: 26px;
+                    .svg-headline{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+        
+                h3{
+                    font-size: 17px;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 100px;
+    
+    
+            .global-presence-header{
+                h1{
+                    font-size: 26px;
+                    .svg-headline{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+        
+                h3{
+                    font-size: 17px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 650px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 35px;
+    
+                        .headline-on-map{
+                          .circle-span{
+                                width: 12px;
+                                height: 12px;
+                              
+                                margin-top: 13px;
+                            }
+    
+                            h1{
+                                font-size: 28px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                           
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 23px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1707px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 457px;
+           
+    
+            .layer-on-image{
+                gap: 19px;
+                h1{
+                    font-size: 37.5px;
+                }
+    
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 100px;
+    
+            .main-headline{
+
+                    font-size: 24px;
+                    .svg-headline{
+                        width: 35px;
+                        height: 35px;
+                    }
+        
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 35px;
+               
+                .section{
+                    width: 475px;
+                    padding: 26px 45px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 85px;
+                            height: 85px;
+                        }
+
+                        h1{
+                           
+                            font-size: 26px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+    
+                        h2{
+                           
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 100px;
+    
+            .about-numbers-header{
+                h1{
+                    font-size: 24px;
+                    .svg-headline{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+        
+                h3{
+                    font-size: 16px;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 100px;
+    
+    
+            .global-presence-header{
+                h1{
+                    font-size: 24px;
+                    .svg-headline{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+        
+                h3{
+                    font-size: 16px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 600px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 35px;
+    
+                        .headline-on-map{
+                          .circle-span{
+                                width: 10px;
+                                height: 10px;
+                              
+                                margin-top: 13px;
+                            }
+    
+                            h1{
+                                font-size: 26px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width: 1537px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 415px;
+           
+    
+            .layer-on-image{
+                gap: 19px;
+                h1{
+                    font-size: 33.5px;
+                }
+    
+                h2{
+                    font-size: 18px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 100px;
+    
+            .main-headline{
+
+                    font-size: 22px;
+                    .svg-headline{
+                        width: 30px;
+                        height: 30px;
+                    }
+        
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 35px;
+               
+                .section{
+                    width: 450px;
+                    padding: 22px 40px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 80px;
+                            height: 80px;
+                        }
+
+                        h1{
+                           
+                            font-size: 22px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+                        margin-top: 15px;
+    
+                        h2{
+                           
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 100px;
+    
+            .about-numbers-header{
+                h1{
+                    font-size: 22px;
+                    .svg-headline{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+        
+                h3{
+                    font-size: 15px;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 100px;
+    
+    
+            .global-presence-header{
+                h1{
+                    font-size: 22px;
+                    .svg-headline{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+        
+                h3{
+                    font-size: 15px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 550px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 35px;
+    
+                        .headline-on-map{
+                          .circle-span{
+                                width: 10px;
+                                height: 10px;
+                              
+                                margin-top: 8px;
+                            }
+    
+                            h1{
+                                font-size: 22px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                           
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 17px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1260px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 325px;
+           
+    
+            .layer-on-image{
+                gap: 15px;
+                h1{
+                    font-size: 27px;
+                }
+    
+                h2{
+                    font-size: 14px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 100px;
+    
+            .main-headline{
+    
+                    font-size: 18px;
+                    gap: 5px;
+                    .svg-headline{
+                        width: 25px;
+                        height: 25px;
+                    }
+        
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 35px;
+               
+                .section{
+                    width: 420px;
+                    padding: 20px 38px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 75px;
+                            height: 75px;
+                        }
+
+                        h1{
+                           
+                            font-size: 20px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+                        margin-top: 15px;
+    
+                        h2{
+                           
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 100px;
+    
+            .about-numbers-header{
+                h1{
+                    font-size: 18px;
+                    gap: 5px;
+                    .svg-headline{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+        
+                h3{
+                    font-size: 12px;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 100px;
+    
+    
+            .global-presence-header{
+                h1{
+                    font-size: 18px;
+                    gap: 5px;
+                    .svg-headline{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+        
+                h3{
+                    font-size: 12px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 450px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 35px;
+    
+                        .headline-on-map{
+                            gap: 7px;
+                          .circle-span{
+                                width: 8px;
+                                height: 8px;
+                              
+                                margin-top: 8px;
+                            }
+    
+                            h1{
+                                font-size: 18px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                            width: 50%;
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 14px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px){
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 225px;
+           
+    
+            .layer-on-image{
+                gap: 10px;
+                h1{
+                    font-size: 18px;
+                }
+    
+                h2{
+                    font-size: 10px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 50px;
+    
+            .main-headline{
+                    margin: 0px 20px;
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 35px;
+               
+                .section{
+                    width: 90%;
+                    padding: 20px 38px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 75px;
+                            height: 75px;
+                        }
+
+                        h1{
+                           
+                            font-size: 20px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+                        margin-top: 15px;
+    
+                        h2{
+                           
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 50px;
+    
+            .about-numbers-header{
+                margin: 0px 20px;
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                    text-align: center;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                margin-top: 50px;
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 50px;
+    
+    
+            .global-presence-header{
+                margin: 0px 20px;
+                
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    flex-shrink: 0;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                        flex-shrink: 0;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                    text-align: center;
+                    width: 90%;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 350px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 40%;
+                        padding: 0px 50px;
+                        gap: 25px;
+    
+                        .headline-on-map{
+                            gap: 5px;
+                          .circle-span{
+                                width: 6px;
+                                height: 6px;
+                              
+                                margin-top: 8px;
+                            }
+    
+                            h1{
+                                font-size: 13px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                            width: 50%;
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 10px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 680px) {
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 200px;
+           
+    
+            .layer-on-image{
+                gap: 10px;
+                h1{
+                    font-size: 18px;
+                }
+    
+                h2{
+                    font-size: 10px;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 50px;
+    
+            .main-headline{
+                    margin: 0px 20px;
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 35px;
+               
+                .section{
+                    width: 90%;
+                    padding: 20px 38px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 75px;
+                            height: 75px;
+                        }
+
+                        h1{
+                           
+                            font-size: 20px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+                        margin-top: 15px;
+    
+                        h2{
+                           
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 50px;
+    
+            .about-numbers-header{
+                margin: 0px 20px;
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                    text-align: center;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                position: relative;
+                margin-top: 50px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    background-color: white;
+                    width: 100%;
+                    height: 30px;
+                }
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 50px;
+    
+    
+            .global-presence-header{
+                margin: 0px 20px;
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 250px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 90%;
+                        padding: 0px 20px;
+                        gap: 25px;
+    
+                        .headline-on-map{
+                            gap: 5px;
+                          .circle-span{
+                                width: 6px;
+                                height: 6px;
+                              
+                                margin-top: 8px;
+                            }
+    
+                            h1{
+                                font-size: 12px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                            width: 80%;
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 9px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 410px) {
+    .about-page-container{
+
+        .about-page-header{
+          
+            height: 200px;
+           
+    
+            .layer-on-image{
+                gap: 10px;
+                h1{
+                    font-size: 18px;
+                }
+    
+                h2{
+                    font-size: 10px;
+                    width: 90%;
+                }
+            }
+        }
+    
+    
+        .about-sections-container{
+            margin-top: 50px;
+    
+            .main-headline{
+                    margin: 0px 20px;
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    flex-shrink: 0;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                        flex-shrink: 0;
+                    }
+        
+            }
+    
+    
+            .sections-container{
+                 margin-top: 50px;
+                 gap: 25px;
+               
+                .section{
+                    width: 95%;
+                    padding: 15px 28px;
+                   
+                    .top-section{
+
+                        img{
+                            width: 65px;
+                            height: 65px;
+                        }
+
+                        h1{
+                           
+                            font-size: 16px;
+                         
+                        }
+                    }
+    
+                    .bottom-section{
+                       
+                        margin-top: 10px;
+    
+                        h2{
+                           
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    
+    
+        .about-numbers-container{
+    
+            margin-top: 50px;
+    
+            .about-numbers-header{
+                margin: 0px 20px;
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    text-align: center;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                    text-align: center;
+                }
+        
+        
+            }
+    
+            .about-counter{
+                position: relative;
+                margin-top: 50px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    background-color: white;
+                    width: 100%;
+                    height: 30px;
+                }
+            }
+        }
+    
+    
+        .global-presence-container{
+            margin-top: 50px;
+    
+    
+            .global-presence-header{
+                margin: 0px 20px;
+                h1{
+                    font-size: 16px;
+                    gap: 5px;
+                    .svg-headline{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                h3{
+                    font-size: 11px;
+                }
+        
+        
+            }
+    
+            .map-container{
+                margin-top: 50px;
+                height: 200px;
+              
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 95%;
+                        padding: 0px 20px;
+                        gap: 10px;
+    
+                        .headline-on-map{
+                            gap: 5px;
+                          .circle-span{
+                                width: 5px;
+                                height: 5px;
+                              
+                                margin-top: 4px;
+                            }
+    
+                            h1{
+                                font-size: 10px;
+                            }
+                        }
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+            .global-presence-container{
+                .map-container{
+
+    
+                    .layer-on-map{
+    
+                        direction: ltr;
+                     
+                        .inner-layer-on-map{
+                            width: 90%;
+                            .headline-on-map{
+                                flex-direction: row-reverse;
+    
+                                .circle-span{
+                                    margin-top: 9px;
+                                }
+                              
+                               
+        
+                                h1{
+                                    font-family: 'Cairo-Bold';
+                                    text-align: right;
+        
+                                    span{
+                                        font-family: 'Cairo-Regular';
+                                    }
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        }
+    }
+}

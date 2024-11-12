@@ -15,7 +15,12 @@
       "about": "Über uns",
       "contact": "Kontaktieren Sie uns"
     },
-      "styled-link": "Unsere Produkte"
+      "styled-link": "Unsere Produkte",
+      "langs": {
+        "en": "ENGLISCH",
+        "de": "DEUTCH",
+        "ar": "ARABISCH"
+      }
   },
 
   "footer": {
@@ -132,6 +137,65 @@
       "map": {
         "title": "Haben Sie unsere Verbreitung bemerkt?",
         "subTitle": "Wir sind auf der ganzen Welt vertreten"
+      }
+    },
+
+    "about": {
+      "header": {
+        "headline": "Über Flennor",
+        "subHeadline": "Flennor wurde 1935 gegründet und hat eine reiche Tradition, die in Düsseldorf im Herzen Deutschlands verwurzelt ist. Ursprünglich gegründet, um den wachsenden Bedarf der Automobilindustrie zu decken, haben wir uns zu einer Marke entwickelt, die für Qualität und Zuverlässigkeit bei Autoersatzteilen steht. Unser Engagement für Spitzenqualität hat uns dazu bewogen, unsere Reichweite weltweit auszuweiten und sicherzustellen, dass wir unseren internationalen Kunden erstklassige Produkte anbieten."
+      },
+      "sections": {
+        "headlineOne": "Wir stärken unseren Erfolg,",
+        "headlineTwo": "Unsere Mission, Vision und unser Ziel",
+        "sectionsContainer": {
+          "sectionOne": {
+            "title": "Unsere Mission",
+            "subTitle": "In unserem Streben nach Spitzenleistung ist Flennor bestrebt, sein Produktangebot kontinuierlich weiterzuentwickeln. Wir erweitern unser Sortiment regelmäßig um neue Artikel und Produktgruppen, die den sich ständig ändernden Anforderungen des Marktes gerecht werden. Unser proaktiver Ansatz stellt sicher, dass wir an der Spitze der Automobilindustrie bleiben und die Bedürfnisse unserer Kunden stets mit den höchsten Standards erfüllen."
+          },
+          "sectionTwo": {
+            "title": "Unser Engagement",
+            "subTitle": "Bei Flennor ist es unser Hauptziel, Autoersatzteile zu liefern, die der Qualität von Originalteilen ebenbürtig sind, und unseren Kunden zuverlässige Produkte zu wettbewerbsfähigen Preisen anzubieten. Wir wissen, welche entscheidende Rolle Autoteile für die Sicherheit und Leistung von Fahrzeugen spielen, und unser Engagement für Qualität ist unerschütterlich."
+          },
+          "sectionThree": {
+            "title": "Unser Team",
+            "subTitle": "Unser Erfolg beruht auf dem Talent und dem Engagement unseres vielfältigen Teams. Wir sind ein Team aus qualifizierten Fachkräften aus verschiedenen Abteilungen – Produktion, Qualitätsmanagement, Vertrieb und Einkauf – und haben uns dazu verpflichtet, bei jedem unserer Produkte Spitzenqualität zu liefern. Jeder einzelne Mitarbeiter bei Flennor trägt entscheidend dazu bei, unseren Ruf für höchste Qualität aufrechtzuerhalten."
+          },
+          "sectionFour": {
+            "title": "Unsere Exzellenz",
+            "subTitle": "Bei Flennor sind wir bestrebt, in jedem Aspekt unseres Geschäfts Spitzenleistungen zu erbringen. Von der Produktqualität bis zum Kundendienst wollen wir die Erwartungen übertreffen. Unsere strengen Standards und unser Streben nach Perfektion stellen sicher, dass jedes von uns hergestellte Ersatzteil zuverlässig und langlebig ist und den höchsten Branchenstandards entspricht."
+          },
+          "sectionFive": {
+            "title": "Unsere Ehrlichkeit",
+            "subTitle": "Integrität ist der Eckpfeiler der Geschäftstätigkeit von Flennor. Wir glauben an transparente Kommunikation, faire Preise und ethische Praktiken. Indem wir Vertrauen fördern und echte Beziehungen zu unseren Kunden und Partnern aufbauen, gewährleistet Flennor einen kooperativen und ehrlichen Ansatz in allen unseren Geschäften."
+          },
+          "sectionSix": {
+            "title": "Unsere Innovation",
+            "subTitle": "Innovation treibt Flennor voran. Wir erforschen ständig neue Technologien und Trends, um unser Produktangebot zu verbessern. Durch Investitionen in Forschung und Entwicklung ist Flennor bestrebt, fortschrittliche Automobillösungen zu liefern, die den sich entwickelnden Anforderungen der Branche gerecht werden und sicherstellen, dass unsere Kunden immer einen Schritt voraus sind."
+          }
+        }
+      },
+      "numbers": {
+        "headline": "Haben Sie unsere Zahlen gesehen?",
+        "sub": "Werfen Sie einen Blick auf unsere Unternehmenszahlen, die unseren hohen Wert widerspiegeln."
+      },
+      "global": {
+        "headline": "Haben Sie unsere Verbreitung bemerkt?",
+        "subHeadline": "Flennor ist global aufgestellt und stellt sicher, dass unsere kompetenten Dienstleistungen und hochwertigen Produkte weltweit verfügbar sind. Unsere regionalen Vertriebsbüros sind strategisch günstig gelegen, um einen effizienten und zuverlässigen Service zu gewährleisten.",
+        "map": {
+          "one": {
+            "headline": "Düsseldorf, Deutschland:",
+            "sub": "Unser Hauptsitz bleibt ein Zentrum der Innovation und Marktführerschaft im Bereich hochwertiger Autoteile."
+          },
+          "two": {
+            "headline": "Dubai, Vereinigte Arabische Emirate:",
+            "sub": "Unser Büro in Dubai liegt an einem Handelsknotenpunkt und erweitert unsere Reichweite auf die florierenden Märkte im Nahen Osten."
+          },
+          "three": {
+            "headline": "Istanbul, Türkei:",
+            "sub": "Unser Büro in Istanbul fungiert als Tor zwischen Europa und Asien und stärkt unsere Fähigkeit, den Anforderungen dieser wichtigen Regionen gerecht zu werden."
+          }
+        }
       }
     }
 }

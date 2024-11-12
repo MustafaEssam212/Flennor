@@ -15,7 +15,12 @@
         "about": "About us",
         "contact": "Contact us"
       },
-      "styled-link": "Our Products"
+      "styled-link": "Our Products",
+      "langs": {
+        "en": "ENGLISH",
+        "de": "DEUTCH",
+        "ar": "ARABIC"
+      }
     },
 
     "footer": {
@@ -131,6 +136,64 @@
       "map": {
         "title": "Have you noticed our spread?",
         "subTitle": "We exist all over the world"
+      }
+    },
+    "about": {
+      "header": {
+        "headline": "About Flennor",
+        "subHeadline": "Founded in 1935, Flennor has a rich heritage rooted in the heart of Germany in Düsseldorf. Initially established to meet the burgeoning needs of the automotive industry, we have grown into a brand synonymous with quality and reliability in automotive spare parts. Our commitment to excellence has propelled us to expand our reach globally, ensuring we bring top-tier products to our international clientele."
+      },
+      "sections": {
+        "headlineOne": "Empowering Our Success,",
+        "headlineTwo": "Our Mission, Vision, and Goal",
+        "sectionsContainer": {
+          "sectionOne": {
+            "title": "Our Mission",
+            "subTitle": "In our quest for excellence, Flennor is devoted to continuously evolving our product offerings. We regularly expand our range by adding new items and product groups that cater to the ever-changing demands of the market. Our proactive approach ensures that we remain at the forefront of the automotive industry, consistently meeting the needs of our customers with the highest standards."
+          },
+          "sectionTwo": {
+            "title": "Our Commitment",
+            "subTitle": "At Flennor, our primary goal is to deliver automotive spare parts that rival the quality of genuine parts, providing our customers with dependable products at competitive prices. We understand the pivotal role automotive parts play in vehicle safety and performance, and our commitment to quality is unwavering."
+          },
+          "sectionThree": {
+            "title": "Our Team",
+            "subTitle": "Our success is driven by the talent and dedication of our diverse team. Consisting of skilled professionals across various departments—production, quality management, sales, and purchasing—we are committed to delivering excellence in every product we supply. Each employee at Flennor plays a vital role in upholding our reputation for superior quality."
+          },
+          "sectionFour": {
+            "title": "Our Excellence",
+            "subTitle": "At Flennor, we are committed to delivering excellence in every aspect of our business. From product quality to customer service, we aim to exceed expectations. Our rigorous standards and dedication to perfection ensure that each spare part we produce is reliable, durable, and meets the highest industry benchmarks."
+          },
+          "sectionFive": {
+            "title": "Our Honesty",
+            "subTitle": "Integrity is the cornerstone of Flennor's operations. We believe in transparent communication, fair pricing, and ethical practices. By fostering trust and building genuine relationships with our customers and partners, Flennor ensures a collaborative and honest approach in all our dealings."
+          },
+          "sectionSix": {
+            "title": "Our Innovation",
+            "subTitle": "Innovation drives Flennor forward. We continuously explore new technologies and trends to enhance our product offerings. By investing in research and development, Flennor strives to deliver advanced automotive solutions that meet the evolving needs of the industry, ensuring our customers stay ahead."
+          }
+        }
+      },
+      "numbers": {
+        "headline": "Have you seen our numbers?",
+        "sub": "Take a look at our company numbers that reflect our great value."
+      },
+      "global": {
+        "headline": "Have you noticed our spread?",
+        "subHeadline": "Flennor operates with a strategic global footprint, ensuring our expert services and high-quality products are available worldwide. Our regional sales offices are strategically located to facilitate efficient and reliable service.",
+        "map": {
+          "one": {
+            "headline": "Düsseldorf, Germany:",
+            "sub": "Our headquarters remains a hub of innovation and leadership in quality automotive parts."
+          },
+          "two": {
+            "headline": "Dubai, United Arab Emirates:",
+            "sub": "Positioned at the crossroads of trade, our Dubai office expands our reach into the thriving Middle Eastern markets."
+          },
+          "three": {
+            "headline": "Istanbul, Turkey:",
+            "sub": "Serving as the gateway between Europe and Asia, our Istanbul office strengthens our ability to meet the demands of these critical regions."
+          }
+        }
       }
     }
   }

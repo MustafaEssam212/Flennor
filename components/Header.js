@@ -65,15 +65,15 @@ const Header = () => {
 
     const getLang = {
         "en": <div className="parag-img-container">
-                <p>ENGLISH</p>
+                <p>{t('header.langs.en')}</p>
                 <div className="flag-image-container"><Image src={EnFlag} fill alt="English Flag" /></div>
               </div>,
         "de": <div className="parag-img-container">
-                <p>DEUTCH</p>
+                <p>{t('header.langs.de')}</p>
                 <div className="flag-image-container"><Image src={DeFlag} fill alt="Deutch Flag" /></div>
              </div>,
         "ar": <div className="parag-img-container">
-                <p>ARABIC</p>
+                <p>{t('header.langs.ar')}</p>
                 <div className="flag-image-container"><Image src={ArFlag} fill alt="Arabic Flag" /></div>
               </div>
     }
@@ -146,11 +146,11 @@ const Header = () => {
                         {
                             openLangMenu && <div className="lang-menu" ref={langMenuRef}>
 
-                                    <div onClick={() => changeLanguage('en')} aria-label="Change Language To English" title="Change Language To English" className="lang-choice"><p>ENGLISH</p> <div className="img-container"><Image src={EnFlag} fill alt="English Flag" /></div></div>
+                                    <div onClick={() => changeLanguage('en')} aria-label="Change Language To English" title="Change Language To English" className="lang-choice"><p>{t('header.langs.en')}</p> <div className="img-container"><Image src={EnFlag} fill alt="English Flag" /></div></div>
                                     
-                                    <div onClick={() => changeLanguage('de')} aria-label="Change Language To Deutch" title="Change Language To Deutch" className="lang-choice"><p>DEUTCH</p> <div className="img-container"><Image src={DeFlag} fill alt="Deutch Flag" /></div></div>
+                                    <div onClick={() => changeLanguage('de')} aria-label="Change Language To Deutch" title="Change Language To Deutch" className="lang-choice"><p>{t('header.langs.de')}</p> <div className="img-container"><Image src={DeFlag} fill alt="Deutch Flag" /></div></div>
 
-                                    <div onClick={() => changeLanguage('ar')} aria-label="Change Language To ARABIC" title="Change Language To ARABIC" className="lang-choice"><p>ARABIC</p> <div className="img-container"><Image src={ArFlag} fill alt="Arabic flag" /></div></div>
+                                    <div onClick={() => changeLanguage('ar')} aria-label="Change Language To ARABIC" title="Change Language To ARABIC" className="lang-choice"><p>{t('header.langs.ar')}</p> <div className="img-container"><Image src={ArFlag} fill alt="Arabic flag" /></div></div>
 
                             </div>
                         }
