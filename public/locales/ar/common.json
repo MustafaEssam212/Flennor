@@ -196,6 +196,36 @@
           }
         }
       }
+    },
+
+    "contact": {
+      "header": {
+        "backgroundWord": "تواصل معنا",
+        "firstHeadline": "كن على تواصل مع",
+        "secondHeadline": "فلينـــور"
+      },
+
+      "body": {
+        "header": {
+          "headline": "تواصل معنا",
+          "sub": "هل تريد أن تقول شيئا؟ نحن نحب أن نسمع منك"
+        },
+
+        "content": {
+          "phoneCard": {
+            "phoneOne": "+1 514-571-4054"
+          },
+          "emailCard": {
+            "emailOne": "sales@flennor-parts.com"
+          },
+          "addressCard": {
+            "addressOne": "Adersstraße 29-31 · 40215 Düsseldorf - Germany",
+            "addressTwo": "Mai Tower - 6th Floor - Al Nahda 1 - Dubai - United Arab Emirates",
+            "addressThree": "Esentepe Mah., 34870 Kartal - Istanbul - Türkiye",
+            "addressFour": "11015 Cavendish Blvd suite 410 - Montreal - Quebec - Canada"
+          }
+        }
+      }
     }
 
 }

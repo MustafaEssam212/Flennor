@@ -63,6 +63,13 @@ const Header = () => {
         };
     }, []);
 
+
+    useEffect(() => {
+        if(openMobileMenu){
+            setOpenMobileMenu(false);
+        }
+    }, [router.pathname])
+
     const getLang = {
         "en": <div className="parag-img-container">
                 <p>{t('header.langs.en')}</p>
