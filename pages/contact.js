@@ -38,7 +38,7 @@ const ContactUs = () => {
                 
                 <div className='contact-us-content-header'>
                     <h1><YellowShape classname={`svg-headline`} />Contact Us<YellowShape classname={`svg-headline`} /></h1>
-                    <h3>Want to say something? We'd love to hear from you.</h3>
+                    <h3>Want to say something? We would love to hear from you.</h3>
                 </div>
 
                 <div className='contact-cards'>
