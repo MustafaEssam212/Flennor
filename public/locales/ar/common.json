@@ -244,7 +244,14 @@
       },
       "popWindow": {
         "titleOne": "معلومات المركبة",
-        "titleTwo": "أرقام الشركة المصنعة الأصلية"
+        "titleTwo": "أرقام الشركة المصنعة الأصلية",
+        "dropmenuHeader": {
+          "model": "الموديل",
+          "engineType": "نوع المحرك",
+          "engineNo": "رقم المحرك",
+          "year": "السنة",
+          "additionalInfo": "معلومات اضافية"
+        }
       },
       "mobileFilter": {
         "align": "تنسيق"

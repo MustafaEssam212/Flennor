@@ -245,7 +245,14 @@
       },
       "popWindow": {
         "titleOne": "Fahrzeuginformationen",
-        "titleTwo": "O.E.M-Nummern"
+        "titleTwo": "O.E.M-Nummern",
+        "dropmenuHeader": {
+          "model": "Modell",
+          "engineType": "Motortyp",
+          "engineNo": "Motornummer",
+          "year": "Jahr",
+          "additionalInfo": "Weitere Informationen"
+        }
       },
       "mobileFilter": {
         "align": "Ausrichtung"

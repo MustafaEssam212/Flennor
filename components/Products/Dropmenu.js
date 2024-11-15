@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from 'next-i18next';
+
 
 const DropMenu = () => {
   const [openDropMenu, setOpenDropMenu] = useState(false);
+  const { t } = useTranslation('common');
+
 
   return (
     <div className="dropdown" onClick={() => setOpenDropMenu(!openDropMenu)}>
@@ -23,11 +27,11 @@ const DropMenu = () => {
             transition={{ duration: 0.3 }}
           >
             <div className="dropmenu-body-head">
-              <h4>Model</h4>
-              <h4>Engine Type</h4>
-              <h4>Engine No.</h4>
-              <h4>Year</h4>
-              <h4>Additional info</h4>
+              <h4>{t('products.popWindow.dropmenuHeader.model')}</h4>
+              <h4>{t('products.popWindow.dropmenuHeader.engineType')}</h4>
+              <h4>{t('products.popWindow.dropmenuHeader.engineNo')}</h4>
+              <h4>{t('products.popWindow.dropmenuHeader.year')}</h4>
+              <h4>{t('products.popWindow.dropmenuHeader.additionalInfo')}</h4>
             </div>
 
             <div className="dropmenu-body-result">
