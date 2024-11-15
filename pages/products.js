@@ -132,7 +132,7 @@ const Products = () => {
 
                     <div className='grid-filter'>
 
-                        <h2>Alignment</h2>
+                        <h2>{t('products.mobileFilter.align')}</h2>
                         <div className='grid-btns'>
                             <button onClick={()=> setCardGrid(2)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid2Alt className='grid-icon icon'/></button>
                             <button onClick={()=> setCardGrid(3)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid3Alt className='grid-icon icon'/></button>

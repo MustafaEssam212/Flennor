@@ -66,8 +66,8 @@
       },
       "categories": {
         "productOne": {
-          "name": "Brake Caliper and Rotor",
-          "description": "High-performance brake caliper with drilled rotor for cooling."
+          "name": "Fuel Pump Module",
+          "description": "Supplies fuel from the tank to the engine for smooth vehicle operation."
         },
         "productTwo": {
           "name": "Radiator",
@@ -242,6 +242,9 @@
       "popWindow": {
         "titleOne": "Vehicle Information",
         "titleTwo": "O.E.M Numbers"
+      },
+      "mobileFilter": {
+        "align": "Alignment"
       }
     }
   }

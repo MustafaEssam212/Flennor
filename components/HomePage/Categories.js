@@ -33,7 +33,7 @@ const Categories = () => {
 
     return (
         <div className="categories-homepage-container">
-            {/* Header with bottom-to-top animation */}
+            {/* Header with bottom-to-top animation */} 
             <motion.div 
                 className="categories-homepage-header"
                 initial="hidden"

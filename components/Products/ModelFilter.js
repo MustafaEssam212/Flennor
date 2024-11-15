@@ -1,7 +1,7 @@
 import { IoSearchOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import Models from '@/utils/models.json';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';  
 
 
 const ModelFilter = ({brand, sendDataToParent}) => {

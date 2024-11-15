@@ -67,8 +67,8 @@
       },
       "categories": {
         "productOne": {
-          "name": "Bremssattel und Rotor",
-          "description": "Hochleistungsbremssattel mit gebohrtem Rotor zur Kühlung."
+          "name": "Brandstofpomp Module",
+          "description": "Levert brandstof van de tank naar de motor voor een soepele werking van het voertuig."
         },
         "productTwo": {
           "name": "Radiateur",
@@ -246,6 +246,9 @@
       "popWindow": {
         "titleOne": "Fahrzeuginformationen",
         "titleTwo": "O.E.M-Nummern"
+      },
+      "mobileFilter": {
+        "align": "Ausrichtung"
       }
     }
 }
