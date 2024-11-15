@@ -24,7 +24,7 @@ const ProductCard = ({screenWidth, grid, sendDataToParent, checked, data}) =>{
                     <input onChange={(s)=> sendDataToParent(s.target.checked, data)} checked={checked} type="checkbox" title="check flennor parts product" aria-label="check flennor parts product"  />
                     <h2>R15863/HP</h2>
                 </div>
-                <div onClick={()=> setOpenPopWindow(true)} className="img-container" style={screenWidth > 627 ? {height: `calc(100vh / (${grid}))`} : {height: `calc(100vh / (${grid} /.6))`}}><Image loading="lazy" src={productImg} alt="Flennor Parts Product" title="Flennor Parts Product" fill /></div>
+                <div onClick={()=> setOpenPopWindow(true)} className="img-container" style={screenWidth > 627 ? {height: `calc(100vh / (${grid}))`} : {height: `calc(100vh / (${grid} /.5))`}}><Image loading="lazy" src={productImg} alt="Flennor Parts Product" title="Flennor Parts Product" fill /></div>
                 <div className="title-card">
                     <h2 onClick={()=> setOpenPopWindow(true)}>AIR BLEEDING PUMP (8mm x 8mm)</h2>
                 </div>
