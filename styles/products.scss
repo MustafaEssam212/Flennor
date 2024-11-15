@@ -1,0 +1,2936 @@
+
+body[dir="rtl"]{
+    .products-page-container{
+
+
+        .products-header{
+         
+    
+            .input-container{
+             
+    
+                .inner-input-container{
+                
+           
+                    button{
+                        font-family: 'Cairo-Medium';
+                    
+                    }
+
+                }
+    
+    
+            }
+        }
+    
+        .products-nav{
+             h1{
+                font-family: 'Cairo-Light';
+    
+                span{
+                    font-family: 'Cairo-Bold';
+                }
+            }
+            
+    
+            .products-nav-btns{
+             
+               
+    
+                .pdf-btn{
+                    font-family: 'Cairo-Bold';
+                   
+                }
+            }
+
+    
+        }
+    
+    
+        .products-body{
+          .inner-products-body{
+              
+                .products-filter{
+                  
+                    .filter-checkboxes-component{
+                     
+                        .filter-header{
+                         
+                            h1{
+                                font-family: 'Cairo-Bold';
+                            }
+                        }
+    
+                        .filter-body{
+   
+    
+                            .filter-alert{
+                                font-family: 'Cairo-Regular';
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                
+                    .product-card-component{
+                        direction: ltr;
+                    }
+    
+    
+                }
+    
+    
+              
+            }
+            
+        }
+    
+        .mobile-filters{
+          
+            .inner-mobile-filter{
+             
+                .grid-filter{
+                 h2{
+                        
+                        font-family: 'Cairo-Bold';
+                       
+                    }
+
+    
+                }
+
+                .filter-checkboxes-component{
+                     
+                    .filter-header{
+                     
+                        h1{
+                            font-family: 'Cairo-Bold';
+                        }
+                    }
+
+                    .filter-body{
+
+
+                        .filter-alert{
+                            font-family: 'Cairo-Regular';
+                        }
+                    }
+                }
+
+    
+                .pdf-btn{
+                      
+    
+                        font-family: 'Cairo-Bold';
+                        letter-spacing: 0px;
+
+                }
+            }
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+      
+    
+        .inner-prodcut-pop-window-container{
+         
+           
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                 
+
+    
+                    .product-pop-info{
+    
+                    
+                        .info-header{
+                          
+                            h3{
+                                font-family: 'Cairo-Medium';
+                                letter-spacing: 0px;
+                                text-align: right;
+                            }
+                        }
+    
+
+
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+.products-page-container{
+
+
+    .products-header{
+        height: 40vh;
+        position: relative;
+
+        .img-container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .input-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .inner-input-container{
+                background-color: white;
+                height: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 40px;
+                width: 50%;
+                .icon{
+                    font-size: 35px;
+                }
+       
+                button{
+                    font-family: 'Roboto-Medium';
+                    text-transform: uppercase;
+                    background-color: var(--Primary-Color);
+                    outline: none;
+                    border: none;
+                    width: 150px;
+                    height: 60%;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                }
+       
+                input{
+                    flex-grow: 1;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 21px;
+                    padding: 0px 25px;
+                }
+            }
+
+
+        }
+    }
+
+    .products-nav{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+
+        h1{
+            font-family: 'Roboto-Light';
+            font-weight: 400;
+
+            span{
+                font-family: 'Roboto-Bold';
+            }
+        }
+        
+
+        .products-nav-btns{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            button{
+                background-color: white;
+                outline: none;
+                border: 1px solid rgb(221, 221, 221);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+
+            .pdf-btn{
+                width: 250px;
+                height: 65px;
+                font-family: 'Roboto-Bold';
+                font-weight: 400;
+                gap: 7px;
+                font-size: 17px;
+                letter-spacing: 1px;
+
+                .pdf-icon{
+                    font-size: 22px;
+                }
+            }
+
+            .grid-btns{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                button{
+                    width: 65px;
+                    height: 65px;
+
+                    .grid-icon{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+
+        .bars{
+            background-color: white;
+            outline: none;
+            border: 1px solid rgb(221, 221, 221);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: none;
+
+            .icon-bars{
+                font-size: 17px;
+            }
+        }
+
+
+    }
+
+
+    .products-body{
+        display: flex;
+        justify-content: center;
+
+        .inner-products-body{
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+
+            .products-filter{
+                width: 18vw;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                padding-bottom: 50px;
+                
+                .filter-checkboxes-component{
+                    background-color: white;
+                    border: 1px solid rgb(221, 221, 221);
+
+                    .filter-header{
+                        height: 80px;
+                        border-bottom: 1px solid rgb(221, 221, 221);
+                        display: flex;
+                        align-items: center;
+                        padding: 0px 25px;
+
+                        h1{
+                            font-family: 'Roboto-Bold';
+                        }
+                    }
+
+                    .filter-body{
+                        .filter-body-search{
+                            width: 80%;
+                            margin: 20px auto;
+                            display: flex;
+                            align-items: center;
+                            height: 80px;
+                            position: relative;
+                            background-color: white;
+                            border: 1px solid rgb(221, 221, 221);
+
+                            .icon{
+                                width: 15%;
+                                flex-shrink: 0;
+                                font-size: 28px;
+                            }
+
+                            input{
+                                width: 80%;
+                                height: 100%;
+                                outline: none;
+                                border: none;
+                                font-family: 'Roboto-Medium';
+                            }
+
+                            button{
+                                position: absolute;
+                                right: 20px;
+                                top: 50%;
+                                transform: translate(0, -50%);
+                                -webkit-transform: translate(0, -50%);
+                                -moz-transform: translate(0, -50%);
+                                -ms-transform: translate(0, -50%);
+                                -o-transform: translate(0, -50%);
+                                background-color: rgb(228, 61, 61);
+                                cursor: pointer;
+                                border: none;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-family: 'Roboto-Medium';
+                                font-size: 17px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+}
+                        }
+
+                        .filter-body-content{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            width: 80%;
+                            margin: 0px auto;
+                            height: 300px;
+                            overflow: hidden;
+                            overflow-y: scroll;
+                            padding-bottom: 20px;
+
+                            .filter-section{
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+
+                                input{
+                                    outline: none;
+                                    width: 20px;
+                                    height: 20px;
+                                    accent-color: var(--Primary-Color);
+                                }
+
+                                p{
+                                    font-family: 'Roboto-Medium';
+                                    font-size: 19px;
+                                }
+                            }
+                        }
+
+                        .filter-alert{
+                            width: 80%;
+                            margin: 20px auto;
+                            text-align: center;
+                            font-family: 'Roboto-Regular';
+                        }
+                    }
+                }
+
+            }
+
+            .products-content{
+                width: 60vw;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid rgb(221, 221, 221);
+                margin-bottom: 50px;
+                position: relative;
+
+                .product-card-component{
+                    position: relative;
+                    background-color: white;
+                    border-bottom: 1px solid rgb(221, 221, 221);
+
+                    .top-product-card{
+                        
+                        position: relative;
+
+                        .part-num-checkbox{
+                            height: 70px;
+                            padding: 0px 25px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            overflow: hidden;
+                            width: 100%;
+                            position: relative;
+
+                            h2{
+                                font-family: 'Roboto-Bold';
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            input{
+                                width: 25px;
+                                height: 25px;
+                                accent-color: var(--Primary-Color);
+                            }
+                        }
+
+                        .img-container{
+                            position: relative;
+                            width: 100%;
+                            cursor: pointer;
+                        }
+
+                        .title-card{
+                            height: 70px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            width: 100%;
+                            position: relative;
+                            
+
+                            h2{
+                                font-family: 'Roboto-Bold';
+                                white-space: nowrap;
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                text-align: center;
+                                padding: 0px 25px;
+                                cursor: pointer;
+
+                                &:hover{
+                                        text-decoration: underline;
+                                }
+                            }
+
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                width: 90%;
+                                height: 1px;
+                                border-bottom: 1px solid rgb(221, 221, 221);
+                            }
+                           
+                        }
+
+
+
+                    }
+
+                    .bottom-product-card{
+                        margin-top: 15px;
+
+                        .model-brand-oem{
+                            height: 60px;
+                            position: relative;
+                            margin-top: 15px;
+
+                            .content-product{
+                                display: flex;
+                                align-items: center;
+                                gap: 25px;
+                                overflow: hidden;
+                                position: relative;
+                                width: 100%;
+                                padding: 0px 28px;
+                                margin-top: 5px;
+
+                                h3{
+                                    font-family: 'Roboto-Bold';
+                                    font-size: 18px;
+                                }
+
+                                span{
+                                    font-family: 'Roboto-Light';
+                                    color: #4a4a4a;
+                                    font-size: 18px;
+                                    margin-left: 5px;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+
+
+
+                            }
+
+                            &:not(:last-child)::after{
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                width: 90%;
+                                height: 1px;
+                                border-bottom: 1px solid rgb(221, 221, 221);
+                                left: 50%;
+                                transform: translateX(-50%);
+                                -webkit-transform: translateX(-50%);
+                                -moz-transform: translateX(-50%);
+                                -ms-transform: translateX(-50%);
+                                -o-transform: translateX(-50%);
+}
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+            .not-grided{
+                & > :nth-child(odd){
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        background-color: rgb(221, 221, 221);
+                        width: 1px;
+                    }
+                }
+            }
+
+
+            .two-grided {
+                & .product-card-component:not(:nth-child(3n)) {
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        background-color: rgb(221, 221, 221);
+                        width: 1px;
+                    }
+                }
+              }
+
+              .three-grided{
+
+                    & .product-card-component:not(:nth-child(4n)) {
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 100%;
+                            background-color: rgb(221, 221, 221);
+                            width: 1px;
+                        }
+
+                  }
+              }
+
+        }
+        
+    }
+
+    .mobile-filters{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.096);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        display: none;
+
+        .inner-mobile-filter{
+            width: 40vw;
+            height: 100%;
+            background-color: white;
+            box-shadow: 5px 0 5px -8px #333;
+            padding: 25px 0px;
+            overflow: hidden;
+            overflow-y: scroll;
+
+            .grid-filter{
+                background-color: #3c3c3c21;
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 5px;
+                height: 50px;
+                h2{
+                    font-size: 11px;
+                    font-family: 'Roboto-Bold';
+                    text-transform: uppercase;
+                }
+
+                .grid-btns{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    button{
+                        background-color: white;
+                        outline: none;
+                        border: 1px solid rgb(221, 221, 221);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        width: 30px;
+                        height: 30px;
+    
+                        .grid-icon{
+                            font-size: 12px;
+                        }
+
+                    }
+                }
+
+            }
+
+            .filter-checkboxes-component{
+                background-color: white;
+                border: 1px solid rgb(221, 221, 221);
+                width: 90%;
+                margin: 25px auto;
+                .filter-header{
+                    height: 50px;
+                    padding: 0px 20px;
+                    border-bottom: 1px solid rgb(221, 221, 221);
+                    display: flex;
+                    align-items: center;
+
+                    h1{
+                        font-family: 'Roboto-Bold';
+                        font-size: 16px;
+                    }
+                }
+
+                .filter-body{
+                    .filter-body-search{
+                        width: 80%;
+                        margin: 20px auto;
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        position: relative;
+                        background-color: white;
+                        border: 1px solid rgb(221, 221, 221);
+
+                        .icon{
+                            width: 15%;
+                            flex-shrink: 0;
+                            font-size: 15px;
+                        }
+
+                        input{
+                            width: 80%;
+                            height: 100%;
+                            outline: none;
+                            border: none;
+                            font-family: 'Roboto-Medium';
+                            font-size: 10px;
+                        }
+
+                        button{
+                            position: absolute;
+                            right: 20px;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            -webkit-transform: translate(0, -50%);
+                            -moz-transform: translate(0, -50%);
+                            -ms-transform: translate(0, -50%);
+                            -o-transform: translate(0, -50%);
+                            background-color: rgb(228, 61, 61);
+                            cursor: pointer;
+                            border: none;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: 'Roboto-Medium';
+                            font-size: 10px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            width: 20px;
+                            height: 20px;
+}
+                    }
+
+                    .filter-body-content{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        height: 200px;
+                        width: 80%;
+                        margin: 0px auto;
+                        overflow: hidden;
+                        overflow-y: scroll;
+                        padding-bottom: 20px;
+
+                        .filter-section{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            input{
+                                outline: none;
+                                width: 12px;
+                                height: 12px;
+                                accent-color: var(--Primary-Color);
+                            }
+
+                            p{
+                                font-family: 'Roboto-Medium';
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .filter-alert{
+                        width: 80%;
+                        margin: 20px auto;
+                        text-align: center;
+                        font-family: 'Roboto-Regular';
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .pdf-btn{
+                    background-color: white;
+                    outline: none;
+                    border: 1px solid rgb(221, 221, 221);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    margin: 0px auto;
+                    width: 90%;
+                    height: 40px;
+                    font-size: 10px;
+                   
+
+                    font-family: 'Roboto-Bold';
+                    font-weight: 400;
+                    gap: 7px;
+                    letter-spacing: 1px;
+    
+                    .pdf-icon{
+                        font-size: 13px;
+                    }
+              
+            }
+        }
+    }
+
+}
+
+
+.product-pop-window-container{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.027);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-prodcut-pop-window-container{
+        width: 90%;
+        height: 95%;
+        background-color: white;
+        box-shadow: 0px 0px 5px #3c3c3c21;
+        display: flex;
+
+        .left-product-pop-window, .right-product-pop-window{
+            width: 50%;
+        }
+
+        .left-product-pop-window{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .img-container{
+                position: relative;
+                width: 98%;
+                height: 98%;
+                overflow: hidden;
+            }
+        }
+
+        .right-product-pop-window{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .inner-right-pop{
+                width: 98%;
+                height: 98%;
+
+                .product-pop-title{
+                    height: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+                    h3{
+                        font-family: 'Roboto-Medium';
+                        font-weight: 400;
+                        background-color: var(--Primary-Color);
+                        width: fit-content;
+                        padding: 20px 25px;
+                    }
+
+                    h1{
+                        font-family: 'Roboto-Bold';
+                        font-size: 50px;
+                    }
+                }
+
+                .product-pop-info{
+
+                    height: 80%;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    padding-bottom: 50px;
+
+                    .info-header{
+                        position: relative;
+                        padding: 10px 0px;
+                        h3{
+                            font-family: 'Roboto-Medium';
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background-color: #3c3c3c21;
+                        }
+                    }
+
+                    .vechiles-info{
+
+                        .dropdown{
+                            width: 100%;
+                            margin-top: 25px;
+                            background-color: rgb(236, 236, 236);
+
+                            .main-parag{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 100%;
+                                padding: 0px 25px;
+                                height: 90px;
+                                cursor: pointer;
+
+                                h2{
+                                    font-family: 'Roboto-Bold';
+                                }
+                            }
+
+                            .dropmenu-body{
+                                border-top: 1px solid #3c3c3c21;
+                                
+                                .dropmenu-body-head{
+                                    height: 70px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0px 25px;
+                                    border-bottom: 1px solid #3c3c3c21;
+
+                                    h4{
+                                        font-family: 'Roboto-Bold';
+                                        width: calc(100% / 5);
+                                        text-align: center;
+                                    }
+                                }
+
+                                .dropmenu-body-result{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 0px 25px;
+
+                                    h4{
+                                        font-family: 'Roboto-Regular';
+                                        font-weight: 400;
+                                        width: calc(100% / 5);
+                                        text-align: center;
+                                        padding: 25px 0px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+
+                    .oem-nums{
+                        margin-top: 25px;
+
+                        .oem-nums-body{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            margin-top: 15px;
+
+                            .oem-record{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                h4{
+                                    font-family: 'Roboto-Bold';
+                                    font-weight: 400;
+                                }
+
+                                span{
+                                    color: #4a4a4a;
+                                    font-family: 'Roboto-Regular';
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 2048px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 40vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+                    height: 120px;
+                    padding: 0px 37px;
+                    .icon{
+                        font-size: 30px;
+                    }
+           
+                    button{
+                        width: 135px;
+                        font-size: 16px;
+                    }
+           
+                    input{
+                        font-size: 19px;
+                    }
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 120px;
+            width: 80vw;
+
+            h1{
+               font-size: 28px;
+            }
+            
+    
+            .products-nav-btns{
+              
+                gap: 45px;
+
+    
+    
+                .pdf-btn{
+                    width: 220px;
+                    height: 60px;
+                    font-size: 15px;
+                   
+                    .pdf-icon{
+                        font-size: 20px;
+                    }
+                }
+    
+                .grid-btns{
+                  
+                    gap: 12px;
+    
+                    button{
+                        width: 58px;
+                        height: 58px;
+    
+                        .grid-icon{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    width: 18vw;
+                    gap: 25px;
+                    padding-bottom: 50px;
+                    
+                    .filter-checkboxes-component{
+                       
+                        .filter-header{
+                            height: 80px;
+                            padding: 0px 25px;
+    
+                            h1{
+                                font-size: 28px;
+                            }
+                        }
+    
+                        .filter-body{
+                            .filter-body-search{
+                                height: 75px;
+                               
+                                .icon{
+                                   font-size: 26px;
+                                }
+    
+                                input{
+                                   font-size: 14px;
+                                }
+    
+                                button{
+                                    font-size: 15px;
+                                   
+                                    width: 26px;
+                                    height: 26px;
+                                }
+                            }
+    
+                            .filter-body-content{
+                                gap: 20px;
+                                height: 290px;
+                               
+                                .filter-section{
+                                  
+                                    input{
+                                       
+                                        width: 19px;
+                                        height: 19px;
+                                    }
+    
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+    
+                            .filter-alert{
+                                width: 80%;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                    width: 60vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 65px;
+                               
+                                h2{
+                                    font-size: 22px;
+                                }
+    
+                                input{
+                                    width: 22px;
+                                    height: 22px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 65px;
+                             
+                                h2{
+                                 font-size: 22px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                        
+                            .model-brand-oem{
+                                height: 55px;
+                               
+                                .content-product{
+                                    gap: 22px;
+                                    padding: 0px 28px;
+                                   
+                                    h3{
+                                        font-size: 16px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 16px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+        
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 10px;
+                        h3{
+                            font-size: 18px;
+                            padding: 20px 25px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 45px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 17px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 25px;
+                               
+                                .main-parag{
+                                   padding: 0px 25px;
+                                    height: 85px;
+                                   
+                                    h2{
+                                        font-size: 20px;
+                                    }
+
+                                    .icon{
+                                        font-size: 16px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 65px;
+                                        padding: 0px 25px;
+                                       
+                                        h4{
+                                            font-size: 15px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 25px;
+    
+                                        h4{
+                                          padding: 25px 0px;
+                                          font-size: 15px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 25px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 15px;
+                                    }
+    
+                                    span{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1921px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 40vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+
+                 
+                        height: 110px;
+                        padding: 0px 34px;
+                        .icon{
+                            font-size: 28px;
+                        }
+               
+                        button{
+                            width: 120px;
+                            font-size: 15px;
+                        }
+               
+                        input{
+                            font-size: 18px;
+                        }
+          
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 110px;
+            width: 80vw;
+
+            h1{
+               font-size: 26px;
+            }
+            
+    
+            .products-nav-btns{
+              
+                gap: 40px;
+
+    
+    
+                .pdf-btn{
+                    width: 210px;
+                    height: 55px;
+                    font-size: 14px;
+                   
+                    .pdf-icon{
+                        font-size: 18px;
+                    }
+                }
+    
+                .grid-btns{
+                  
+                    gap: 12px;
+    
+                    button{
+                        width: 54px;
+                        height: 54px;
+    
+                        .grid-icon{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    width: 18vw;
+                    gap: 25px;
+                    padding-bottom: 50px;
+                    
+                    .filter-checkboxes-component{
+                       
+                        .filter-header{
+                            height: 70px;
+                            padding: 0px 25px;
+    
+                            h1{
+                                font-size: 26px;
+                            }
+                        }
+    
+                        .filter-body{
+                            .filter-body-search{
+                                height: 70px;
+                               
+                                .icon{
+                                   font-size: 24px;
+                                }
+    
+                                input{
+                                   font-size: 13px;
+                                }
+    
+                                button{
+                                    font-size: 14px;
+                                   
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+    
+                            .filter-body-content{
+                                gap: 20px;
+                                height: 280px;
+                               
+                                .filter-section{
+                                  
+                                    input{
+                                       
+                                        width: 17px;
+                                        height: 17px;
+                                    }
+    
+                                    p{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+    
+                            .filter-alert{
+                                width: 80%;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                    width: 60vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 60px;
+                                gap: 7px;
+                                h2{
+                                    font-size: 20px;
+                                }
+    
+                                input{
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 60px;
+                             
+                                h2{
+                                 font-size: 20px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                        
+                            .model-brand-oem{
+                                height: 50px;
+                               
+                                .content-product{
+                                    gap: 20px;
+                                    padding: 0px 28px;
+                                   
+                                    h3{
+                                        font-size: 15px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 15px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+        
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 10px;
+                        h3{
+                            font-size: 17px;
+                            padding: 18px 23px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 40px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 15px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 25px;
+                               
+                                .main-parag{
+                                   padding: 0px 25px;
+                                    height: 80px;
+                                   
+                                    h2{
+                                        font-size: 18px;
+                                    }
+
+                                    .icon{
+                                        font-size: 15px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 60px;
+                                        padding: 0px 25px;
+                                       
+                                        h4{
+                                            font-size: 14px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 25px;
+    
+                                        h4{
+                                          padding: 25px 0px;
+                                          font-size: 14px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 25px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 14px;
+                                    }
+    
+                                    span{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 1707px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 40vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+                    height: 100px;
+                    padding: 0px 32px;
+                    .icon{
+                        font-size: 25px;
+                    }
+           
+                    button{
+                        width: 105px;
+                        font-size: 14px;
+                    }
+           
+                    input{
+                        font-size: 17px;
+                    }
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 100px;
+            width: 80vw;
+
+            h1{
+               font-size: 24px;
+            }
+            
+    
+            .products-nav-btns{
+              
+                gap: 35px;
+
+    
+    
+                .pdf-btn{
+                    width: 200px;
+                    height: 50px;
+                    font-size: 13px;
+                   
+                    .pdf-icon{
+                        font-size: 16px;
+                    }
+                }
+    
+                .grid-btns{
+                  
+                    gap: 10px;
+    
+                    button{
+                        width: 50px;
+                        height: 50px;
+    
+                        .grid-icon{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    width: 18vw;
+                    gap: 20px;
+                    
+                    .filter-checkboxes-component{
+                       
+                        .filter-header{
+                            height: 65px;
+                            padding: 0px 25px;
+    
+                            h1{
+                                font-size: 24px;
+                            }
+                        }
+    
+                        .filter-body{
+                            .filter-body-search{
+                                height: 65px;
+                               
+                                .icon{
+                                   font-size: 22px;
+                                }
+    
+                                input{
+                                   font-size: 12px;
+                                }
+    
+                                button{
+                                    font-size: 12px;
+                                   
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+    
+                            .filter-body-content{
+                                gap: 18px;
+                                height: 270px;
+                               
+                                .filter-section{
+                                  
+                                    input{
+                                       
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+    
+                                    p{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+    
+                            .filter-alert{
+                                width: 80%;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                    width: 60vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 55px;
+                                gap: 5px;
+                                h2{
+                                    font-size: 18px;
+                                }
+    
+                                input{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 55px;
+                             
+                                h2{
+                                 font-size: 18px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                        
+                            .model-brand-oem{
+                                height: 45px;
+                               
+                                .content-product{
+                                    gap: 18px;
+                                    padding: 0px 28px;
+                                   
+                                    h3{
+                                        font-size: 14px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 14px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+        
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 10px;
+                        h3{
+                            font-size: 15px;
+                            padding: 16px 19px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 35px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 13px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 25px;
+                               
+                                .main-parag{
+                                   padding: 0px 25px;
+                                    height: 75px;
+                                   
+                                    h2{
+                                        font-size: 16px;
+                                    }
+
+                                    .icon{
+                                        font-size: 14px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 55px;
+                                        padding: 0px 25px;
+                                       
+                                        h4{
+                                            font-size: 13px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 25px;
+    
+                                        h4{
+                                          padding: 25px 0px;
+                                          font-size: 13px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 25px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 13px;
+                                    }
+    
+                                    span{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 1537px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 40vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+                    height: 90px;
+                    padding: 0px 30px;
+                    .icon{
+                        font-size: 22px;
+                    }
+           
+                    button{
+                        width: 90px;
+                        font-size: 13px;
+                    }
+           
+                    input{
+                        font-size: 16px;
+                    }
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 90px;
+            width: 80vw;
+
+            h1{
+               font-size: 22px;
+            }
+            
+    
+            .products-nav-btns{
+              
+                gap: 30px;
+
+    
+    
+                .pdf-btn{
+                    width: 180px;
+                    height: 45px;
+                    font-size: 12px;
+                   
+                    .pdf-icon{
+                        font-size: 15px;
+                    }
+                }
+    
+                .grid-btns{
+                  
+                    gap: 10px;
+    
+                    button{
+                        width: 45px;
+                        height: 45px;
+    
+                        .grid-icon{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    width: 18vw;
+                    gap: 15px;
+                    
+                    .filter-checkboxes-component{
+                       
+                        .filter-header{
+                            height: 60px;
+                            padding: 0px 25px;
+    
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+    
+                        .filter-body{
+                            .filter-body-search{
+                                height: 60px;
+                               
+                                .icon{
+                                   font-size: 18px;
+                                }
+    
+                                input{
+                                   font-size: 11px;
+                                }
+    
+                                button{
+                                    font-size: 11px;
+                                   
+                                    width: 22px;
+                                    height: 22px;
+                                }
+                            }
+    
+                            .filter-body-content{
+                                gap: 15px;
+                                height: 250px;
+                               
+                                .filter-section{
+                                    gap: 5px;
+                                    input{
+                                       
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+    
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+    
+                            .filter-alert{
+                                width: 80%;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                    width: 60vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 50px;
+                                gap: 5px;
+                                h2{
+                                    font-size: 16px;
+                                }
+    
+                                input{
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 50px;
+                             
+                                h2{
+                                 font-size: 16px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                        
+                            .model-brand-oem{
+                                height: 40px;
+                               
+                                .content-product{
+                                    gap: 15px;
+                                    padding: 0px 28px;
+                                   
+                                    h3{
+                                        font-size: 12px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 12px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+        
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 10px;
+                        h3{
+                            font-size: 14px;
+                            padding: 16px 16px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 30px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 12px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 25px;
+                               
+                                .main-parag{
+                                   padding: 0px 25px;
+                                    height: 70px;
+                                   
+                                    h2{
+                                        font-size: 15px;
+                                    }
+
+                                    .icon{
+                                        font-size: 13px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 50px;
+                                        padding: 0px 25px;
+                                       
+                                        h4{
+                                            font-size: 12px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 25px;
+    
+                                        h4{
+                                          padding: 25px 0px;
+                                          font-size: 12px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 25px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 12px;
+                                    }
+    
+                                    span{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 1260px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 40vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+                    height: 80px;
+                    padding: 0px 28px;
+                    .icon{
+                        font-size: 20px;
+                    }
+           
+                    button{
+                        width: 80px;
+                        font-size: 11px;
+                    }
+           
+                    input{
+                        font-size: 14px;
+                    }
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 70px;
+            width: 80vw;
+
+            h1{
+               font-size: 18px;
+            }
+            
+    
+            .products-nav-btns{
+              
+                gap: 25px;
+
+    
+    
+                .pdf-btn{
+                    width: 160px;
+                    height: 40px;
+                    font-size: 10px;
+                   
+                    .pdf-icon{
+                        font-size: 13px;
+                    }
+                }
+    
+                .grid-btns{
+                  
+                    gap: 7px;
+    
+                    button{
+                        width: 35px;
+                        height: 35px;
+    
+                        .grid-icon{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    width: 18vw;
+                    gap: 10px;
+                    
+                    .filter-checkboxes-component{
+                       
+                        .filter-header{
+                            height: 50px;
+                            padding: 0px 20px;
+    
+                            h1{
+                                font-size: 16px;
+                            }
+                        }
+    
+                        .filter-body{
+                            .filter-body-search{
+                                height: 50px;
+                               
+                                .icon{
+                                   font-size: 15px;
+                                }
+    
+                                input{
+                                   font-size: 10px;
+                                }
+    
+                                button{
+                                    font-size: 10px;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+    
+                            .filter-body-content{
+                                gap: 10px;
+                                height: 200px;
+                               
+                                .filter-section{
+                                    gap: 5px;
+                                    input{
+                                       
+                                        width: 12px;
+                                        height: 12px;
+                                    }
+    
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+    
+                            .filter-alert{
+                                width: 80%;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+    
+                }
+    
+                .products-content{
+                    width: 60vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 50px;
+                                gap: 5px;
+                                h2{
+                                    font-size: 16px;
+                                }
+    
+                                input{
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 50px;
+                             
+                                h2{
+                                 font-size: 16px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                        
+                            .model-brand-oem{
+                                height: 40px;
+                               
+                                .content-product{
+                                    gap: 15px;
+                                    padding: 0px 28px;
+                                   
+                                    h3{
+                                        font-size: 12px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 12px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+        
+    
+            .right-product-pop-window{
+             
+                .inner-right-pop{
+                
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 10px;
+                        h3{
+                            font-size: 12px;
+                            padding: 12px 13px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 23px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 10px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 25px;
+                               
+                                .main-parag{
+                                   padding: 0px 25px;
+                                    height: 60px;
+                                   
+                                    h2{
+                                        font-size: 12px;
+                                    }
+
+                                    .icon{
+                                        font-size: 11px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 40px;
+                                        padding: 0px 15px;
+                                       
+                                        h4{
+                                            font-size: 10px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 25px;
+    
+                                        h4{
+                                          padding: 15px 0px;
+                                          font-size: 10px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 25px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 10px;
+                                    }
+    
+                                    span{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .products-page-container{
+
+
+        .products-header{
+            height: 35vh;
+    
+            .input-container{
+                
+                .inner-input-container{
+                    height: 60px;
+                    padding: 0px 5px;
+                    .icon{
+                       display: none;
+                    }
+           
+                    button{
+                        font-size: 11px;
+                        flex-shrink: 0;
+                        width: 20%;
+                    }
+           
+                    input{
+                        font-size: 11px;
+                        width: calc(100% - 25%);
+                    }
+                }
+             
+            }
+        }
+    
+        .products-nav{
+            height: 60px;
+            width: 80vw;
+            
+            h1{
+               font-size: 16px;
+            }
+            
+    
+            .products-nav-btns{
+                display: none;
+            }
+
+            .bars{
+                display: flex;
+            }
+        }
+
+        .mobile-filters{
+            display: block;
+        }
+    
+    
+        .products-body{
+         
+            .inner-products-body{
+                width: 80vw;
+              
+                .products-filter{
+                    display: none;
+                }
+    
+                .products-content{
+                    width: 80vw;
+                   
+                    .product-card-component{
+                      
+                        .top-product-card{
+                            
+                            .part-num-checkbox{
+                                height: 30px;
+                                gap: 3px;
+                                padding: 0px 5px;
+                                h2{
+                                    font-size: 11px;
+                                }
+    
+                                input{
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                            }
+    
+    
+                            .title-card{
+                                height: 30px;
+                                h2{
+                                 font-size: 12px;
+                                }
+    
+                                
+                            }
+    
+    
+    
+                        }
+    
+                        .bottom-product-card{
+                            margin-top: 5px;
+                            .model-brand-oem{
+                                height: 30px;
+                                margin-top: 5px;
+                                .content-product{
+                                    gap: 10px;
+                                    padding: 0px 15px;
+                                   
+                                    h3{
+                                        font-size: 10px;
+                                    }
+    
+                                    span{
+
+                                        font-size: 10px;
+                                    }
+    
+    
+    
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+    
+                }
+    
+
+    
+            }
+            
+        }
+    
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+            flex-direction: column;
+            overflow-y: scroll;
+            .left-product-pop-window, .right-product-pop-window{
+                width: 100%;
+            }
+
+            .left-product-pop-window{
+                .img-container{
+                    height: 90vh;
+                }
+            }
+    
+            .right-product-pop-window{
+        
+                .inner-right-pop{
+                    
+                    .product-pop-title{
+                        height: 20%;
+                        gap: 5px;
+                        h3{
+                            font-size: 10px;
+                            padding: 12px;
+                        }
+    
+                        h1{
+                           
+                            font-size: 20px;
+                        }
+                    }
+    
+                    .product-pop-info{
+    
+                        height: 80%;
+                        
+                        .info-header{
+                            h3{
+                              font-size: 9px;
+                            }
+    
+                            
+                        }
+    
+                        .vechiles-info{
+    
+                            .dropdown{
+                                margin-top: 15px;
+                               
+                                .main-parag{
+                                   padding: 0px 15px;
+                                    height: 50px;
+                                   
+                                    h2{
+                                        font-size: 10px;
+                                    }
+
+                                    .icon{
+                                        font-size: 9px;
+                                    }
+                                }
+    
+                                .dropmenu-body{
+                                    
+                                    .dropmenu-body-head{
+                                        height: 40px;
+                                        padding: 0px 5px;
+                                       
+                                        h4{
+                                            font-size: 9px;
+                                        }
+                                    }
+    
+                                    .dropmenu-body-result{
+                                         padding: 0px 5px;
+    
+                                        h4{
+                                          padding: 15px 0px;
+                                          font-size: 9px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+    
+                        .oem-nums{
+                            margin-top: 15px;
+    
+                            .oem-nums-body{
+                                gap: 10px;
+                                margin-top: 15px;
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 9px;
+                                    }
+    
+                                    span{
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+@media (max-width: 520px) {
+    .products-page-container{
+        .mobile-filters{
+            .inner-mobile-filter{
+                width: 70vw;
+            }
+        }
+    }
+
+    .product-pop-window-container{
+
+        .inner-prodcut-pop-window-container{
+         
+    
+    
+    
+            .right-product-pop-window{
+        
+                .inner-right-pop{
+
+    
+                    .product-pop-info{
+
+
+    
+                        .oem-nums{
+  
+    
+                            .oem-nums-body{
+
+    
+                                .oem-record{
+                                   
+                                    h4{
+                                        font-size: 8px;
+                                    }
+    
+                                    span{
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+        }
+    }
+}

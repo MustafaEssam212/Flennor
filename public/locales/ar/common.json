@@ -70,16 +70,16 @@
         "description": "فرجار فرامل عالي الأداء مع دوار مثقوب للتبريد"
       },
       "productTwo": {
-        "name": "جلبة ذراع التحكم",
-        "description": "جلبة ذراع التحكم المتينة لضمان تعليق سلس واستقرار"
+        "name": "رادياتير",
+        "description": "ينقل الحرارة من سائل التبريد إلى الهواء لتبريد المحرك بإداء عالي"
       },
       "productThree": {
-        "name": "محمل كروي",
-        "description": "محامل كروية دقيقة ومتينة لضمان حركة سلسة وفعالة"
+        "name": "قاعدة المحرك",
+        "description": "يثبت المحرك على الهيكل ويقلل من الاهتزازات"
       },
       "productFour": {
-        "name": "قرص الفرامل",
-        "description": "قرص فرامل عالي الجودة مزود بتهوية لضمان التبريد الأمثل"
+        "name": "مبرد زيت",
+        "description": "يبرد زيت المحرك للحفاظ على درجة حرارة المحرك المثلى"
       },
       "btn": "تصفح الأن",
       "mainTitle": "الفئات الشائعة",
@@ -225,6 +225,26 @@
             "addressFour": "11015 Cavendish Blvd suite 410 - Montreal - Quebec - Canada"
           }
         }
+      }
+    },
+
+    "products": {
+      "productsNav": {
+        "productListed": "منتج مُدرج",
+        "createPDF": "PDF إنشاء"
+      },
+      "brandFilter": {
+        "title": "براند",
+        "inputPlaceholder": "ابحث عن براند"
+      },
+      "modelFilter": {
+        "title": "موديل",
+        "inputPlaceholder": "ابحث عن موديلات",
+        "noBrand": "اختر براند اولاً"
+      },
+      "popWindow": {
+        "titleOne": "معلومات المركبة",
+        "titleTwo": "أرقام الشركة المصنعة الأصلية"
       }
     }
 

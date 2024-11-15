@@ -70,16 +70,16 @@
           "description": "High-performance brake caliper with drilled rotor for cooling."
         },
         "productTwo": {
-          "name": "Control Arm Bushing",
-          "description": "Durable control arm bushing for smooth suspension and stability."
+          "name": "Radiator",
+          "description": "Transfers heat from engine coolant to air to cool engine."
         },
         "productThree": {
-          "name": "Ball Bearing",
-          "description": "Durable precision ball bearings for smooth, efficient motion."
+          "name": "Engine Mount",
+          "description": "Secures engine to vehicle frame, reduces vibration."
         },
         "productFour": {
-          "name": "Brake Rotor",
-          "description": "High-quality ventilated disc brake rotor for optimal cooling."
+          "name": "Oil Cooler",
+          "description": "Cools engine oil to maintain optimal engine temperature."
         },
         "btn": "Explore Now",
         "mainTitle": "Popular Categories",
@@ -223,6 +223,25 @@
             "addressFour": "11015 Cavendish Blvd suite 410 - Montreal - Quebec - Canada"
           }
         }
+      }
+    },
+    "products": {
+      "productsNav": {
+        "productListed": "Product listed",
+        "createPDF": "CREATE PDF"
+      },
+      "brandFilter": {
+        "title": "BRAND",
+        "inputPlaceholder": "Search for brand"
+      },
+      "modelFilter": {
+        "title": "MODEL",
+        "inputPlaceholder": "Search for models",
+        "noBrand": "Please choose brand"
+      },
+      "popWindow": {
+        "titleOne": "Vehicle Information",
+        "titleTwo": "O.E.M Numbers"
       }
     }
   }

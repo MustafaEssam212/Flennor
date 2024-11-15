@@ -1,10 +1,10 @@
 import YellowShape from "../YellowShape";
 import FiveStars from "./Five-Stars";
 import Image from "next/image";
-import CategoryOnePic from '../../public/category3.jpg';
-import CategoryTwoPic from '../../public/category1.jpg';
-import CategoryThreePic from '../../public/category4.jpg';
-import CategoryFourPic from '../../public/category2.jpg';
+import CategoryOnePic from '../../public/category-3-3.png';
+import CategoryTwoPic from '../../public/category-1-1.png';
+import CategoryThreePic from '../../public/category-4-4.png';
+import CategoryFourPic from '../../public/category-2-2.png';
 import Link from "next/link";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useTranslation } from 'next-i18next';

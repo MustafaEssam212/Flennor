@@ -71,16 +71,16 @@
           "description": "Hochleistungsbremssattel mit gebohrtem Rotor zur Kühlung."
         },
         "productTwo": {
-          "name": "Querlenkerbuchse",
-          "description": "Langlebige Querlenkerbuchse für sanfte Federung und Stabilität."
+          "name": "Radiateur",
+          "description": "Voert warmte af van koelvloeistof naar lucht om motor te koelen."
         },
         "productThree": {
-          "name": "Kugellager",
-          "description": "Langlebige Präzisionskugellager für eine sanfte, effiziente Bewegung."
+          "name": "Motorsteun",
+          "description": "Bevestigt motor aan voertuigframe, vermindert trillingen."
         },
         "productFour": {
-          "name": "Bremsscheibe",
-          "description": "Hochwertiger belüfteter Bremsscheibenrotor für optimale Kühlung."
+          "name": "Oliekoeler",
+          "description": "Koelt motorolie om de optimale motortemperatuur te behouden."
         },
         "btn": "Jetzt erkunden",
         "mainTitle": "Beliebte Kategorien",
@@ -226,6 +226,26 @@
             "addressFour": "11015 Cavendish Blvd Suite 410 – Montreal – Quebec – Kanada"
           }
         }
+      }
+    },
+
+    "products": {
+      "productsNav": {
+        "productListed": "Produkt aufgelistet",
+        "createPDF": "PDF ERSTELLEN"
+      },
+      "brandFilter": {
+        "title": "MARKE",
+        "inputPlaceholder": "Suche nach Marke"
+      },
+      "modelFilter": {
+        "title": "MODELL",
+        "inputPlaceholder": "Suche nach Modellen",
+        "noBrand": "Bitte wählen Sie eine Marke"
+      },
+      "popWindow": {
+        "titleOne": "Fahrzeuginformationen",
+        "titleTwo": "O.E.M-Nummern"
       }
     }
 }

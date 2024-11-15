@@ -68,7 +68,7 @@ const Header = () => {
         if(openMobileMenu){
             setOpenMobileMenu(false);
         }
-    }, [router.pathname])
+    }, [router.pathname, i18n.language])
 
     const getLang = {
         "en": <div className="parag-img-container">
