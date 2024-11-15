@@ -20,6 +20,30 @@ export async function getStaticProps({ locale }) {
     };
 }
 
+
+const useWindowWidth = () => {
+    // State to store the window width
+    const [windowWidth, setWindowWidth] = useState(undefined);
+  
+    useEffect(() => {
+      // Handler to update the width
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      // Set the initial width
+      handleResize();
+  
+      // Add event listener
+      window.addEventListener('resize', handleResize);
+  
+      // Cleanup on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }, []); // Runs only on mount and unmount
+  
+    return windowWidth;
+  };
+
 const Products = () => {
 
     const router = useRouter();
@@ -35,6 +59,10 @@ const Products = () => {
     const [products, setProducts] = useState([]);
     const [openMobileFilters, setOpenMobileFilters] = useState(false);
     const mobileFiltersRef = useRef();
+    const width = useWindowWidth();
+
+
+    
 
     const getGridClassName = {
         2: "not-grided",
@@ -115,11 +143,11 @@ const Products = () => {
                     </div>
 
                     <div className={`products-content ${getGridClassName[cardGird]}`}>
-                        <ProductCard data={{productId: 1}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 1)} />
-                        <ProductCard data={{productId: 2}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 2)} />
-                        <ProductCard data={{productId: 3}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 3)} />
-                        <ProductCard data={{productId: 4}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 4)} />
-                        <ProductCard data={{productId: 5}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 5)} />
+                        <ProductCard screenWidth={width} data={{productId: 1}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 1)} />
+                        <ProductCard screenWidth={width} data={{productId: 2}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 2)} />
+                        <ProductCard screenWidth={width} data={{productId: 3}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 3)} />
+                        <ProductCard screenWidth={width} data={{productId: 4}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 4)} />
+                        <ProductCard screenWidth={width} data={{productId: 5}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 5)} />
                     </div>
 
 
