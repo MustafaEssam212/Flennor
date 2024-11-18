@@ -59,7 +59,7 @@ const Counter = () => {
     const { t } = useTranslation('common');
 
     const counters = [
-        { img: ClientsImg, count: 150, label: t('homepage.counter.clients'), suffix: "+" },
+        { img: ClientsImg, count: 850, label: t('homepage.counter.clients'), suffix: "+" },
         { img: ProductsImg, count: 10000, label: t('homepage.counter.products'), suffix: "+" },
         { img: ExperienceImg, count: 89, label: t('homepage.counter.experienceYears'), suffix: "+" },
         { img: EmployeeImg, count: 250, label: t('homepage.counter.employees'), suffix: "+" },

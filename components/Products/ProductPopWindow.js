@@ -3,9 +3,9 @@ import Image from "next/image";
 import productImg from '../../public/category1.jpg';
 import DropMenu from "./Dropmenu";
 import { useTranslation } from 'next-i18next';
+import React from "react";
 
-
-const ProductPopWindow = ({ sendDataToParent }) => {
+const ProductPopWindow = ({ sendDataToParent, data }) => {
 
 
     const containerRef = useRef();
@@ -47,7 +47,7 @@ const ProductPopWindow = ({ sendDataToParent }) => {
                     >
                         {/* Image Container */}
                         <Image
-                            src={productImg}
+                            src={`/api/getFullImage?productId=${data.productId}&image=${data.image}`}
                             alt="Flennor Parts Product Image"
                             title="Flennor Parts Product Image"
                             fill
@@ -63,7 +63,7 @@ const ProductPopWindow = ({ sendDataToParent }) => {
                                     width: '100%',
                                     height: '100%',
                                     pointerEvents: 'none',
-                                    backgroundImage: `url(${productImg.src})`,
+                                    backgroundImage: `url(${`/api/getFullImage?productId=${data.productId}&image=${data.image}`})`,
                                     backgroundSize: '200%', // Zoom factor
                                     backgroundPosition: `${position.x}% ${position.y}%`,
                                     transition: 'background-position 0.1s ease',
@@ -78,8 +78,8 @@ const ProductPopWindow = ({ sendDataToParent }) => {
                     <div className="inner-right-pop">
 
                         <div className="product-pop-title">
-                            <h3>R57914R57914</h3>
-                            <h1>Control arm bushing (right)</h1>
+                            <h3>{data.partNum}</h3>
+                            <h1>{data.partName}</h1>
                         </div>
 
                         <div className="product-pop-info">
@@ -90,8 +90,17 @@ const ProductPopWindow = ({ sendDataToParent }) => {
                                     <h3>{t('products.popWindow.titleOne')}</h3>
                                 </div>
 
-                                <DropMenu />
-                                <DropMenu />
+
+                
+                               
+                                {
+                                   data.brands.map((brand, key) => {
+                                    return(
+                                        <DropMenu key={key} data={{brand, obj: data.vehiclesInfo[brand]}} />
+                                    )
+                                   })
+                                }
+
 
                             </div>
 
@@ -101,22 +110,34 @@ const ProductPopWindow = ({ sendDataToParent }) => {
                                 </div>
 
                                 <div className="oem-nums-body">
-                                    <div className="oem-record">
-                                        <h4>AUDI</h4>
-                                        <span>191407182 • 357407182 • 357407182F • 1J0407181 • 1J0407181A</span>
-                                    </div>
-                                    <div className="oem-record">
-                                        <h4>SEAT</h4>
-                                        <span>191407182 • 357407182 • 357407182F • 1J0407181 • 1J0407181A</span>
-                                    </div>
-                                    <div className="oem-record">
-                                        <h4>SKODA</h4>
-                                        <span>191407182 • 357407182 • 357407182F • 1J0407181 • 1J0407181A</span>
-                                    </div>
-                                    <div className="oem-record">
-                                        <h4>VOLKSWAGEN</h4>
-                                        <span>191407182 • 357407182 • 357407182F • 1J0407181 • 1J0407181A</span>
-                                    </div>
+
+                                    {
+                                        data.brands.map((brand, key) => {
+                                            return(
+                                                <div key={key} className="oem-record">
+                                                    <h4>{brand}</h4>
+                                                    {
+                                                        data.brandsOems && data.brandsOems[brand] && data.brandsOems[brand].length > 0 ? <span>{data.brandsOems[brand].map((brandOem, brandOemKey) => {
+                                                            return(
+                                                                <React.Fragment key={`${key}-${brandOemKey}`}>
+                                                                    {brandOem}
+                                                                    {brandOemKey !== data.brandsOems[brand].length - 1 && ' • '}
+                                                                </React.Fragment>
+                                                            )
+                                                        })}</span> : <span>{data.oemNums.map((brandOem, brandOemKey) => {
+                                                            return(
+                                                                <React.Fragment key={`${key}-${brandOemKey}`}>
+                                                                    {brandOem}
+                                                                    {brandOemKey !== data.oemNums.length - 1 && ' • '}
+                                                                </React.Fragment>
+                                                            )
+                                                        })}</span>
+                                                    }
+                                                </div>
+                                            )
+                                        })
+                                    }
+
                                 </div>
                             </div>
 

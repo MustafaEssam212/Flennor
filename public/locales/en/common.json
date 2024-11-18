@@ -252,6 +252,21 @@
       },
       "mobileFilter": {
         "align": "Alignment"
+      },   
+      "loadMore": "Load More"
+    },
+    "errorsPages": {
+        "notFound": {
+          "title": "Page Not Found",
+          "link": "Back to homepage"
+        },
+        "techErr": {
+          "title": "An Error Occurred",
+          "link": "Back to homepage"
+        }
+      },
+      "alerts": {
+        "pdf": "Please choose at least one product",
+        "noLength": "No available products"
       }
-    }
   }

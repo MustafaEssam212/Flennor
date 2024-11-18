@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import '../styles/main.scss';
 import Layout from '@/layouts/Layout';
 import LoadingPage from '@/components/LoadingPage';
+import Head from 'next/head';
 
 const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -47,6 +48,9 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <Layout>
+      <Head>
+        <title>Flennor Parts</title>
+      </Head>
       {loading && <LoadingPage />}
       <Component {...pageProps} />
     </Layout>

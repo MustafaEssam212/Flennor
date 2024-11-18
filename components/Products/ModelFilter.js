@@ -10,6 +10,7 @@ const ModelFilter = ({brand, sendDataToParent}) => {
     const [modelSearch, setModelSearch] = useState('');
     const [models, setModels] = useState([]);
     const [filtered, setFiltered] = useState([]);
+    const { i18n } = useTranslation();
 
     useEffect(() => {
         if(brand){
@@ -37,7 +38,11 @@ const ModelFilter = ({brand, sendDataToParent}) => {
                 setFiltered(filteredModelOfSearch);
             }
         }
-    }, [modelSearch])
+    }, [modelSearch]);
+
+    useEffect(()=> {
+        setModels([]);
+     }, [i18n.language]);
 
 
     const handleChangeInput = (event, name) => {

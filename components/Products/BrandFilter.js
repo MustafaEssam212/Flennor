@@ -7,6 +7,7 @@ import { useTranslation } from 'next-i18next';
 
 const BrandFilter = ({sendDataToParent}) => {
     const { t } = useTranslation('common');
+    const { i18n } = useTranslation();
     const [brandSearch, setBrandSearch] = useState('');
     const [brand, setBrand] = useState('');
     const [filtered, setFiltered] = useState(Brands);
@@ -23,7 +24,12 @@ const BrandFilter = ({sendDataToParent}) => {
 
     useEffect(()=> {
         sendDataToParent(brand)
-    }, [brand])
+    }, [brand]);
+
+
+    useEffect(()=> {
+        setBrand('');
+     }, [i18n.language]);
 
 
     const handleChangeInput = (event, name) => {

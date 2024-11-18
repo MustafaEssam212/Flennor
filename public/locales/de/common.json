@@ -63,7 +63,7 @@
         "mainTitle": "Flennor",
         "secondTitle": "Parts",
         "inputPlaceholder": "Suchen Sie nach Produktnamen, Flennor-Teilecode und OEM-Code.",
-        "btn": "Anruf"
+        "btn": "Mkan anruf"
       },
       "categories": {
         "productOne": {
@@ -256,6 +256,21 @@
       },
       "mobileFilter": {
         "align": "Ausrichtung"
+      },   
+      "loadMore": "Mehr laden"
+    },
+    "errorsPages": {
+      "notFound": {
+        "title": "Seite nicht gefunden",
+        "link": "zurück zur Startseite"
+      },
+      "techErr": {
+        "title": "Ein Fehler ist aufgetreten",
+        "link": "zurück zur Startseite"
       }
+    },
+    "alerts": {
+      "pdf": "Bitte wählen Sie mindestens ein Produkt aus",
+        "noLength": "Keine verfügbaren Produkte"
     }
 }

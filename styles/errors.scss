@@ -1,0 +1,82 @@
+
+
+body[dir="rtl"]{
+    .not-found-page{
+     
+        .inner-not-found-page{
+        
+            .error-content{
+                h1{
+                    font-family: 'Cairo-Bold';
+                }
+    
+                a{
+                    font-family: 'Cairo-Regular';
+                }
+            }
+        }
+    
+    }
+}
+
+
+.not-found-page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .inner-not-found-page{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .error-content{
+            h1{
+                font-family: 'Roboto-Bold';
+                text-transform: uppercase;
+            }
+
+            a{
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                color: green;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+    .not-found-page{
+      
+    
+        .inner-not-found-page{
+            flex-direction: column;
+
+            img{
+                width: 80px;
+                height: 80px;
+            }
+
+            .error-content{
+
+                text-align: center;
+
+
+
+                h1{
+                    font-size: 18px;
+                }
+    
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    
+    }
+}

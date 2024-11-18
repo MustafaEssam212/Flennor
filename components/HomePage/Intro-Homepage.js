@@ -12,10 +12,23 @@ import SpareIconFive from '../../public/icons/spare-icon-five.png'
 import SpareIconSix from '../../public/icons/spare-icon-six.png'
 import SpareIconSeven from '../../public/icons/spare-icon-seven.png'
 import SpareIconEight from '../../public/icons/spare-icon-eight.png'
+import { useRouter } from "next/router";
 
 const IntroHomepage = () => {
     const { t } = useTranslation('common');
     const [search, setSearch] = useState('');
+    const router = useRouter();
+
+    const handleKeyDown = (event) => {
+        if(event.keyCode === 13){
+            if(!search){
+                return
+            }
+
+            router.push(`/products?text=${search}`);
+        }
+    }
+
 
     return(
         <div className="intro-homepage-container">
@@ -31,8 +44,10 @@ const IntroHomepage = () => {
 
                     <div className='input-container'>
                         <IoSearchOutline className='icon' />
-                        <input placeholder={t('homepage.intro.inputPlaceholder')} value={search} onChange={(s)=> setSearch(s.target.value)} />
-                        <button>{t('homepage.intro.btn')}</button>
+                        <input onKeyDown={handleKeyDown} placeholder={t('homepage.intro.inputPlaceholder')} value={search} onChange={(s)=> setSearch(s.target.value)} />
+                        <button onClick={()=> {
+                            router.push(`/products?text=${search}`)
+                        }} aria-label="Flennor Parts Product Search Input">{t('homepage.intro.btn')}</button>
                     </div>
 
                     <div className="icons-intro-container">

@@ -4,15 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'next-i18next';
 
 
-const DropMenu = () => {
+const DropMenu = ({data}) => {
   const [openDropMenu, setOpenDropMenu] = useState(false);
   const { t } = useTranslation('common');
 
 
   return (
     <div className="dropdown" onClick={() => setOpenDropMenu(!openDropMenu)}>
+ 
       <div className="main-parag">
-        <h2>TESLA</h2>
+        <h2>{data.brand}</h2>
         {!openDropMenu ? <FaPlus className="icon" /> : <FaMinus className="icon" />}
       </div>
 
@@ -34,45 +35,22 @@ const DropMenu = () => {
               <h4>{t('products.popWindow.dropmenuHeader.additionalInfo')}</h4>
             </div>
 
-            <div className="dropmenu-body-result">
-              <h4>MODEL 3</h4>
-              <h4>A 0.0 EV</h4>
-              <h4>3D1</h4>
-              <h4>20---20---</h4>
-              <h4>adad adasd wweasd asdasd asdasd</h4>
-            </div>
+            {
+              Object.keys(data.obj).map((key, index) => {
+                return(
+                  <div key={index} className="dropmenu-body-result">
+                    <h4>{data.obj[key].model}</h4>
+                    <h4>{data.obj[key].engineType}</h4>
+                    <h4>{data.obj[key].engineNo}</h4>
+                    <h4>{data.obj[key].year}</h4>
+                    <h4>{data.obj[key].additionalInfo}</h4>
+                  </div>
+                )
+              })
+            }
 
-            <div className="dropmenu-body-result">
-              <h4>MODEL 3</h4>
-              <h4>A 0.0 EV</h4>
-              <h4>3D1</h4>
-              <h4>20---20---</h4>
-              <h4>adad adasd wweasd asdasd asdasd</h4>
-            </div>
 
-            <div className="dropmenu-body-result">
-              <h4>MODEL 3</h4>
-              <h4>A 0.0 EV</h4>
-              <h4>3D1</h4>
-              <h4>20---20---</h4>
-              <h4>adad adasd wweasd asdasd asdasd</h4>
-            </div>
 
-            <div className="dropmenu-body-result">
-              <h4>MODEL 3</h4>
-              <h4>A 0.0 EV</h4>
-              <h4>3D1</h4>
-              <h4>20---20---</h4>
-              <h4>adad adasd wweasd asdasd asdasd</h4>
-            </div>
-
-            <div className="dropmenu-body-result">
-              <h4>MODEL 3</h4>
-              <h4>A 0.0 EV</h4>
-              <h4>3D1</h4>
-              <h4>20---20---</h4>
-              <h4>adad adasd wweasd asdasd asdasd</h4>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

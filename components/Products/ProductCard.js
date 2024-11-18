@@ -1,4 +1,4 @@
-
+import React from "react";
 import Image from "next/image";
 import productImg from '../../public/product.png';
 import dynamic from 'next/dynamic';
@@ -17,30 +17,64 @@ const ProductCard = ({screenWidth, grid, sendDataToParent, checked, data}) =>{
     return(
         <div className="product-card-component" style={{width: `calc(100% / ${grid})`}}>
 
-            {openPopWindow && <ProductPopWindow sendDataToParent={getDataFromPop} />}
+
+
+            {openPopWindow && <ProductPopWindow data={data} sendDataToParent={getDataFromPop} />}
 
             <div className="top-product-card">
                 <div className="part-num-checkbox">
                     <input onChange={(s)=> sendDataToParent(s.target.checked, data)} checked={checked} type="checkbox" title="check flennor parts product" aria-label="check flennor parts product"  />
-                    <h2>R15863/HP</h2>
+                    <h2>{data.partNum}</h2>
                 </div>
-                <div onClick={()=> setOpenPopWindow(true)} className="img-container" style={screenWidth > 627 ? {height: `calc(100vh / (${grid}))`} : {height: `calc(100vh / (${grid} /.5))`}}><Image loading="lazy" src={productImg} alt="Flennor Parts Product" title="Flennor Parts Product" fill /></div>
+                <div onClick={()=> setOpenPopWindow(true)} className="img-container" style={screenWidth > 627 ? {height: `calc(100vh / (${grid}))`} : {height: `calc(100vh / (${grid} /.5))`}}><Image loading="lazy" src={`/api/getImage?productId=${data.productId}&image=${data.image}`} alt="Flennor Parts Product" title="Flennor Parts Product" fill /></div>
                 <div className="title-card">
-                    <h2 onClick={()=> setOpenPopWindow(true)}>AIR BLEEDING PUMP (8mm x 8mm)</h2>
+                    <h2 onClick={()=> setOpenPopWindow(true)}>{data.partName}</h2>
                 </div>
             </div>
 
             <div className="bottom-product-card">
-                <div className="model-brand-oem">
-                    <div className="content-product">
-                        <h3>OPEL</h3> 
-                        <span>E60 • E60N • E61 • E61N • E63 • E63N • E64 • E64N</span>
-                    </div>
-                    <div className="content-product">
-                        <h3>O.E.M</h3>
-                        <span>4F0919133B • 4F0919133A • 4F0919133 • 90512483 • 1337328 • 9013230288</span>
-                    </div>
-                </div>
+
+                {
+                    data.brands.map((e, key) => {
+                        return(
+                            <div key={key} className="model-brand-oem">
+                                <div className="content-product">
+                                    <h3>{e}</h3> 
+                                    <span>{data.models[e]?.map((model, modelKey) => (
+                                        <React.Fragment key={modelKey}>
+                                            {model}
+                                            {modelKey !== data.models[e].length - 1 && ' • '}
+                                        </React.Fragment>
+                                    ))}</span>
+                                </div>
+                                <div className="content-product">
+                                    <h3>O.E.M</h3>
+
+                                    {
+                                        data.brandsOems && data.brandsOems[e] && data.brandsOems[e].length > 0 ? <span>{data.brandsOems[e].map((brandOem, brandOemKey) => {
+                                            return(
+                                                <React.Fragment key={brandOemKey}>
+                                                    {brandOem}
+                                                    {brandOemKey !== data.brandsOems[e].length - 1 && ' • '}
+                                                </React.Fragment>
+                                            )
+                                        })}</span> : <span>{data.oemNums.map((brandOem, brandOemKey) => {
+                                            return(
+                                                <React.Fragment key={brandOemKey}>
+                                                    {brandOem}
+                                                    {brandOemKey !== data.oemNums.length - 1 && ' • '}
+                                                </React.Fragment>
+                                            )
+                                        })}</span>
+                                    }
+
+
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+
             </div>
 
         </div>

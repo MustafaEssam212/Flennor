@@ -73,15 +73,22 @@ body[dir="rtl"]{
                 }
     
                 .products-content{
-                
+                        flex-direction: row-reverse;
                     .product-card-component{
                         direction: ltr;
                     }
     
+                    .no-length{
+
+                        h1{
+                            font-family: 'Cairo-Bold';
+                            text-transform: uppercase;
+                        }
     
+                    }
                 }
     
-    
+                
               
             }
             
@@ -127,6 +134,16 @@ body[dir="rtl"]{
                         letter-spacing: 0px;
 
                 }
+            }
+        }
+
+
+        .load-more{
+            
+            button{
+                flex-direction: row-reverse;
+                font-family: 'Cairo-Medium';
+               
             }
         }
     
@@ -606,7 +623,21 @@ body[dir="rtl"]{
 
                 }
 
+                .no-length{
+                    margin: 100px auto;
+                    padding: 0px 20px;
 
+                    h1{
+                        font-family: 'Roboto-Bold';
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        gap: 7px;
+                    }
+
+                }
             }
 
 
@@ -665,7 +696,7 @@ body[dir="rtl"]{
         left: 0;
         background-color: rgba(0, 0, 0, 0.096);
         width: 100%;
-        height: 100%;
+        height: 100vh;
         backdrop-filter: blur(2px);
         display: none;
 
@@ -852,6 +883,35 @@ body[dir="rtl"]{
                         font-size: 13px;
                     }
               
+            }
+        }
+    }
+
+
+    .load-more{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+
+        button{
+            background-color: var(--Primary-Color);
+            font-family: 'Roboto-Medium';
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            height: 65px;
+            width: 250px;
+            font-size: 17px;
+            cursor: pointer;
+
+            .icon{
+                font-size: 22px;
             }
         }
     }
@@ -1248,7 +1308,20 @@ body[dir="rtl"]{
                         }
     
                     }
+                    
+                    .no-length{
+                        
+                        img{
+                            height: 115px;
+                            width: 115px;
+                        }
+                      
+                        h1{
+                            font-size: 30px;
+                            gap: 7px;
+                        }
     
+                    }
     
                 }
     
@@ -1256,6 +1329,24 @@ body[dir="rtl"]{
     
             }
             
+        }
+
+
+        .load-more{
+      
+            margin: 45px 0px;
+    
+            button{
+             
+                gap: 7px;
+                height: 60px;
+                width: 235px;
+                font-size: 16px;
+              
+                .icon{
+                    font-size: 20px;
+                }
+            }
         }
     
     }
@@ -1366,6 +1457,8 @@ body[dir="rtl"]{
             }
         }
     }
+
+
 }
 
 
@@ -1573,6 +1666,19 @@ body[dir="rtl"]{
     
                     }
     
+                    .no-length{
+                        
+                        img{
+                            height: 110px;
+                            width: 110px;
+                        }
+                      
+                        h1{
+                            font-size: 28px;
+                            gap: 7px;
+                        }
+    
+                    }
     
                 }
     
@@ -1580,6 +1686,24 @@ body[dir="rtl"]{
     
             }
             
+        }
+
+
+        .load-more{
+      
+            margin: 40px 0px;
+    
+            button{
+             
+                gap: 7px;
+                height: 55px;
+                width: 220px;
+                font-size: 15px;
+              
+                .icon{
+                    font-size: 18px;
+                }
+            }
         }
     
     }
@@ -1892,13 +2016,44 @@ body[dir="rtl"]{
     
                     }
     
+                    .no-length{
+                        
+                        img{
+                            height: 105px;
+                            width: 105px;
+                        }
+                      
+                        h1{
+                            font-size: 26px;
+                            gap: 7px;
+                        }
     
+                    }
+
                 }
     
 
     
             }
             
+        }
+
+
+        .load-more{
+      
+            margin: 40px 0px;
+    
+            button{
+             
+                gap: 7px;
+                height: 50px;
+                width: 205px;
+                font-size: 14px;
+              
+                .icon{
+                    font-size: 16px;
+                }
+            }
         }
     
     }
@@ -2210,6 +2365,21 @@ body[dir="rtl"]{
                         }
     
                     }
+
+
+                    .no-length{
+                        
+                        img{
+                            height: 100px;
+                            width: 100px;
+                        }
+                      
+                        h1{
+                            font-size: 24px;
+                            gap: 7px;
+                        }
+    
+                    }
     
     
                 }
@@ -2218,6 +2388,24 @@ body[dir="rtl"]{
     
             }
             
+        }
+
+
+        .load-more{
+      
+            margin: 40px 0px;
+    
+            button{
+             
+                gap: 7px;
+                height: 50px;
+                width: 185px;
+                font-size: 13px;
+              
+                .icon{
+                    font-size: 15px;
+                }
+            }
         }
     
     }
@@ -2529,6 +2717,19 @@ body[dir="rtl"]{
     
                     }
     
+                    .no-length{
+                        
+                        img{
+                            height: 80px;
+                            width: 80px;
+                        }
+                      
+                        h1{
+                            font-size: 20px;
+                            gap: 5px;
+                        }
+    
+                    }
     
                 }
     
@@ -2536,6 +2737,24 @@ body[dir="rtl"]{
     
             }
             
+        }
+
+
+        .load-more{
+      
+            margin: 30px 0px;
+    
+            button{
+             
+                gap: 5px;
+                height: 45px;
+                width: 165px;
+                font-size: 13px;
+              
+                .icon{
+                    font-size: 14px;
+                }
+            }
         }
     
     }
@@ -2778,12 +2997,41 @@ body[dir="rtl"]{
     
                 }
     
+                .no-length{
+                        margin: 50px auto;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                  
+                    h1{
+                        font-size: 16px;
+                        gap: 5px;
+                    }
 
+                }
     
             }
             
         }
     
+        .load-more{
+      
+            margin: 30px 0px;
+    
+            button{
+             
+                gap: 5px;
+                height: 45px;
+                width: 145px;
+                font-size: 12px;
+              
+                .icon{
+                    font-size: 13px;
+                }
+            }
+        }
+
     }
 
     .product-pop-window-container{

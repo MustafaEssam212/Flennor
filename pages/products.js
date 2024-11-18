@@ -11,6 +11,10 @@ import BrandFilter from '@/components/Products/BrandFilter';
 import ModelFilter from '@/components/Products/ModelFilter';
 import ProductCard from '@/components/Products/ProductCard';
 import { HiBars4 } from "react-icons/hi2";
+import { IoReloadSharp } from "react-icons/io5";
+import { jsPDF } from "jspdf";
+import LengthGIF from '../public/length.gif';
+
 
 export async function getStaticProps({ locale }) {
     return {
@@ -47,12 +51,12 @@ const useWindowWidth = () => {
 const Products = () => {
 
     const router = useRouter();
-    const { car, color } = router.query;
+
     const { t } = useTranslation('common');
+    const { i18n } = useTranslation();
 
 
-
-    const [search, setSearch] = useState('');
+    const [search, setSearch] = useState(router.query.text ? router.query.text : '');
     const [brandFilter, setBrandFilter] = useState('');
     const [modelFilter, setModelFilter] = useState([]);
     const [cardGird, setCardGrid] = useState(2);
@@ -60,9 +64,147 @@ const Products = () => {
     const [openMobileFilters, setOpenMobileFilters] = useState(false);
     const mobileFiltersRef = useRef();
     const width = useWindowWidth();
+    const [page, setPage] = useState(1);
+    const [total, setTotal] = useState(0);
+    const [productsDisplay, setProductsDisplay] = useState([]);
 
+
+    const fetchItems = async () => {
+        // Get the query parameters from the router
+        const { text, brand } = router.query;
+    
+        // Create a URLSearchParams instance
+        const params = new URLSearchParams();
+    
+        // Append 'text' query if it exists
+        if (text) params.append('text', text);
+    
+        // Append 'brand' query if it exists
+        if (brand) params.append('brand', brand);
+
+
+        const models = Object.keys(router.query)
+        .filter(key => key.startsWith('model['))
+        .map(key => router.query[key]);
+    
+        if(models.length > 0){
+            models.forEach((m, index) => {
+                params.append(`model[${index}]`, m);
+            });
+        }
+    
+        // Append 'page' query if it exists
+        if (page) params.append('page', page);
+        const queryString = params.toString();
+
+        const apiUrl = `/api/getItems?${queryString}`;
+        
+
+        try {
+            // Fetch data from the API
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            if (page === 1) {
+                setProductsDisplay(data.products);
+            } else {
+                setProductsDisplay(prevProducts => [...prevProducts, ...data.products]);
+            }
+    
+            setTotal(data.totalCount);
+        } catch (error) {
+            console.error('Error fetching items:', error);
+            setProductsDisplay([]);
+            setTotal(0)
+        }
+
+    };
+
+
+    useEffect(() => {
+        if (router.isReady) {
+            // Reset the page to 1 when the query changes
+            setPage(1);
+            fetchItems();
+        }
+    }, [router.query]);
+
+    useEffect(()=> {
+       setBrandFilter('');
+       setModelFilter([]);
+       setSearch('');
+    }, [i18n.language]);
+    
+    useEffect(() => {
+        if (page > 1) {
+            fetchItems();
+        }
+    }, [page]);
+
+    const handleLoadMore = () => {
+        setPage(prevPage => prevPage + 1);
+    };
+
+
+
+    useEffect(() => {
+        if (router.isReady) {
+            // Check if there's a brand filter or any models selected
+            if (brandFilter || modelFilter.length > 0) {
+                // Construct the models query dynamically
+                const modelsQuery = modelFilter.reduce((acc, model, index) => {
+                    acc[`model[${index}]`] = model;
+                    return acc;
+                }, {});
+    
+                // Update the URL with the brand and models, using shallow routing
+                router.replace(
+                    {
+                        pathname: '/products',
+                        query: {
+                            text: router.query.text,
+                            ...(brandFilter && { brand: brandFilter }),
+                            ...modelsQuery
+                        }
+                    },
+                    undefined,
+                    { shallow: true }
+                );
+            } else{
+                    // If filters are cleared, remove them from the URL
+                    router.replace(
+                        {
+                            pathname: '/products',
+                            query: {
+                                text: router.query.text
+                            }
+                        },
+                        undefined,
+                        { shallow: true }
+                    );
+
+               }
+        }
+    }, [brandFilter, modelFilter]);
+    
 
     
+    const handleKeyDown = (event) => {
+        if(event.keyCode === 13){
+            if(search){
+                router.replace({
+                    pathname: `/products`,
+                    query: {
+                        ...router.query,
+                        text: search
+                    }
+                },
+                undefined,
+                { shallow: true })
+            }
+        }
+    }
+
+
 
     const getGridClassName = {
         2: "not-grided",
@@ -76,8 +218,10 @@ const Products = () => {
 
 
     const getModelFromComponent = (models) => {
-        setModelFilter(models);
+        setModelFilter(models)
     }
+
+
 
     const getProductFromCard = (event, productObj) => {
         if(event){
@@ -104,8 +248,103 @@ const Products = () => {
     }, []);
 
 
+    const generatePDF = () => {
+        if (products.length <= 0) {
+            alert("No products available for the PDF.");
+            return;
+        }
+    
+        const doc = new jsPDF();
+    
+        products.forEach((product, index) => {
+            if (index > 0) doc.addPage(); // Add a new page for each product
+    
+            // Product Image (Increased size)
+            const imageUrl = `/api/getImage?productId=${product.productId}&image=${product.image}`;
+            doc.addImage(imageUrl, "JPEG", 10, 10, 100, 70); // Updated dimensions for larger image
+    
+            // Product Details
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(16);
+            doc.setTextColor("#FFD700");
+            doc.text(product.partNum || "Unknown Part Number", 120, 20); // Part number in yellow
+    
+            doc.setFontSize(14);
+            doc.setTextColor("#000");
+            doc.text(product.partName || "Unknown Part Name", 120, 30); // Part name
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(12);
+    
+            // Vehicle Information Header
+            doc.setFontSize(14);
+            doc.setFont("helvetica", "bold");
+            doc.text("Vehicle Information", 10, 90);
+    
+            doc.setFontSize(12);
+            doc.setFont("helvetica", "normal");
+    
+            // Vehicle Information Table
+            let yPosition = 100; // Start position for vehicle info
+            const vehiclesInfo = product.vehiclesInfo || {}; // Default to empty object if missing
+            Object.keys(vehiclesInfo).forEach((brand) => {
+                doc.setFontSize(12);
+                doc.setFont("helvetica", "bold");
+                doc.text(brand, 10, yPosition);
+                yPosition += 5;
+    
+                const models = vehiclesInfo[brand] || {}; // Default to empty object if missing
+                Object.keys(models).forEach((model) => {
+                    const info = models[model] || {};
+    
+                    doc.setFontSize(8);
+                    doc.setFont("helvetica", "normal");
+                    doc.text(`Model: ${info.model || "N/A"}`, 20, yPosition);
+                    doc.text(`Engine Type: ${info.engineType || "N/A"}`, 60, yPosition);
+                    doc.text(`Engine No: ${info.engineNo || "N/A"}`, 140, yPosition);
+                    yPosition += 10;
+                    doc.text(`Year: ${info.year || "N/A"}`, 20, yPosition);
+                    doc.text(`Additional Info: ${info.additionalInfo || "N/A"}`, 60, yPosition);
+                    yPosition += 10;
+                });
+                yPosition += 5;
+            });
+    
+            // O.E.M Numbers Section
+            doc.setFontSize(14);
+            doc.setFont("helvetica", "bold");
+            doc.text("O.E.M Numbers", 10, yPosition); // Add O.E.M Numbers header
+            yPosition += 10;
+
+            const brands = product.brands || []; // Default to an empty array
+            brands.forEach((brand) => {
+                doc.setFontSize(12);
+                doc.setFont("helvetica", "bold");
+                doc.text(brand || "Unknown Brand", 10, yPosition + 5); // Display brand name
+                yPosition += 5;
+
+                // Ensure product.models and product.brandsOems are defined
+                const models = product.models?.[brand];
+                const oems = product.brandsOems?.[brand] && product.brandsOems?.[brand].length > 0 ? product.brandsOems?.[brand] : product.oemNums; // Fallback to general O.E.M numbers
+
+                doc.setFont("helvetica", "normal");
+
+                // Display Models
+                doc.setFontSize(9);
+                doc.text(`MODELS: ${models.join(" • ") || "N/A"}`, 20, yPosition + 5);
+                yPosition += 5;
+
+                // Display O.E.M Numbers
+                doc.text(`O.E.M: ${oems.join(" • ") || "N/A"}`, 20, yPosition + 5);
+                yPosition += 5;
+            });
+        });
+    
+        doc.save("flennor-parts-products.pdf");
+    };
+
     return(
-        <div className="products-page-container">
+        <div  className="products-page-container">
+    
             <div className='products-header'>
                 <div className='img-container'>
                     <Image src={FlennorProductsImg} fill style={{objectFit: 'cover'}} alt='Flennor Parts Cover' title='Flennor Parts Cover' />
@@ -114,16 +353,26 @@ const Products = () => {
                 <div className='input-container'>
                     <div className='inner-input-container'>
                         <IoSearchOutline className='icon' />
-                        <input placeholder={t('homepage.intro.inputPlaceholder')} onChange={(s)=> setSearch(s.target.value)} aria-label='Flennor Parts Search' alt='Flennor Parts Search' title='Flennor Parts Search' />
-                        <button aria-label='Flennor Parts Search'>{t('homepage.intro.btn')}</button>
+                        <input onKeyDown={handleKeyDown} placeholder={t('homepage.intro.inputPlaceholder')} value={search} onChange={(s)=> setSearch(s.target.value)} aria-label='Flennor Parts Search' alt='Flennor Parts Search' title='Flennor Parts Search' />
+                        <button onClick={()=> {
+                            router.replace({
+                                pathname: `/products`,
+                                query: {
+                                    ...router.query,
+                                    text: search
+                                }
+                            },
+                            undefined,
+                            { shallow: true })
+                        }} aria-label='Flennor Parts Search'>{t('homepage.intro.btn')}</button>
                     </div>
                 </div>
             </div>
 
             <div className='products-nav'>
-                <h1><span>10617</span> {t('products.productsNav.productListed')}</h1>
+                <h1><span>{total}</span> {t('products.productsNav.productListed')}</h1>
                 <div className='products-nav-btns'>
-                    <button className='pdf-btn'><FaRegFilePdf className='pdf-icon icon' /> {t('products.productsNav.createPDF')} ({products.length})</button>
+                    <button onClick={generatePDF} aria-label='Create Products PDF On Flennor Parts' className='pdf-btn'><FaRegFilePdf className='pdf-icon icon' /> {t('products.productsNav.createPDF')} ({products.length})</button>
                     <div className='grid-btns'>
                         <button onClick={()=> setCardGrid(2)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid2Alt className='grid-icon icon'/></button>
                         <button onClick={()=> setCardGrid(3)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid3Alt className='grid-icon icon'/></button>
@@ -132,7 +381,8 @@ const Products = () => {
                 </div>
                 <div className='bars' onClick={()=> setOpenMobileFilters(true)}><HiBars4 className='icon-bars' /></div>
             </div>
-
+            
+     
 
             <div className='products-body'>
                <div className='inner-products-body'>
@@ -143,16 +393,34 @@ const Products = () => {
                     </div>
 
                     <div className={`products-content ${getGridClassName[cardGird]}`}>
-                        <ProductCard screenWidth={width} data={{productId: 1}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 1)} />
-                        <ProductCard screenWidth={width} data={{productId: 2}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 2)} />
-                        <ProductCard screenWidth={width} data={{productId: 3}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 3)} />
-                        <ProductCard screenWidth={width} data={{productId: 4}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 4)} />
-                        <ProductCard screenWidth={width} data={{productId: 5}} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((e) => e.productId === 5)} />
+
+
+                        {
+                            productsDisplay.map((e, key) => {
+                                return(
+                                    <ProductCard key={key} screenWidth={width} data={e} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((check) => check.productId === e.productId)} />
+                                )
+                            })
+                        }
+
+
+                        {
+                            productsDisplay.length <= 0 &&   <div className='no-length'><h1><Image src={LengthGIF} alt='Flennor Parts GIF' title='No Available Products in Flennor Parts' width={120} height={120} /> {t('alerts.noLength')}</h1></div>
+                        }
+
                     </div>
 
 
                </div>
             </div>
+
+            
+            {
+                productsDisplay.length !== total && <div className='load-more'>
+                    <button onClick={handleLoadMore} aria-label='Load More Flennor Parts Products'><IoReloadSharp className='icon' /> {t('products.loadMore')}</button>
+                </div> 
+            }
+
 
             {
                 openMobileFilters &&  <div className='mobile-filters'>
@@ -175,6 +443,8 @@ const Products = () => {
                 </div>
             </div>
             }
+
+
         </div>
     )
 }
