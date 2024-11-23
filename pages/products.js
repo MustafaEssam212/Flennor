@@ -14,7 +14,7 @@ import { HiBars4 } from "react-icons/hi2";
 import { IoReloadSharp } from "react-icons/io5";
 import { jsPDF } from "jspdf";
 import LengthGIF from '../public/length.gif';
-
+import { motion } from 'framer-motion';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -25,28 +25,7 @@ export async function getStaticProps({ locale }) {
 }
 
 
-const useWindowWidth = () => {
-    // State to store the window width
-    const [windowWidth, setWindowWidth] = useState(undefined);
-  
-    useEffect(() => {
-      // Handler to update the width
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-  
-      // Set the initial width
-      handleResize();
-  
-      // Add event listener
-      window.addEventListener('resize', handleResize);
-  
-      // Cleanup on component unmount
-      return () => window.removeEventListener('resize', handleResize);
-    }, []); // Runs only on mount and unmount
-  
-    return windowWidth;
-  };
+
 
 const Products = () => {
 
@@ -63,7 +42,6 @@ const Products = () => {
     const [products, setProducts] = useState([]);
     const [openMobileFilters, setOpenMobileFilters] = useState(false);
     const mobileFiltersRef = useRef();
-    const width = useWindowWidth();
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(0);
     const [productsDisplay, setProductsDisplay] = useState([]);
@@ -122,7 +100,6 @@ const Products = () => {
 
     useEffect(() => {
         if (router.isReady) {
-            // Reset the page to 1 when the query changes
             setPage(1);
             fetchItems();
         }
@@ -147,6 +124,7 @@ const Products = () => {
 
 
     useEffect(() => {
+
         if (router.isReady) {
             // Check if there's a brand filter or any models selected
             if (brandFilter || modelFilter.length > 0) {
@@ -255,6 +233,7 @@ const Products = () => {
         }
     
         const doc = new jsPDF();
+        const maxLineWidth = 80; // Maximum width for text wrapping
     
         products.forEach((product, index) => {
             if (index > 0) doc.addPage(); // Add a new page for each product
@@ -298,13 +277,32 @@ const Products = () => {
     
                     doc.setFontSize(8);
                     doc.setFont("helvetica", "normal");
+    
+                    // Model
                     doc.text(`Model: ${info.model || "N/A"}`, 20, yPosition);
-                    doc.text(`Engine Type: ${info.engineType || "N/A"}`, 60, yPosition);
+    
+                    // Engine Type (wrapped text)
+                    const engineType = info.engineType || "N/A";
+                    const wrappedEngineType = doc.splitTextToSize(`Engine Type: ${engineType}`, maxLineWidth);
+                    doc.text(wrappedEngineType, 60, yPosition);
+    
+                    // Move yPosition based on wrapped text
+                    yPosition += 10 * wrappedEngineType.length;
+    
+                    // Engine No
                     doc.text(`Engine No: ${info.engineNo || "N/A"}`, 140, yPosition);
+    
                     yPosition += 10;
+    
+                    // Year
                     doc.text(`Year: ${info.year || "N/A"}`, 20, yPosition);
-                    doc.text(`Additional Info: ${info.additionalInfo || "N/A"}`, 60, yPosition);
-                    yPosition += 10;
+    
+                    // Additional Info (wrapped text)
+                    const additionalInfo = info.additionalInfo || "N/A";
+                    const wrappedAdditionalInfo = doc.splitTextToSize(`Additional Info: ${additionalInfo}`, maxLineWidth);
+                    doc.text(wrappedAdditionalInfo, 60, yPosition);
+    
+                    yPosition += 10 * wrappedAdditionalInfo.length; // Adjust for wrapped lines
                 });
                 yPosition += 5;
             });
@@ -314,32 +312,42 @@ const Products = () => {
             doc.setFont("helvetica", "bold");
             doc.text("O.E.M Numbers", 10, yPosition); // Add O.E.M Numbers header
             yPosition += 10;
-
+    
             const brands = product.brands || []; // Default to an empty array
             brands.forEach((brand) => {
                 doc.setFontSize(12);
                 doc.setFont("helvetica", "bold");
                 doc.text(brand || "Unknown Brand", 10, yPosition + 5); // Display brand name
                 yPosition += 5;
-
+    
                 // Ensure product.models and product.brandsOems are defined
                 const models = product.models?.[brand];
-                const oems = product.brandsOems?.[brand] && product.brandsOems?.[brand].length > 0 ? product.brandsOems?.[brand] : product.oemNums; // Fallback to general O.E.M numbers
-
+                const oems = product.brandsOems?.[brand] && product.brandsOems?.[brand].length > 0
+                    ? product.brandsOems?.[brand]
+                    : product.oemNums; // Fallback to general O.E.M numbers
+    
                 doc.setFont("helvetica", "normal");
-
+    
                 // Display Models
                 doc.setFontSize(9);
-                doc.text(`MODELS: ${models.join(" • ") || "N/A"}`, 20, yPosition + 5);
-                yPosition += 5;
-
+                const wrappedModels = doc.splitTextToSize(`MODELS: ${models.join(" • ") || "N/A"}`, maxLineWidth);
+                doc.text(wrappedModels, 20, yPosition + 5);
+                yPosition += 5 * wrappedModels.length;
+    
                 // Display O.E.M Numbers
-                doc.text(`O.E.M: ${oems.join(" • ") || "N/A"}`, 20, yPosition + 5);
-                yPosition += 5;
+                const wrappedOems = doc.splitTextToSize(`O.E.M: ${oems.join(" • ") || "N/A"}`, maxLineWidth);
+                doc.text(wrappedOems, 20, yPosition + 5);
+                yPosition += 10 * wrappedOems.length;
             });
         });
     
         doc.save("flennor-parts-products.pdf");
+    };
+
+
+    const slideVariants = {
+        open: { x: 0, transition: { duration: 0.5 } }, // Slide in from the left
+        closed: { x: '-100%', transition: { duration: 0.5 } } // Slide out to the left
     };
 
     return(
@@ -398,7 +406,7 @@ const Products = () => {
                         {
                             productsDisplay.map((e, key) => {
                                 return(
-                                    <ProductCard key={key} screenWidth={width} data={e} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((check) => check.productId === e.productId)} />
+                                    <ProductCard key={key} data={e} sendDataToParent={getProductFromCard} grid={cardGird} checked={products.some((check) => check.productId === e.productId)} />
                                 )
                             })
                         }
@@ -422,27 +430,46 @@ const Products = () => {
             }
 
 
-            {
-                openMobileFilters &&  <div className='mobile-filters'>
-                <div ref={mobileFiltersRef} className='inner-mobile-filter'>
-
-                    <div className='grid-filter'>
-
+            <motion.div
+                className="mobile-filters"
+                initial="closed"
+                animate={openMobileFilters ? 'open' : 'closed'}
+                variants={slideVariants}
+            >
+                <div ref={mobileFiltersRef} className="inner-mobile-filter">
+                    <div className="grid-filter">
                         <h2>{t('products.mobileFilter.align')}</h2>
-                        <div className='grid-btns'>
-                            <button onClick={()=> setCardGrid(2)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid2Alt className='grid-icon icon'/></button>
-                            <button onClick={()=> setCardGrid(3)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid3Alt className='grid-icon icon'/></button>
-                            <button onClick={()=> setCardGrid(4)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid4Alt className='grid-icon icon'/></button>
+                        <div className="grid-btns">
+                            <button
+                                onClick={() => setCardGrid(2)}
+                                aria-label="Flennor Parts Products Grid"
+                                title="Flennor Parts Products Grid"
+                            >
+                                <TfiLayoutGrid2Alt className="grid-icon icon" />
+                            </button>
+                            <button
+                                onClick={() => setCardGrid(3)}
+                                aria-label="Flennor Parts Products Grid"
+                                title="Flennor Parts Products Grid"
+                            >
+                                <TfiLayoutGrid3Alt className="grid-icon icon" />
+                            </button>
+                            <button
+                                onClick={() => setCardGrid(4)}
+                                aria-label="Flennor Parts Products Grid"
+                                title="Flennor Parts Products Grid"
+                            >
+                                <TfiLayoutGrid4Alt className="grid-icon icon" />
+                            </button>
                         </div>
                     </div>
-
                     <BrandFilter sendDataToParent={getBrandFromComponent} />
                     <ModelFilter brand={brandFilter} sendDataToParent={getModelFromComponent} />
-
-                    <button className='pdf-btn'><FaRegFilePdf className='pdf-icon icon' /> {t('products.productsNav.createPDF')} ({products.length})</button>
+                    <button className="pdf-btn">
+                        <FaRegFilePdf className="pdf-icon icon" /> {t('products.productsNav.createPDF')} ({products.length})
+                    </button>
                 </div>
-            </div>
-            }
+            </motion.div>
 
 
         </div>

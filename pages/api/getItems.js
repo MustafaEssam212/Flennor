@@ -45,9 +45,23 @@ export default async function handler(req, res) {
                 }
 
                 if (regularText) {
-                    query.$or.push(
-                        { partName: { $regex: regularText, $options: 'i' } }
-                    );
+                    // Check if the input contains Arabic characters
+                    const isArabic = /[\u0600-\u06FF]/.test(regularText);
+                
+                    query.$or = query.$or || [];
+                
+                    if (isArabic) {
+                        // If the input is Arabic, search in partNameAr
+                        query.$or.push(
+                            { partNameAr: { $regex: regularText, $options: 'i' } }
+                        );
+                    } else {
+                        // If the input is not Arabic, search in partName and partNameDe
+                        query.$or.push(
+                            { partName: { $regex: regularText, $options: 'i' } },
+                            { partNameDe: { $regex: regularText, $options: 'i' } }
+                        );
+                    }
                 }
             }
 

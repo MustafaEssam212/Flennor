@@ -1,9 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
-import productImg from '../../public/category1.jpg';
 import DropMenu from "./Dropmenu";
 import { useTranslation } from 'next-i18next';
 import React from "react";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+    
 
 const ProductPopWindow = ({ sendDataToParent, data }) => {
 
@@ -12,7 +13,7 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const { t } = useTranslation('common');
-
+    const carouselRef = useRef();
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -35,6 +36,19 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
         setPosition({ x, y });
     };
 
+
+    const scrollCarousel = (direction) => {
+        const scrollAmount = 300; // Adjust this value based on how far you want to scroll
+        if (direction === "left") {
+          carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        } else {
+          carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+      };
+
+
+      const [chosenPic, setChosenPic] = useState(data.image)
+
     return (
         <div className="product-pop-window-container">
             <div ref={containerRef} className="inner-prodcut-pop-window-container">
@@ -47,7 +61,7 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
                     >
                         {/* Image Container */}
                         <Image
-                            src={`/api/getFullImage?productId=${data.productId}&image=${data.image}`}
+                            src={`/api/getFullImage?productId=${data.productId}&image=${chosenPic}`}
                             alt="Flennor Parts Product Image"
                             title="Flennor Parts Product Image"
                             fill
@@ -63,7 +77,7 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
                                     width: '100%',
                                     height: '100%',
                                     pointerEvents: 'none',
-                                    backgroundImage: `url(${`/api/getFullImage?productId=${data.productId}&image=${data.image}`})`,
+                                    backgroundImage: `url(${`/api/getFullImage?productId=${data.productId}&image=${chosenPic}`})`,
                                     backgroundSize: '200%', // Zoom factor
                                     backgroundPosition: `${position.x}% ${position.y}%`,
                                     transition: 'background-position 0.1s ease',
@@ -71,10 +85,37 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
                             />
                         )}
                     </div>
+
+                    <div className="carousel">
+                        <button onClick={() => scrollCarousel("left")} aria-label="Flennor Parts Product Carousel"><FaArrowAltCircleLeft className="icon" /></button>
+
+
+                            <div ref={carouselRef} className="inner-carousel">
+
+
+                            <div onClick={()=> setChosenPic(data.image)} className={chosenPic === data.image ? "img-preview active" : "img-preview"}>
+                                <Image src={`/api/getFullImage?productId=${data.productId}&image=${data.image}`} alt="Flennor Parts Product Image" title="Flennor Parts Product Image" fill />
+                            </div>
+
+                                    {
+                                        data.images.map((e, key) => {
+                                            return(
+                                                <div onClick={()=> setChosenPic(e)} key={key} className={chosenPic === e ? "img-preview active" : "img-preview"}>
+                                                    <Image src={`/api/getImage?productId=${data.productId}&image=${e}`} alt="Flennor Parts Product Image" title="Flennor Parts Product Image" fill />
+                                                </div>
+                                            )
+                                        })
+                                    }
+
+                            </div>
+
+
+                        <button onClick={() => scrollCarousel("right")} aria-label="Flennor Parts Product Carousel"><FaArrowAltCircleRight className="icon" /></button>
+                    </div>
                 </div>
 
                 <div className="right-product-pop-window">
-                    
+
                     <div className="inner-right-pop">
 
                         <div className="product-pop-title">
@@ -84,6 +125,15 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
 
                         <div className="product-pop-info">
 
+                            {
+                                data.notes && <div className="notes-info">
+                                        <div className="info-header">
+                                            <h3>{t('products.popWindow.titleThree')}</h3>
+                                        </div>
+
+                                        <h4>{data.notes}</h4>
+                                    </div>
+                            }
 
                             <div className="vechiles-info">
                                 <div className="info-header">
@@ -146,6 +196,8 @@ const ProductPopWindow = ({ sendDataToParent, data }) => {
                     </div>
 
                 </div>
+
+
             </div>
         </div>
     );

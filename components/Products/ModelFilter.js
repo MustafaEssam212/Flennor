@@ -1,6 +1,5 @@
 import { IoSearchOutline } from "react-icons/io5";
-import { useEffect, useState } from "react";
-import Models from '@/utils/models.json';
+import { useEffect, useState, useRef } from "react";
 import { useTranslation } from 'next-i18next';  
 
 
@@ -11,29 +10,49 @@ const ModelFilter = ({brand, sendDataToParent}) => {
     const [models, setModels] = useState([]);
     const [filtered, setFiltered] = useState([]);
     const { i18n } = useTranslation();
+    const isFirstRender = useRef(true);
+    const [Brands, setBrands] = useState([]);
+
+
+    useEffect(()=> {
+        const getBrands = async () => {
+            const res = await fetch(`/api/getBrands`);
+            const dataOfResponse = await res.json();
+
+            if(res.status === 200){
+                setBrands(dataOfResponse);
+            }
+        }
+
+        getBrands();
+    }, []);
+
 
     useEffect(() => {
         if(brand){
-            const filterModels = Models[brand];
-            setFiltered(filterModels);
+            setFiltered(Brands.find((e)=> e.brand === brand).models);
             setModels([]);
         }
     }, [brand]);
 
 
-    useEffect(()=> {
-        sendDataToParent(models)
+    useEffect(() => {
+        // Skip execution on the first render
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+        sendDataToParent(models, isFirstRender);
     }, [models]);
 
 
     useEffect(()=> {
         if(brand){
             if (modelSearch.trim() === '') {
-                const filterModels = Models[brand];
-                setFiltered(filterModels);
+                setFiltered(Brands.find((e)=> e.brand === brand).models);
             } else {
                 const regex = new RegExp(modelSearch, 'i');
-                const filterModels = Models[brand];
+                const filterModels = Brands.find((e)=> e.brand === brand).models;
                 const filteredModelOfSearch = filterModels.filter(model => regex.test(model));
                 setFiltered(filteredModelOfSearch);
             }
@@ -72,7 +91,7 @@ const ModelFilter = ({brand, sendDataToParent}) => {
                     </div>
     
                     <div className="filter-body-content">
-
+                     
                         {filtered.map((e, key) => {
                             return(
                                 <div key={key} className="filter-section"><input checked={models.includes(e)} type="checkbox" aria-label={e} title={e} onChange={(s)=> handleChangeInput(s.target.checked, e)} /> <p>{e}</p></div>

@@ -242,6 +242,7 @@
       "popWindow": {
         "titleOne": "Vehicle Information",
         "titleTwo": "O.E.M Numbers",
+        "titleThree": "Notes",
         "dropmenuHeader": {
           "model": "Model",
           "engineType": "Engine Type",
@@ -267,6 +268,7 @@
       },
       "alerts": {
         "pdf": "Please choose at least one product",
-        "noLength": "No available products"
+        "noLength": "No available products",
+        "loading": "Loading..."
       }
   }

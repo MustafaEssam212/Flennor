@@ -246,6 +246,7 @@
       "popWindow": {
         "titleOne": "Fahrzeuginformationen",
         "titleTwo": "O.E.M-Nummern",
+        "titleThree": "Hinweise",
         "dropmenuHeader": {
           "model": "Modell",
           "engineType": "Motortyp",
@@ -271,6 +272,7 @@
     },
     "alerts": {
       "pdf": "Bitte wählen Sie mindestens ein Produkt aus",
-        "noLength": "Keine verfügbaren Produkte"
+        "noLength": "Keine verfügbaren Produkte",
+        "loading": "Laden..."
     }
 }

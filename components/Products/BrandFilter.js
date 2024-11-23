@@ -1,7 +1,6 @@
 
 import { IoSearchOutline } from "react-icons/io5";
-import { useEffect, useState } from "react";
-import Brands from '@/utils/brands.json';
+import { useEffect, useState, useRef } from "react";
 import { useTranslation } from 'next-i18next';
 
 
@@ -10,20 +9,48 @@ const BrandFilter = ({sendDataToParent}) => {
     const { i18n } = useTranslation();
     const [brandSearch, setBrandSearch] = useState('');
     const [brand, setBrand] = useState('');
-    const [filtered, setFiltered] = useState(Brands);
+    const [Brands, setBrands] = useState([]);
+    const [filtered, setFiltered] = useState([]);
+    const isFirstRender = useRef(true);
+    const [loading, setLoading] = useState(true);
+
+
+    useEffect(()=> {
+        const getBrands = async () => {
+            const res = await fetch(`/api/getBrands`);
+            const dataOfResponse = await res.json();
+
+            if(res.status === 200){
+                setBrands(dataOfResponse);
+                setLoading(false);
+            }
+        }
+
+        getBrands();
+    }, []);
+
+    useEffect(()=> {
+        if(Brands.length){
+            setFiltered(Brands)
+        }
+    }, [Brands])
 
     useEffect(() => {
         if (brandSearch.trim() === '') {
             setFiltered(Brands);
         } else {
             const regex = new RegExp(brandSearch, 'i'); // 'i' for case-insensitive matching
-            const filteredBrands = Brands.filter(brand => regex.test(brand));
+            const filteredBrands = Brands.filter(brand => regex.test(brand.brand));
             setFiltered(filteredBrands);
         }
     }, [brandSearch]);
 
     useEffect(()=> {
-        sendDataToParent(brand)
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+        sendDataToParent(brand);
     }, [brand]);
 
 
@@ -55,11 +82,20 @@ const BrandFilter = ({sendDataToParent}) => {
 
                 <div className="filter-body-content">
 
-                    {filtered.map((e, key) => {
+      
+
+                    {
+                       loading ? <div className="filter-alert"><p>{t('alerts.loading')}</p></div> : <>
+                       
+                       {filtered.map((e, key) => {
                         return(
-                            <div key={key} className="filter-section"><input checked={brand === e} type="checkbox" aria-label={e} title={e} onChange={(s)=> handleChangeInput(s.target.checked, e)} /> <p>{e}</p></div>
+                            <div key={key} className="filter-section"><input checked={brand === e.brand} type="checkbox" aria-label={e.brand} title={e.brand} onChange={(s)=> handleChangeInput(s.target.checked, e.brand)} /> <p>{e.brand}</p></div>
                         )
                     })}
+                        
+                       
+                       </>
+                    }
                 </div>
             </div>
         </div>
