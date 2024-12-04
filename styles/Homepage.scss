@@ -699,7 +699,7 @@ body[dir="rtl"]{
     align-items: center;
     margin-top: 100px;
     padding-top: 100px;
-
+    overflow: hidden;
     .inner-about-flennor-homepage{
         display: flex;
         justify-content: center;
@@ -3737,15 +3737,15 @@ body[dir="rtl"]{
             .inner-layer-on-intro{
 
                 .great-headline{
-                    font-size: 16px;
+                    font-size: 20px;
                 }
     
                 .more-great-headline{
-                    font-size: 25px;
+                    font-size: 30px;
                 }
     
                 .greater-headline{
-                    font-size: 35px;
+                    font-size: 40px;
                     line-height: 30px;
                 }
 
@@ -3850,4 +3850,37 @@ body[dir="rtl"]{
             }
         }
     }
-}   
+}
+
+
+@media (max-width: 369px) {
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+
+                .great-headline{
+                    font-size: 15px;
+                }
+    
+                .more-great-headline{
+                    font-size: 25px;
+                }
+    
+                .greater-headline{
+                    font-size: 35px;
+                    line-height: 30px;
+                }
+
+                .last-headline{
+                    line-height: 45px;
+                }
+
+            }
+        }
+    }
+
+}

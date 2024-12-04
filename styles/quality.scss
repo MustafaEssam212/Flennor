@@ -1,4 +1,9 @@
 
+body[dir="rtl"]{
+    .quality-management-container{
+        direction: ltr;
+    }
+}
 
 
 .quality-management-container{

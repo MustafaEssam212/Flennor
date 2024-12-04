@@ -16,8 +16,8 @@ const TopPageInfo = () => {
   };
 
   const variants = {
-    hidden: { opacity: 0, height: 0 },
-    visible: { opacity: 1, height: 'auto' },
+    hidden: { opacity: 0, display: 'none', height: 0 },
+    visible: { opacity: 1, display: 'block', height: 'auto' },
   };
 
   return (
