@@ -18,6 +18,7 @@ const IntroHomepage = () => {
     const { t } = useTranslation('common');
     const [search, setSearch] = useState('');
     const router = useRouter();
+    const { i18n } = useTranslation();
 
     const handleKeyDown = (event) => {
         if(event.keyCode === 13){
@@ -40,7 +41,8 @@ const IntroHomepage = () => {
                 <div className="inner-layer-on-intro">
                     <h1 className="great-headline">{t('homepage.intro.firstTitle')}</h1>
                     <h1 className="more-great-headline">{t('homepage.intro.mainTitle')}</h1>
-                    <h1 className="greater-headline">{t('homepage.intro.secondTitle')}</h1>
+                    <h1 className="greater-headline">{t('homepage.intro.middleTitle')}</h1>
+                    <h1 className="greater-headline last-headline">{t('homepage.intro.secondTitle')}</h1>
 
                     <div className='input-container'>
                         <IoSearchOutline className='icon' />

@@ -7,18 +7,19 @@ export default async function handler(req, res) {
     if (req.method === 'GET') {
         try {
             const { text, brand, page = 1 } = req.query;
-            const limit = 6;
+            const limit = parseInt(req.query.grid) > 3 ? 8 : 6;
             const skip = (parseInt(page) - 1) * limit;
 
             let regularText = '';
             let formattedText = '';
             let brandText = '';
-
+ 
             // Extract and format the text query
             if (text) {
-                formattedText = text.replace(/\s+/g, '').toUpperCase();
-                regularText = text;
+                formattedText = text.replace(/[^a-zA-Z0-9]/g, '').toUpperCase();
+                regularText = text.replace(/[\[\]]/g, '');
             }
+
 
             // Extract the brand query
             if (brand) {

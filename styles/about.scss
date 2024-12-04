@@ -539,6 +539,43 @@ body[dir='rtl']{
     
     }
 
+    body[dir='rtl']{
+        .about-page-container{
+    
+
+        
+            .global-presence-container{
+
+        
+                .map-container{
+    
+        
+                    .layer-on-map{
+    
+          
+                     
+                        .inner-layer-on-map{
+                           
+                            .headline-on-map{
+                               
+    
+                               
+        
+                                h1{
+                                    font-size: 28px;
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        
+        }
+    }
 
 }
 
@@ -719,6 +756,7 @@ body[dir='rtl']{
                                 h1{
                                     font-family: 'Cairo-Bold';
                                     text-align: right;
+                                    font-size: 26px;
         
                                     span{
                                         font-family: 'Cairo-Regular';
@@ -878,7 +916,7 @@ body[dir='rtl']{
                             }
     
                             h1{
-                                font-size: 26px;
+                                font-size: 24px;
                             }
                         }
     
@@ -890,6 +928,44 @@ body[dir='rtl']{
             }
         }
     
+    }
+
+    body[dir='rtl']{
+        .about-page-container{
+    
+
+        
+            .global-presence-container{
+
+        
+                .map-container{
+    
+        
+                    .layer-on-map{
+    
+          
+                     
+                        .inner-layer-on-map{
+                            width: 50%;
+                            .headline-on-map{
+                               
+    
+                               
+        
+                                h1{
+                                    font-size: 22px;
+                                }
+                            }
+        
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        
+        }
     }
 }
 
@@ -1022,7 +1098,7 @@ body[dir='rtl']{
                 .layer-on-map{
                  
                     .inner-layer-on-map{
-                        width: 40%;
+                        width: 50%;
                         padding: 0px 50px;
                         gap: 35px;
     
@@ -1035,7 +1111,7 @@ body[dir='rtl']{
                             }
     
                             h1{
-                                font-size: 22px;
+                                font-size: 20px;
                             }
                         }
     
@@ -1071,12 +1147,7 @@ body[dir='rtl']{
                                
         
                                 h1{
-                                    font-family: 'Cairo-Bold';
-                                    text-align: right;
-        
-                                    span{
-                                        font-family: 'Cairo-Regular';
-                                    }
+                                   font-size: 20px;
                                 }
                             }
         
@@ -1223,7 +1294,7 @@ body[dir='rtl']{
                 .layer-on-map{
                  
                     .inner-layer-on-map{
-                        width: 40%;
+                        width: 50%;
                         padding: 0px 50px;
                         gap: 35px;
     
@@ -1237,7 +1308,7 @@ body[dir='rtl']{
                             }
     
                             h1{
-                                font-size: 18px;
+                                font-size: 17px;
                             }
                         }
     
@@ -1262,7 +1333,7 @@ body[dir='rtl']{
                         direction: ltr;
                      
                         .inner-layer-on-map{
-                            width: 50%;
+                            width: 60%;
                             .headline-on-map{
                                 flex-direction: row-reverse;
     
@@ -1275,7 +1346,7 @@ body[dir='rtl']{
                                 h1{
                                     font-family: 'Cairo-Bold';
                                     text-align: right;
-        
+                                    font-size: 18px;
                                     span{
                                         font-family: 'Cairo-Regular';
                                     }
@@ -1290,6 +1361,34 @@ body[dir='rtl']{
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1117px) {
+    .about-page-container{
+
+    
+        .global-presence-container{
+       
+
+    
+            .map-container{
+
+    
+                .layer-on-map{
+                 
+                    .inner-layer-on-map{
+                        width: 50%;
+
+    
+                        
+                    }
+    
+                }
+    
+            }
+        }
+    
     }
 }
 
@@ -1435,7 +1534,7 @@ body[dir='rtl']{
                 .layer-on-map{
                  
                     .inner-layer-on-map{
-                        width: 40%;
+                        width: 60%;
                         padding: 0px 50px;
                         gap: 25px;
     
@@ -1445,7 +1544,7 @@ body[dir='rtl']{
                                 width: 6px;
                                 height: 6px;
                               
-                                margin-top: 8px;
+                                margin-top: 5px;
                             }
     
                             h1{
@@ -1474,10 +1573,11 @@ body[dir='rtl']{
                         direction: ltr;
                      
                         .inner-layer-on-map{
-                            width: 50%;
+                            width: 75%;
+                            gap: 15px;
                             .headline-on-map{
                                 flex-direction: row-reverse;
-    
+                                
                                 .circle-span{
                                     margin-top: 10px;
                                 }
@@ -1487,6 +1587,7 @@ body[dir='rtl']{
                                 h1{
                                     font-family: 'Cairo-Bold';
                                     text-align: right;
+                                    font-size: 16px;
         
                                     span{
                                         font-family: 'Cairo-Regular';
@@ -1662,7 +1763,7 @@ body[dir='rtl']{
                                 width: 6px;
                                 height: 6px;
                               
-                                margin-top: 8px;
+                                margin-top: 5px;
                             }
     
                             h1{
@@ -1685,13 +1786,13 @@ body[dir='rtl']{
             .global-presence-container{
                 .map-container{
 
-    
+                    height: 320px;
                     .layer-on-map{
     
                         direction: ltr;
                      
                         .inner-layer-on-map{
-                            width: 80%;
+                            width: 95%;
                             .headline-on-map{
                                 flex-direction: row-reverse;
     
@@ -1702,12 +1803,7 @@ body[dir='rtl']{
                                
         
                                 h1{
-                                    font-family: 'Cairo-Bold';
-                                    text-align: right;
-        
-                                    span{
-                                        font-family: 'Cairo-Regular';
-                                    }
+                                font-size: 14px;
                                 }
                             }
         
@@ -1872,9 +1968,9 @@ body[dir='rtl']{
                 .layer-on-map{
                  
                     .inner-layer-on-map{
-                        width: 95%;
+                        width: 100%;
                         padding: 0px 20px;
-                        gap: 10px;
+                        gap: 5px;
     
                         .headline-on-map{
                             gap: 5px;
@@ -1904,14 +2000,16 @@ body[dir='rtl']{
         .about-page-container{
             .global-presence-container{
                 .map-container{
-
-    
+                    height: 250px;
+                    
+                   
                     .layer-on-map{
     
                         direction: ltr;
+
                      
                         .inner-layer-on-map{
-                            width: 90%;
+                            width: 100%;
                             .headline-on-map{
                                 flex-direction: row-reverse;
     
@@ -1924,6 +2022,7 @@ body[dir='rtl']{
                                 h1{
                                     font-family: 'Cairo-Bold';
                                     text-align: right;
+                                    font-size: 10px;
         
                                     span{
                                         font-family: 'Cairo-Regular';
@@ -1941,3 +2040,4 @@ body[dir='rtl']{
         }
     }
 }
+

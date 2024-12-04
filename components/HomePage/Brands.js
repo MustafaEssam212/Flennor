@@ -10,7 +10,10 @@ import VolkswagenLogo from '../../public/brands/vw.png';
 import { IoArrowForward, IoArrowBackSharp } from "react-icons/io5";
 import { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
-
+import Scoda from '../../public/brands/scoda.png';
+import Seat from '../../public/brands/seat.png';
+import Peugeot from '../../public/brands/peugeot.png';
+import Audi from '../../public/brands/audi.png';
 
 const Brands = () => {
 
@@ -25,6 +28,10 @@ const Brands = () => {
     { name: t('homepage.brands.MB'), logo: MBLogo },
     { name: t('homepage.brands.Opel'), logo: OpelLogo },
     { name: t('homepage.brands.Renault'), logo: RenaultLogo },
+    { name: t('homepage.brands.Scoda'), logo: Scoda },
+    { name: t('homepage.brands.Seat'), logo: Seat },
+    { name: t('homepage.brands.Peugeot'), logo: Peugeot },
+    { name: t('homepage.brands.Audi'), logo: Audi },
     { name: t('homepage.brands.Volvo'), logo: VolvoLogo },
     { name: t('homepage.brands.Ford'), logo: FordLogo },
     { name: t('homepage.brands.Volkswagen'), logo: VolkswagenLogo },
@@ -32,6 +39,10 @@ const Brands = () => {
     { name: t('homepage.brands.MB'), logo: MBLogo },
     { name: t('homepage.brands.Opel'), logo: OpelLogo },
     { name: t('homepage.brands.Renault'), logo: RenaultLogo },
+    { name: t('homepage.brands.Scoda'), logo: Scoda },
+    { name: t('homepage.brands.Seat'), logo: Seat },
+    { name: t('homepage.brands.Peugeot'), logo: Peugeot },
+    { name: t('homepage.brands.Audi'), logo: Audi },
     { name: t('homepage.brands.Volvo'), logo: VolvoLogo },
     { name: t('homepage.brands.Ford'), logo: FordLogo },
     { name: t('homepage.brands.Volkswagen'), logo: VolkswagenLogo },
@@ -39,6 +50,10 @@ const Brands = () => {
     { name: t('homepage.brands.MB'), logo: MBLogo },
     { name: t('homepage.brands.Opel'), logo: OpelLogo },
     { name: t('homepage.brands.Renault'), logo: RenaultLogo },
+    { name: t('homepage.brands.Scoda'), logo: Scoda },
+    { name: t('homepage.brands.Seat'), logo: Seat },
+    { name: t('homepage.brands.Peugeot'), logo: Peugeot },
+    { name: t('homepage.brands.Audi'), logo: Audi },
     { name: t('homepage.brands.Volvo'), logo: VolvoLogo },
     { name: t('homepage.brands.Ford'), logo: FordLogo },
     { name: t('homepage.brands.Volkswagen'), logo: VolkswagenLogo },

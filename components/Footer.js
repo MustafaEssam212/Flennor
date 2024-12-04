@@ -20,7 +20,7 @@ const Footer = () => {
                         <Image src={FlennorPartsWhiteLogo} fill alt="Flennor Parts Logo" title="Flennor Parts Logo" />
                     </div>
                     <h2>{t('footer.topFooter.left.description')}</h2>
-                    <div className="social-links">
+                    {/* <div className="social-links">
                         <h2>{t('footer.topFooter.left.socialHeadline')}</h2>
                         <div className="social-containers">
                             <Link href="#" aria-label="Flennor Parts Facebook" title="Flennor Parts Facebook"><FaFacebookF className="icon" /></Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                             <Link href="#" aria-label="Flennor Parts Instagram" title="Flennor Parts Instagram"><FaInstagram className="icon" /></Link>
                             <Link href="#" aria-label="Flennor Parts Youtube" title="Flennor Parts Youtube"><FaYoutube className="icon" /></Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="middle-top-footer">
@@ -43,16 +43,16 @@ const Footer = () => {
                 </div>
 
                 <div className="right-top-footer">
-                    <h1>{t('footer.topFooter.right.headline')}</h1>
+                <h1><Link href={`/contact`} title="Contact Flennor Parts" aria-label="Contact Flennor Parts" >{t('footer.topFooter.right.headline')}</Link></h1>
 
-                    <div className="info-container">
+                    {/* <div className="info-container">
                         <h2><IoLocationOutline className="icon" />{t('footer.topFooter.right.info.addressOne')}</h2>
                         <h2><IoLocationOutline className="icon" />{t('footer.topFooter.right.info.addressTwo')}</h2>
                         <h2><IoLocationOutline className="icon" />{t('footer.topFooter.right.info.addressThree')}</h2>
                         <h2><IoLocationOutline className="icon" />{t('footer.topFooter.right.info.addressFour')}</h2>
                         <h2><MdOutlineMailOutline className="icon" /> sales@flennor-parts.com</h2>
                         <h2><FiPhone className="icon" /> +1 514-571-4054</h2>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="bottom-footer">

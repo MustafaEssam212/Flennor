@@ -1,19 +1,21 @@
 {
 
   "topInfo": {
+    "titleOne": "EUROPA",
+    "titleTwo": "NORDAMERIKA",
+    "titleThree": "NAHER OSTEN",
     "addressOne": "Deutschland",
     "addressTwo": "Kanada",
     "addressThree": "Truthahn",
-    "addressFour": "UAE",
-    "addressFive": "Ägypten",
-    "firstPhone": "+1 514-571-4054"
+    "addressFour": "UAE"
   },
 
   "header": {
     "navs": {
       "home": "Startseite",
       "about": "Über uns",
-      "contact": "Kontaktieren Sie uns"
+      "contact": "Kontaktieren Sie uns",
+      "qualityManagment": "Qualitätsmanagement"
     },
       "styled-link": "Unsere Produkte",
       "langs": {
@@ -62,6 +64,7 @@
         "firstTitle": "Machen Sie sich bereit mit",
         "mainTitle": "Flennor",
         "secondTitle": "Parts",
+        "middleTitle": "Automotive",
         "inputPlaceholder": "Suchen Sie nach Produktnamen, Flennor-Teilecode und OEM-Code.",
         "btn": "Mkan anruf"
       },
@@ -93,7 +96,11 @@
         "Renault": "Renault",
         "Opel": "Opel",
         "MB": "MB",
-        "BMW": "BMW"
+        "BMW": "BMW",
+        "Scoda": "Skoda",
+        "Seat": "Seat",
+        "Peugeot": "Peugeot",
+        "Audi": "Audi"
       },
       "carImages": {
         "imgOne": {
@@ -123,7 +130,8 @@
         "list": {
           "firstList": "Düsseldorf, Deutschland: Unser Hauptsitz bleibt ein Zentrum der Innovation und führend im Bereich hochwertiger Autoteile.",
           "secondList": "Dubai, Vereinigte Arabische Emirate: Unser Büro in Dubai liegt an einem Handelsknotenpunkt und erweitert unsere Reichweite auf die florierenden Märkte des Nahen Ostens.",
-          "thirdList": "Istanbul, Türkei: Unser Büro in Istanbul fungiert als Tor zwischen Europa und Asien und stärkt unsere Fähigkeit, die Anforderungen dieser wichtigen Regionen zu erfüllen."
+          "thirdList": "Istanbul, Türkei: Unser Büro in Istanbul fungiert als Tor zwischen Europa und Asien und stärkt unsere Fähigkeit, die Anforderungen dieser wichtigen Regionen zu erfüllen.",
+          "fourthList": "Montreal, Quebec, Kanada: Unser Büro in Montreal stärkt unsere Präsenz in Nordamerika und bietet nahtlosen Service und Support für diesen wichtigen Markt."
         }
       },
       "counter": {
@@ -132,7 +140,7 @@
         "experienceYears": "Erfahrungsjahre",
         "employees": "Mitarbeiter",
         "quality": "Qualität",
-        "countries": "Länder"
+        "certificates": "Zertifikate"
       },
       "map": {
         "title": "Haben Sie unsere Verbreitung bemerkt?",
@@ -194,10 +202,14 @@
           "three": {
             "headline": "Istanbul, Türkei:",
             "sub": "Unser Büro in Istanbul fungiert als Tor zwischen Europa und Asien und stärkt unsere Fähigkeit, den Anforderungen dieser wichtigen Regionen gerecht zu werden."
+          },
+          "four": {
+            "headline": "Montreal, Quebec, Kanada:",
+            "sub": "Unser Büro in Montreal stärkt unsere Präsenz in Nordamerika und bietet nahtlosen Service und Support für diesen wichtigen Markt."
           }
         }
       }
-    },
+    },  
 
     "contact": {
       "header": {
@@ -213,17 +225,33 @@
         },
 
         "content": {
-          "phoneCard": {
-            "phoneOne": "+1 514-571-4054"
+          "countries": {
+            "germany": "DEUTSCHLAND",
+            "turkey": "TRUTHAHN",
+            "canada": "KANADA",
+            "uae": "UAE"
           },
-          "emailCard": {
-            "emailOne": "sales@flennor-parts.com"
+          "form": {
+            "dropmenu": {
+              "mr": "HERR.",
+              "mrs": "FRAU.",
+              "code": "Code"
+            },
+            "firstName": "Vorname (Erforderlich).",
+            "familyName": "Nachname (Erforderlich).",
+            "email": "E-Mail (Erforderlich).",
+            "phoneNumber": "Telefonnummer (Erforderlich).",
+            "companyName": "Firmenname (Erforderlich).",
+            "companyAddress": "Firmenadresse (Erforderlich).",
+            "subject": "Betreff (optional).",
+            "message": "Nachricht (Erforderlich).",
+            "files": "Dateien anhängen",
+            "submit": "Einreichen"
           },
-          "addressCard": {
-            "addressOne": "Adersstraße 29-31 · 40215 Düsseldorf - Deutschland",
-            "addressTwo": "Mai Tower – 6. Etage – Al Nahda 1 – Dubai – Vereinigte Arabische Emirate",
-            "addressThree": "Esentepe Mah., 34870 Kartal – Istanbul – Türkei",
-            "addressFour": "11015 Cavendish Blvd Suite 410 – Montreal – Quebec – Kanada"
+          "response": {
+            "error": "Beim Senden der Nachricht ist ein Fehler aufgetreten.",
+            "success": "Die Nachricht wurde erfolgreich versendet.",
+            "alert": "Füllen Sie bitte alle erforderlichen Felder aus."
           }
         }
       }
@@ -232,7 +260,8 @@
     "products": {
       "productsNav": {
         "productListed": "Produkt aufgelistet",
-        "createPDF": "PDF ERSTELLEN"
+        "createPDF": "PDF ERSTELLEN",
+        "select": "Alles auswählen"
       },
       "brandFilter": {
         "title": "MARKE",

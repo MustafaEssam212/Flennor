@@ -2,13 +2,12 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from "react";
-import YellowShape from '../YellowShape';
 import QualityImg from '../../public/icons/quality.gif';
 import ClientsImg from '../../public/icons/clients.gif';
 import ProductsImg from '../../public/icons/products.gif';
 import ExperienceImg from '../../public/icons/experience.gif';
 import EmployeeImg from '../../public/icons/employee.gif';
-import ExportImg from '../../public/icons/export.gif';
+import CertificateImg from '../../public/icons/certificate.gif';
 import { useTranslation } from 'next-i18next';
 
 // CounterItem Component
@@ -64,7 +63,7 @@ const Counter = () => {
         { img: ExperienceImg, count: 89, label: t('homepage.counter.experienceYears'), suffix: "+" },
         { img: EmployeeImg, count: 250, label: t('homepage.counter.employees'), suffix: "+" },
         { img: QualityImg, count: 100, label: t('homepage.counter.quality'), suffix: "%" },
-        { img: ExportImg, count: 5, label: t('homepage.counter.countries'), suffix: "" }
+        { img: CertificateImg, count: 1, label: t('homepage.counter.certificates'), suffix: "" }
     ];
 
 

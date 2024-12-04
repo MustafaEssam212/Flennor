@@ -131,6 +131,7 @@ const Header = () => {
                         <Link className={router.pathname === '/' ? "active-link" : ""} href={`/`} title={t('header.navs.home')} aria-label="Home">{t('header.navs.home')} </Link>
                         <Link className={router.pathname === '/about' ? "active-link" : ""} href={`/about`} title={`${t('header.navs.about')} Flennor Parts`} aria-label="About Flennor Parts">{t('header.navs.about')}</Link>
                         <Link className={router.pathname === '/contact' ? "active-link" : ""} href={`/contact`} title={`${t('header.navs.contact')} Flennor Parts`} aria-label="Contact Flennor Parts">{t('header.navs.contact')}</Link>
+                        <Link className={router.pathname === '/quality-management' ? "active-link" : ""} href={`/quality-management`} title={`${t('header.navs.qualityManagment')} Flennor Parts`} aria-label="Quality Managment Flennor Parts">{t('header.navs.qualityManagment')}</Link>
                     </div>
 
 
@@ -190,6 +191,7 @@ const Header = () => {
                                     <Link className={router.pathname === '/' ? "active-link" : ""} href={`/`} title={t('header.navs.home')} aria-label="Home">{t('header.navs.home')} </Link>
                                     <Link className={router.pathname === '/about' ? "active-link" : ""} href={`/about`} title={`${t('header.navs.about')} Flennor Parts`} aria-label="About Flennor Parts">{t('header.navs.about')}</Link>
                                     <Link className={router.pathname === '/contact' ? "active-link" : ""} href={`/contact`} title={`${t('header.navs.contact')} Flennor Parts`} aria-label="Contact Flennor Parts">{t('header.navs.contact')}</Link>
+                                    <Link className={router.pathname === '/quality-management' ? "active-link" : ""} href={`/quality-management`} title={`${t('header.navs.qualityManagment')} Flennor Parts`} aria-label="Quality Managment Flennor Parts">{t('header.navs.qualityManagment')}</Link>
                                 </div>
                             </div>
 

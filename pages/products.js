@@ -15,6 +15,7 @@ import { IoReloadSharp } from "react-icons/io5";
 import { jsPDF } from "jspdf";
 import LengthGIF from '../public/length.gif';
 import { motion } from 'framer-motion';
+import FlennorLogo from '../public/flennor-parts-logo.png';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -75,7 +76,7 @@ const Products = () => {
         if (page) params.append('page', page);
         const queryString = params.toString();
 
-        const apiUrl = `/api/getItems?${queryString}`;
+        const apiUrl = `/api/getItems?${queryString}&grid=${cardGird}`;
         
 
         try {
@@ -103,7 +104,7 @@ const Products = () => {
             setPage(1);
             fetchItems();
         }
-    }, [router.query]);
+    }, [router.query, cardGird]);
 
     useEffect(()=> {
        setBrandFilter('');
@@ -237,6 +238,18 @@ const Products = () => {
     
         products.forEach((product, index) => {
             if (index > 0) doc.addPage(); // Add a new page for each product
+
+
+            // Add watermark logo
+            const pageWidth = doc.internal.pageSize.getWidth();
+            const pageHeight = doc.internal.pageSize.getHeight();
+
+            // Use the image URL from the imported logo
+            const logoUrl = FlennorLogo.src; 
+
+            doc.setGState(new doc.GState({ opacity: 0.1 })); // Set opacity
+            doc.addImage(logoUrl, 'PNG', pageWidth / 2 - 40, pageHeight / 2 - 50, 80, 40);
+            doc.setGState(new doc.GState({ opacity: 1 })); // Reset opacity
     
             // Product Image (Increased size)
             const imageUrl = `/api/getImage?productId=${product.productId}&image=${product.image}`;
@@ -350,6 +363,15 @@ const Products = () => {
         closed: { x: '-100%', transition: { duration: 0.5 } } // Slide out to the left
     };
 
+
+    const handleSelectAll = () => {
+        if(products.length === productsDisplay.length){
+            setProducts([]);
+        }else{
+            setProducts(productsDisplay)
+        }
+    }
+
     return(
         <div  className="products-page-container">
     
@@ -381,6 +403,7 @@ const Products = () => {
                 <h1><span>{total}</span> {t('products.productsNav.productListed')}</h1>
                 <div className='products-nav-btns'>
                     <button onClick={generatePDF} aria-label='Create Products PDF On Flennor Parts' className='pdf-btn'><FaRegFilePdf className='pdf-icon icon' /> {t('products.productsNav.createPDF')} ({products.length})</button>
+                    <button onClick={handleSelectAll} aria-label='Select all products' className='pdf-btn'>{t('products.productsNav.select')} ({productsDisplay.length})</button>
                     <div className='grid-btns'>
                         <button onClick={()=> setCardGrid(2)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid2Alt className='grid-icon icon'/></button>
                         <button onClick={()=> setCardGrid(3)} aria-label='Flennor Parts Products Grid' title='Flennor Parts Products Grid'><TfiLayoutGrid3Alt className='grid-icon icon'/></button>
@@ -468,6 +491,7 @@ const Products = () => {
                     <button className="pdf-btn">
                         <FaRegFilePdf className="pdf-icon icon" /> {t('products.productsNav.createPDF')} ({products.length})
                     </button>
+                    <button style={{marginTop: '5px'}} onClick={handleSelectAll} aria-label='Select all products' className='pdf-btn'>{t('products.productsNav.select')} ({productsDisplay.length})</button>
                 </div>
             </motion.div>
 

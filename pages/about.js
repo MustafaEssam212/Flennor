@@ -175,6 +175,12 @@ const About = () => {
                                     <span>{t('about.global.map.three.sub')}</span>
                                 </h1>
                             </div>
+                            <div className="headline-on-map">
+                                <span className="circle-span"></span>
+                                <h1>{t('about.global.map.four.headline')}
+                                    <span>{t('about.global.map.four.sub')}</span>
+                                </h1>
+                            </div>
                         </div>
                     </div>
                 </div>

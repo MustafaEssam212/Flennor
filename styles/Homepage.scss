@@ -10,7 +10,7 @@ body[dir="rtl"]{
                 .more-great-headline{
                     font-family: 'Cairo-Black';
                     font-size: 120px;
-                    line-height: 130px;
+                    line-height: 100px;
                 }
 
                 .greater-headline{
@@ -228,6 +228,31 @@ body[dir="rtl"]{
     
 
     }
+
+    .map-pop-container{
+
+        .title{
+            height: 50px;
+    
+            h4{
+                font-family: 'Cairo-Medium';
+               
+            }
+        }
+    
+        h5{
+            text-align: right;
+            flex-direction: row-reverse;
+            direction: ltr;
+          .icon{
+            transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            }
+        }
+    }
 }
 
 
@@ -278,6 +303,10 @@ body[dir="rtl"]{
                 font-size: 150px;
                 color: var(--Primary-Color);
                 line-height: 100px;
+            }
+
+            .last-headline{
+                line-height: 170px;
             }
 
 
@@ -680,7 +709,7 @@ body[dir="rtl"]{
         .left-about-flennor{
             width: 35%;
             position: relative;
-            height: fit-content;
+            height: 60vh;
             align-self: center;
             
         }
@@ -793,10 +822,101 @@ body[dir="rtl"]{
         justify-content: center;
         flex-direction: column;
         gap: 100px;
+
+
         .map-img{
             height: 75vh;
             width: 75%;
             position: relative;
+   
+
+            .location-mark {
+                position: absolute;
+                color: black;
+                font-size: 22px;
+                z-index: 1;
+                
+                .icon{
+                    cursor: pointer;
+                }
+        
+                &.canada {
+                  top: 22%; /* Adjust this */
+                  left: 20%; /* Adjust this */
+                }
+        
+                &.turkey {
+                  top: 35.5%; /* Adjust this */
+                  left: 57.5%; /* Adjust this */
+                }
+        
+                &.germany {
+                  top: 28%; /* Adjust this */
+                  left: 52%; /* Adjust this */
+                }
+        
+                &.uae {
+                  top: 44%; /* Adjust this */
+                  left: 63.5%; /* Adjust this */
+                  z-index: 0;
+                }
+              }
+        }
+    }
+}
+
+
+.map-pop-container{
+    position: absolute;
+    background-color: #262626;
+    width: 300px;
+    top: 35px;
+    border: 1px solid rgb(64, 64, 64);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+    z-index: 2;
+
+
+    .title{
+        height: 40px;
+        border-bottom: 1px solid #3e3e3e;
+
+
+        h4{
+            font-family: 'Roboto-Medium';
+            font-weight: 400;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            text-transform: uppercase;
+
+            .icon{
+                color: var(--Primary-Color);
+            }
+        }
+    }
+
+    h5{
+        font-family: 'Roboto-Regular';
+        font-weight: 400;
+        display: flex;
+        gap: 7px;
+        margin-top: 15px;
+        color: white;
+
+        a{
+            text-decoration: underline;
+            color: white;
+        }
+
+        .icon{
+            flex-shrink: 0;
+            color: var(--Primary-Color);
         }
     }
 }
@@ -825,6 +945,10 @@ body[dir="rtl"]{
                 .greater-headline{
                     font-size: 130px;
                     line-height: 80px;
+                }
+
+                .last-headline{
+                    line-height: 150px;
                 }
     
     
@@ -1101,6 +1225,29 @@ body[dir="rtl"]{
     }
 
 
+    .map-pop-container{
+        width: 290px;
+        top: 35px;
+        padding: 15px;
+       
+    
+        .title{
+            height: 38px;
+          
+    
+            h4{
+                font-size: 20px;
+            }
+        }
+    
+        h5{
+            gap: 7px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    }
+
+
     body[dir="rtl"]{
         .intro-homepage-container{
             .layer-on-intro{
@@ -1108,12 +1255,16 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 120px;
+                        line-height: 50px;
                         font-size: 100px;
+                    }
+
+                    .great-headline{
+                        line-height: 100px;
                     }
     
                     .greater-headline{
-                        line-height: 90px;
+                        line-height: 80px;
                     }
     
                 }
@@ -1156,6 +1307,16 @@ body[dir="rtl"]{
                 }
             }
         }
+
+        .map-pop-container{
+
+            .title{
+                height: 47px;
+
+            }
+        
+          
+        }
     }
 }
 
@@ -1183,6 +1344,11 @@ body[dir="rtl"]{
                 .greater-headline{
                     font-size: 120px;
                     line-height: 70px;
+                }
+
+
+                .last-headline{
+                    line-height: 140px;
                 }
     
     
@@ -1453,6 +1619,56 @@ body[dir="rtl"]{
             
             gap: 100px;
 
+            .map-img{
+                .location-mark {
+
+                    font-size: 20px;
+            
+                    &.canada {
+                      top: 21.5%; /* Adjust this */
+                      left: 19.5%; /* Adjust this */
+                    }
+            
+                    &.turkey {
+                      top: 35%; /* Adjust this */
+                      left: 57.5%; /* Adjust this */
+                    }
+            
+                    &.germany {
+                      top: 27.5%; /* Adjust this */
+                      left: 52%; /* Adjust this */
+                    }
+            
+                    &.uae {
+                      top: 43.5%; /* Adjust this */
+                      left: 63.5%; /* Adjust this */
+                    }
+                  }
+            }
+
+        }
+    }
+
+
+    .map-pop-container{
+        width: 280px;
+        top: 35px;
+        padding: 15px;
+       
+    
+        .title{
+            height: 36px;
+          
+    
+            h4{
+                font-size: 19px;
+            }
+        }
+    
+        h5{
+            gap: 7px;
+            margin-top: 15px;
+            font-size: 15px;
         }
     }
 
@@ -1461,15 +1677,21 @@ body[dir="rtl"]{
         .intro-homepage-container{
             .layer-on-intro{
                 .inner-layer-on-intro{
+
+
                     
     
                     .more-great-headline{
-                        line-height: 100px;
+                        line-height: 50px;
                         font-size: 92px;
+                    }
+
+                    .great-headline{
+                        line-height: 100px;
                     }
     
                     .greater-headline{
-                        line-height: 90px;
+                        line-height: 70px;
                     }
     
                 }
@@ -1512,6 +1734,16 @@ body[dir="rtl"]{
                 }
             }
         }
+
+        .map-pop-container{
+
+            .title{
+                height: 44px;
+
+            }
+        
+          
+        }
     }
 }
 
@@ -1539,6 +1771,11 @@ body[dir="rtl"]{
                 .greater-headline{
                     font-size: 100px;
                     line-height: 60px;
+                }
+
+
+                .last-headline{
+                    line-height: 120px;
                 }
     
     
@@ -1813,6 +2050,29 @@ body[dir="rtl"]{
     }
 
 
+    .map-pop-container{
+        width: 260px;
+        top: 35px;
+        padding: 15px;
+       
+    
+        .title{
+            height: 32px;
+          
+    
+            h4{
+                font-size: 17px;
+            }
+        }
+    
+        h5{
+            gap: 7px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+
+
     body[dir="rtl"]{
         .intro-homepage-container{
             .layer-on-intro{
@@ -1820,12 +2080,16 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 80px;
+                        line-height: 50px;
                         font-size: 80px;
+                    }
+
+                    .great-headline{
+                        line-height: 50px;
                     }
     
                     .greater-headline{
-                        line-height: 80px;
+                        line-height: 50px;
                     }
     
                 }
@@ -1868,6 +2132,16 @@ body[dir="rtl"]{
                 }
             }
         }
+
+        .map-pop-container{
+
+            .title{
+                height: 38px;
+
+            }
+        
+          
+        }
     }
 }
 
@@ -1895,6 +2169,11 @@ body[dir="rtl"]{
                 .greater-headline{
                     font-size: 90px;
                     line-height: 50px;
+                }
+
+
+                .last-headline{
+                    line-height: 110px;
                 }
     
     
@@ -2166,6 +2445,56 @@ body[dir="rtl"]{
             
             gap: 100px;
 
+            .map-img{
+                .location-mark {
+
+                    font-size: 18px;
+            
+                    &.canada {
+                      top: 21%; /* Adjust this */
+                      left: 19.5%; /* Adjust this */
+                    }
+            
+                    &.turkey {
+                      top: 34.5%; /* Adjust this */
+                      left: 57.5%; /* Adjust this */
+                    }
+            
+                    &.germany {
+                      top: 27%; /* Adjust this */
+                      left: 52%; /* Adjust this */
+                    }
+            
+                    &.uae {
+                      top: 43%; /* Adjust this */
+                      left: 63.5%; /* Adjust this */
+                    }
+                  }
+            }
+
+        }
+    }
+
+
+    .map-pop-container{
+        width: 220px;
+        top: 35px;
+        padding: 15px;
+       
+    
+        .title{
+            height: 28px;
+          
+    
+            h4{
+                font-size: 15px;
+            }
+        }
+    
+        h5{
+            gap: 7px;
+            margin-top: 15px;
+            font-size: 12px;
         }
     }
 
@@ -2176,12 +2505,16 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 70px;
+                        line-height: 50px;
                         font-size: 70px;
+                    }
+
+                    .great-headline{
+                        line-height: 50px;
                     }
     
                     .greater-headline{
-                        line-height: 70px;
+                        line-height: 30px;
                     }
     
                 }
@@ -2224,6 +2557,16 @@ body[dir="rtl"]{
                 }
             }
         }
+
+        .map-pop-container{
+
+            .title{
+                height: 35px;
+
+            }
+        
+          
+        }
     }
 }
 
@@ -2250,6 +2593,11 @@ body[dir="rtl"]{
     
                 .greater-headline{
                     font-size: 80px;
+                }
+
+
+                .last-headline{
+                    line-height: 90px;
                 }
     
     
@@ -2451,7 +2799,7 @@ body[dir="rtl"]{
             gap: 30px;
 
             .left-about-flennor{
-                width: 31%;
+                width: 50%;
             }
         
             .right-about-flennor{
@@ -2525,6 +2873,57 @@ body[dir="rtl"]{
             
             gap: 50px;
 
+
+            .map-img{
+                .location-mark {
+
+                    font-size: 16px;
+            
+                    &.canada {
+                      top: 20.5%; /* Adjust this */
+                      left: 19.5%; /* Adjust this */
+                    }
+            
+                    &.turkey {
+                      top: 34%; /* Adjust this */
+                      left: 57.5%; /* Adjust this */
+                    }
+            
+                    &.germany {
+                      top: 26.5%; /* Adjust this */
+                      left: 52%; /* Adjust this */
+                    }
+            
+                    &.uae {
+                      top: 42.5%; /* Adjust this */
+                      left: 63.5%; /* Adjust this */
+                    }
+                  }
+            }
+
+        }
+    }
+
+
+    .map-pop-container{
+        width: 190px;
+        top: 25px;
+        padding: 15px;
+       
+    
+        .title{
+            height: 24px;
+          
+    
+            h4{
+                font-size: 13px;
+            }
+        }
+    
+        h5{
+            gap: 5px;
+            margin-top: 10px;
+            font-size: 11px;
         }
     }
 
@@ -2536,12 +2935,18 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 50px;
+                        line-height: 70px;
                         font-size: 60px;
+                    }
+
+                    .great-headline{
+                        line-height: 0px;
                     }
     
                     .greater-headline{
-                        line-height: 50px;
+                        line-height: 0px;
+                        margin-top: 0;
+                        margin-bottom: 50px;
                     }
     
                 }
@@ -2583,6 +2988,16 @@ body[dir="rtl"]{
                     }
                 }
             }
+        }
+
+        .map-pop-container{
+
+            .title{
+                height: 30px;
+
+            }
+        
+          
         }
     }
 }
@@ -2647,6 +3062,10 @@ body[dir="rtl"]{
                 .greater-headline{
                     font-size: 60px;
                     line-height: 40px;
+                }
+
+                .last-headline{
+                    line-height: 70px;
                 }
     
     
@@ -2862,7 +3281,8 @@ body[dir="rtl"]{
             align-items: center;
 
             .left-about-flennor{
-                width: 50%;
+                width: 90%;
+                height: 80vh;
             }
         
             .right-about-flennor{
@@ -2910,9 +3330,60 @@ body[dir="rtl"]{
             
             gap: 50px;
 
+
+            .map-img{
+                height: 50vh;
+                .location-mark {
+
+                    font-size: 14px;
+            
+                    &.canada {
+                      top: 19%; /* Adjust this */
+                      left: 19%; /* Adjust this */
+                    }
+            
+                    &.turkey {
+                      top: 33%; /* Adjust this */
+                      left: 57.5%; /* Adjust this */
+                    }
+            
+                    &.germany {
+                      top: 26%; /* Adjust this */
+                      left: 52%; /* Adjust this */
+                    }
+            
+                    &.uae {
+                      top: 41.5%; /* Adjust this */
+                      left: 63.5%; /* Adjust this */
+                    }
+                  }
+            }
+
         }
     }
 
+
+    .map-pop-container{
+        width: 170px;
+        top: 20px;
+        padding: 10px;
+       
+    
+        .title{
+            height: 22px;
+          
+    
+            h4{
+                font-size: 12px;
+            }
+        }
+    
+        h5{
+            gap: 5px;
+            margin-top: 7px;
+            font-size: 10px;
+        }
+    }
 
     body[dir="rtl"]{
         .intro-homepage-container{
@@ -2921,16 +3392,31 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 40px;
+                        line-height: 80px;
                         font-size: 50px;
+                    }
+
+                    .great-headline{
+                        line-height: 0px;
                     }
     
                     .greater-headline{
-                        line-height: 30px;
+                        line-height: 0px;
+                        margin-bottom: 25px;
                     }
     
                 }
             }
+        }
+
+        .map-pop-container{
+
+            .title{
+                height: 26px;
+
+            }
+        
+          
         }
     }
 }
@@ -2997,6 +3483,36 @@ body[dir="rtl"]{
 
 
 @media (max-width: 567px) {
+
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+
+                .great-headline{
+                    font-size: 18px;
+                }
+    
+                .more-great-headline{
+                    font-size: 30px;
+                }
+    
+                .greater-headline{
+                    font-size: 45px;
+                    line-height: 35px;
+                }
+
+                .last-headline{
+                    line-height: 55px;
+                }
+
+            }
+        }
+    }
+
     .cars-images-homepage-container{
      
         .inner-cars-container{
@@ -3049,8 +3565,61 @@ body[dir="rtl"]{
             .map-img{
                 height: 30vh;
                 width: 100%;
+
+                .location-mark {
+    
+                    font-size: 12px;
+            
+                    &.canada {
+                      top: 18%; /* Adjust this */
+                      left: 19%; /* Adjust this */
+                    }
+            
+                    &.turkey {
+                      top: 31.5%; /* Adjust this */
+                      left: 57%; /* Adjust this */
+                    }
+            
+                    &.germany {
+                      top: 25%; /* Adjust this */
+                      left: 52%; /* Adjust this */
+                    }
+            
+                    &.uae {
+                      top: 40%; /* Adjust this */
+                      left: 63.5%; /* Adjust this */
+                    }
+                  }
             }
 
+        }
+    }
+
+
+    body[dir="rtl"]{
+        .intro-homepage-container{
+            .layer-on-intro{
+                .inner-layer-on-intro{
+                    
+    
+                    .more-great-headline{
+                        line-height: 80px;
+                        font-size: 50px;
+                    }
+
+                    .great-headline{
+                        line-height: 0px;
+                        font-size: 20px;
+                    }
+    
+                    .greater-headline{
+                        line-height: 0px;
+                        margin-bottom: 25px;
+                        font-size: 60px;
+                    }
+    
+                }
+            }
         }
     }
 }
@@ -3116,7 +3685,8 @@ body[dir="rtl"]{
 
 
             .left-about-flennor{
-                width: 60%;
+                width: 100%;
+                height: 50vh;
 
             }
 
@@ -3155,6 +3725,38 @@ body[dir="rtl"]{
             }
         }
     }
+}
+
+@media (max-width: 416px) {
+    .intro-homepage-container{
+      
+    
+        .layer-on-intro{
+         
+    
+            .inner-layer-on-intro{
+
+                .great-headline{
+                    font-size: 16px;
+                }
+    
+                .more-great-headline{
+                    font-size: 25px;
+                }
+    
+                .greater-headline{
+                    font-size: 35px;
+                    line-height: 30px;
+                }
+
+                .last-headline{
+                    line-height: 45px;
+                }
+
+            }
+        }
+    }
+
 }
 
 
@@ -3233,13 +3835,15 @@ body[dir="rtl"]{
                     
     
                     .more-great-headline{
-                        line-height: 30px;
+                        line-height: 80px;
                         font-size: 40px;
                     }
     
                     .greater-headline{
                         line-height: 20px;
                         font-size: 50px;
+                        margin-bottom: 10px;
+                        margin-top: 0px;
                     }
     
                 }

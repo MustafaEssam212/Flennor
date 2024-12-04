@@ -1,19 +1,21 @@
 {
 
   "topInfo": {
+    "titleOne": "أوروبا",
+    "titleTwo": "أمريكا الشمالية",
+    "titleThree": "الشرق الأوسط",
     "addressOne": "ألمانيا",
     "addressTwo": "كندا",
     "addressThree": "تركيا",
-    "addressFour": "الامارات العربية المتحدة",
-    "addressFive": "مصر",
-    "firstPhone": "+1 514-571-4054"
+    "addressFour": "الإمارات"
   },
 
   "header": {
     "navs": {
       "home": "الرئيسية",
       "about": "معلومات عنا",
-      "contact": "اتصل بنا"
+      "contact": "اتصل بنا",
+      "qualityManagment": "إدارة الجودة"
     },
       "styled-link": "منتجاتنا",
       "langs": {
@@ -61,6 +63,7 @@
       "firstTitle": "كن مُستعداً مع",
       "mainTitle": "فلينــور",
       "secondTitle": "لقطع الغيار",
+      "middleTitle": "",
       "inputPlaceholder": "ابحث حسب اسم المنتج ورمز قطعة فلينور او رمز أو-إي-إم",
       "btn": "بحث"
     },
@@ -92,7 +95,11 @@
       "Renault": "رينو",
       "Opel": "أوبل",
       "MB": "مرسيدس بنز",
-      "BMW": "بي ام دبليو"
+      "BMW": "بي ام دبليو",
+      "Scoda": "سكودا",
+      "Seat": "سيات",
+      "Peugeot": "بيچو",
+      "Audi": "أودي"
     },
     "carImages": {
       "imgOne": {
@@ -122,7 +129,8 @@
       "list": {
         "firstList": "دوسلدورف، ألمانيا: يظل مقرنا الرئيسي مركزًا للابتكار والريادة في قطع غيار السيارات عالية الجودة",
         "secondList": "دبي، الإمارات العربية المتحدة: بفضل موقعنا على مفترق طرق التجارة، يساهم مكتبنا في دبي في توسيع نطاق وصولنا إلى الأسواق المزدهرة في الشرق الأوسط",
-        "thirdList": "إسطنبول، تركيا: يعمل مكتبنا في إسطنبول كبوابة بين أوروبا وآسيا، ويعزز قدرتنا على تلبية متطلبات هذه المناطق الحيوية"
+        "thirdList": "إسطنبول، تركيا: يعمل مكتبنا في إسطنبول كبوابة بين أوروبا وآسيا، ويعزز قدرتنا على تلبية متطلبات هذه المناطق الحيوية",
+        "fourthList": "مونتريال، كيبيك، كندا: لتعزيز حضورنا في أمريكا الشمالية، يقدم مكتبنا في مونتريال خدمة ودعمًا سلسين لهذه السوق الحيوية."
       }
     },
     "counter": {
@@ -131,7 +139,7 @@
       "experienceYears": "سنوات الخبرة",
       "employees": "موظفين",
       "quality": "الجودة",
-      "countries": "بلدان"
+      "certificates": "شهادات"
     },
     "map": {
       "title": "هل لاحظتم انتشارنا؟",
@@ -193,6 +201,10 @@
           "three": {
             "headline": "اسطنبول، تركيا:",
             "sub": "يعمل مكتبنا في إسطنبول كبوابة بين أوروبا وآسيا، ويعزز قدرتنا على تلبية متطلبات هذه المناطق الحيوية."
+          },
+          "four": {
+            "headline": "مونتريال، كيبيك، كندا:",
+            "sub": "تعزيزًا لتواجدنا في أمريكا الشمالية، يقدم مكتبنا في مونتريال خدمة ودعمًا سلسين لهذه السوق الحيوية"
           }
         }
       }
@@ -212,17 +224,33 @@
         },
 
         "content": {
-          "phoneCard": {
-            "phoneOne": "+1 514-571-4054"
+          "countries": {
+            "germany": "ألمانيا",
+            "turkey": "تركيا",
+            "canada": "كندا",
+            "uae": "الإمارات"
           },
-          "emailCard": {
-            "emailOne": "sales@flennor-parts.com"
+          "form": {
+            "dropmenu": {
+              "mr": "السّيد",
+              "mrs": "السّيدة",
+              "code": "الكود"
+            },
+            "firstName": "الإسم الأول (مطلوب)",
+            "familyName": "إسم العائلة (مطلوب)",
+            "email": "الإيميل (مطلوب)",
+            "phoneNumber": "رقم الهاتف (مطلوب)",
+            "companyName": "إسم الشركة (مطلوب)",
+            "companyAddress": "عنوان الشركة (مطلوب)",
+            "subject": "عنوان الرسالة (إختياري)",
+            "message": "الرسالة (مطلوب)",
+            "files": "إلحق ملفات",
+            "submit": "تأكيد"
           },
-          "addressCard": {
-            "addressOne": "Adersstraße 29-31 · 40215 Düsseldorf - Germany",
-            "addressTwo": "Mai Tower - 6th Floor - Al Nahda 1 - Dubai - United Arab Emirates",
-            "addressThree": "Esentepe Mah., 34870 Kartal - Istanbul - Türkiye",
-            "addressFour": "11015 Cavendish Blvd suite 410 - Montreal - Quebec - Canada"
+          "response": {
+            "error": "حدث خطأ اثناء إرسال الرسالة",
+            "success": "تم إرسال الرسالة بنجاح",
+            "alert": "برجاء ملئ جميع الخانات المطلوبة"
           }
         }
       }
@@ -231,7 +259,8 @@
     "products": {
       "productsNav": {
         "productListed": "منتج مُدرج",
-        "createPDF": "PDF إنشاء"
+        "createPDF": "PDF إنشاء",
+        "select": "حدد الكل"
       },
       "brandFilter": {
         "title": "براند",
