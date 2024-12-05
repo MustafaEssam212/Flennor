@@ -95,6 +95,14 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .contact-input-container{
+                            .icon{
+                                width: 93%;
+                            }
+                        }
+                    }
     
                     .input-without-dropdown{
                        
@@ -364,6 +372,7 @@ body[dir="rtl"]{
 
                     }
 
+
                     .contact-input-container{
                         height: 80px;
                         background-color: #141414;
@@ -410,6 +419,25 @@ body[dir="rtl"]{
                             transform: translate(-50%, -50%);
                             font-size: 18px;
                         }
+                    }
+                }
+
+                .countries{
+                    .dropdown-contact{
+                        width: 30%;
+
+                        .input-dropmenu-container{
+                            .dropmenu-options{
+                                button{
+                                    justify-content: space-between;
+                                    padding: 0px 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-input-container{
+                        width: 70%;
                     }
                 }
 
@@ -622,6 +650,19 @@ body[dir="rtl"]{
             background-color: var(--Primary-Color);
           }
 
+
+          input{
+            height: 60px;
+            flex-shrink: 0;
+            padding: 0px 10px;
+            background-color: transparent;
+            border: 1px solid rgb(59, 59, 59);
+            font-family: 'Roboto-Medium';
+            font-weight: 400;
+            color: white;
+            outline: none;
+          }
+
         button{
             height: 65px;
             outline: none;
@@ -759,6 +800,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 10px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 70px;
@@ -833,6 +893,11 @@ body[dir="rtl"]{
     
         .dropmenu-options{
             max-height: 190px;
+
+            input{
+                height: 55px;
+                font-size: 14px;
+              }
             
             button{
                 height: 60px;
@@ -981,6 +1046,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 10px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 65px;
@@ -1056,6 +1140,11 @@ body[dir="rtl"]{
    
        .dropmenu-options{
            max-height: 170px;
+
+           input{
+            height: 52px;
+            font-size: 13px;
+          }
            
            button{
                height: 55px;
@@ -1208,6 +1297,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 10px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 60px;
@@ -1283,6 +1391,11 @@ body[dir="rtl"]{
    
        .dropmenu-options{
            max-height: 160px;
+
+           input{
+            height: 49px;
+            font-size: 12px;
+          }
            
            button{
                height: 50px;
@@ -1435,6 +1548,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 10px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 55px;
@@ -1511,6 +1643,11 @@ body[dir="rtl"]{
    
        .dropmenu-options{
            max-height: 150px;
+
+           input{
+            height: 44px;
+            font-size: 11px;
+          }
            
            button{
                height: 45px;
@@ -1665,6 +1802,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 7px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 50px;
@@ -1740,6 +1896,11 @@ body[dir="rtl"]{
    
        .dropmenu-options{
            max-height: 130px;
+
+           input{
+            height: 41px;
+            font-size: 10px;
+          }
            
            button{
                height: 40px;
@@ -1795,6 +1956,14 @@ body[dir="rtl"]{
         
                                 .icon{
                                     width: 93%;
+                                }
+                            }
+                        }
+
+                        .countries{
+                            .contact-input-container{
+                                .icon{
+                                    width: 92%;
                                 }
                             }
                         }
@@ -1936,6 +2105,25 @@ body[dir="rtl"]{
                             }
                         }
                     }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 30%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 7px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 70%;
+                        }
+                    }
     
                     .input-without-dropdown{
                         height: 45px;
@@ -2011,6 +2199,11 @@ body[dir="rtl"]{
    
        .dropmenu-options{
            max-height: 110px;
+
+           input{
+            height: 38px;
+            font-size: 9px;
+          }
            
            button{
                height: 35px;
@@ -2051,6 +2244,7 @@ body[dir="rtl"]{
         
             }
 
+        
         
         }
     }
@@ -2103,6 +2297,25 @@ body[dir="rtl"]{
                        
                         .dropdown-contact{
                             width: 20%;
+                        }
+                    }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 40%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 7px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 60%;
                         }
                     }
     
@@ -2164,6 +2377,14 @@ body[dir="rtl"]{
                                 }
                             }
                         }
+
+                        .countries{
+                            .contact-input-container{
+                                .icon{
+                                    width: 83%;
+                                }
+                            }
+                        }
         
                         .input-without-dropdown{
                            
@@ -2185,6 +2406,89 @@ body[dir="rtl"]{
 
 
 @media (max-width: 325px) {
+
+    .contact-us-page-container{
+
+        .contact-us-header{
+            height: 30vh;
+
+    
+            .layer-on-header{
+             
+    
+                h2{
+                    font-size: 25px;
+                  
+                }
+    
+                h1{
+                    font-size: 40px;
+                   
+                }
+            }
+    
+        }
+
+        .contact-us-content{
+            padding-bottom: 50px;
+
+            .contact-content-container{
+                
+                .left-contact-content-container{
+                    gap: 15px;
+
+                    .contact-country{
+                        width: 92%;
+                    }
+                  
+                }
+    
+    
+                .right-contact-content-container{
+                  
+                    margin-top: 30px;
+    
+                    .input-with-dropdown{
+                       
+                        .dropdown-contact{
+                            width: 20%;
+                        }
+                    }
+
+                    .countries{
+                        .dropdown-contact{
+                            width: 50%;
+    
+                            .input-dropmenu-container{
+                                .dropmenu-options{
+                                    button{
+                                        justify-content: space-between;
+                                        padding: 0px 7px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .contact-input-container{
+                            width: 50%;
+                        }
+                    }
+    
+                    .textarea-container{
+                       
+                        textarea{
+                            height: 150px;
+                            max-height: 150px;
+                        }
+                    }
+    
+                   
+                   
+                }
+            } 
+        }
+    }
+
     body[dir="rtl"]{
         .contact-us-page-container{
 

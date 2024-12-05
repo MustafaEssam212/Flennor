@@ -241,7 +241,7 @@
             "companyName": "Company Name (Required).",
             "companyAddress": "Company Address (Required).",
             "subject": "Subject (Optional).",
-            "message": "Message (Required).",
+            "message": "Message (Optional).",
             "files": "Attach Files",
             "submit": "Submit"
           },

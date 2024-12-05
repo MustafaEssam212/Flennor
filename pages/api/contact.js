@@ -52,7 +52,7 @@ export default async function handler(req, res) {
         <p><strong>Contact Email:</strong> <a href="mailto:${data.email[0] || 'N/A'}">${data.email[0] || 'N/A'}</a></p>
         <p><strong>Company Name:</strong> ${data.companyName[0] || 'N/A'} <strong>Address:</strong> ${data.companyAddress[0] || 'N/A'}</p>
         <p><strong>Message:</strong></p>
-        <p>${data.message[0] || 'N/A'}</p>
+        <p>${data.message[0] || 'No Message Content'}</p>
       `,
       attachments: files.map((file) => ({
         filename: file.originalFilename,

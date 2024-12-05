@@ -65,7 +65,7 @@ const ContactUs = () => {
 
 
     const handleSubmitEmail = async () => {
-        if(!data.gender || !data.phone || !data.dial_code || !data.firstName || !data.familyName || !data.email || !data.companyName || !data.companyAddress || !data.message){
+        if(!data.gender || !data.phone || !data.dial_code || !data.firstName || !data.familyName || !data.email || !data.companyName || !data.companyAddress){
             setError('fill');
         }else{
             const formData = new FormData();
@@ -163,7 +163,7 @@ const ContactUs = () => {
                             <div className='right-country'>
                                 <h2>{t('contact.body.content.countries.germany')}</h2>
                                 <h3><ImLocation2 className='icon' /> Adersstraße 29-31 · 40215 Dusseldorf - Germany</h3>
-                                <h3><FaPhoneAlt className='icon' /> <Link target='_blank' href={`https://wa.me/15145714054`} title='Flennor Parts Contact On WhatsApp' aria-label="Flennor Parts Contact On WhatsApp">+90 538 652 8778</Link></h3>
+                                <h3><FaPhoneAlt className='icon' /> <Link target='_blank' href={`https://wa.me/905386528778`} title='Flennor Parts Contact On WhatsApp' aria-label="Flennor Parts Contact On WhatsApp">+90 538 652 8778</Link></h3>
                                 <h3><MdEmail className='icon' /> sales@flennor-parts.com</h3>
                             </div>
                         </div>
@@ -218,7 +218,7 @@ const ContactUs = () => {
                             </div>
 
                             <div className='contact-input-container'>
-                                <input value={data.familyName} aria-label='first name' placeholder={t('contact.body.content.form.firstName')} onChange={(s)=> setData({...data, firstName: s.target.value})} type='text'></input>
+                                <input value={data.firstName} aria-label='first name' placeholder={t('contact.body.content.form.firstName')} onChange={(s)=> setData({...data, firstName: s.target.value})} type='text'></input>
                                 <FaRegUser className='icon' />
                             </div>
 
@@ -234,7 +234,7 @@ const ContactUs = () => {
                             <MdOutlineEmail className='icon' />
                         </div>
 
-                        <div className='input-with-dropdown'>
+                        <div className='input-with-dropdown countries'>
 
                         <div className='dropdown-contact'>
                             <InputDropMenu sendDataToParent={getDataFromDropmenu} defaultValue={data.dial_code} type="countries" />

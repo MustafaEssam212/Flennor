@@ -39,7 +39,7 @@ const Products = () => {
     const [search, setSearch] = useState(router.query.text ? router.query.text : '');
     const [brandFilter, setBrandFilter] = useState('');
     const [modelFilter, setModelFilter] = useState([]);
-    const [cardGird, setCardGrid] = useState(2);
+    const [cardGird, setCardGrid] = useState(4);
     const [products, setProducts] = useState([]);
     const [openMobileFilters, setOpenMobileFilters] = useState(false);
     const mobileFiltersRef = useRef();

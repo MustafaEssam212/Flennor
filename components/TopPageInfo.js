@@ -28,8 +28,8 @@ const TopPageInfo = () => {
           {
             country: `${t('topInfo.addressOne')}`,
             address: 'Adersstraße 29-31 40215 Düsseldorf - Germany',
-            phone: '+15145714054',
-            phoneLink: 'https://wa.me/15145714054',
+            phone: '+90 538 652 8778',
+            phoneLink: 'https://wa.me/905386528778',
             email: 'sales@flennor-parts.com',
           },
           {

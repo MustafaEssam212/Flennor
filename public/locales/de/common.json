@@ -244,7 +244,7 @@
             "companyName": "Firmenname (Erforderlich).",
             "companyAddress": "Firmenadresse (Erforderlich).",
             "subject": "Betreff (optional).",
-            "message": "Nachricht (Erforderlich).",
+            "message": "Nachricht (optional).",
             "files": "Dateien anhängen",
             "submit": "Einreichen"
           },

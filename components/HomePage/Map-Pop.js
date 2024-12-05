@@ -25,8 +25,8 @@ const MapPop = ({data, handlePopToggle}) => {
         'GERMANY': {
             country: t('topInfo.addressOne'),
             location: 'Adersstraße 29-31 40215 Düsseldorf - Germany',
-            phoneText: '+1 514 571 4054',
-            link: 'https://wa.me/15145714054'
+            phoneText: '+90 538 652 8778',
+            link: 'https://wa.me/905386528778'
         },
         'UAE': {
             country: t('topInfo.addressFour'),
