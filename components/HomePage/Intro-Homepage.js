@@ -34,7 +34,7 @@ const IntroHomepage = () => {
     return(
         <div className="intro-homepage-container">
             
-            <div className="img-container-intro"><Image src={FlennorPartsBG} fill style={{objectFit: 'cover'}} alt="Flennor Parts" title="Flennor Parts" /></div>
+            <div className="img-container-intro"><Image sizes="131.37vw" src={FlennorPartsBG} priority fill style={{objectFit: 'cover'}} alt="Flennor Parts" title="Flennor Parts" /></div>
 
             <div className="layer-on-intro">
 

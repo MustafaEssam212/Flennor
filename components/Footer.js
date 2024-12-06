@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="top-footer">
                 <div className="left-top-footer">
                     <div className="logo-img-container">
-                        <Image src={FlennorPartsWhiteLogo} fill alt="Flennor Parts Logo" title="Flennor Parts Logo" />
+                        <Image sizes="(min-width: 1720px) calc(1.56vw + 273px), (min-width: 1540px) 280px, (min-width: 920px) 250px, 220px" loading="lazy" src={FlennorPartsWhiteLogo} fill alt="Flennor Parts Logo" title="Flennor Parts Logo" />
                     </div>
                     <h2>{t('footer.topFooter.left.description')}</h2>
                     {/* <div className="social-links">

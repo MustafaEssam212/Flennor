@@ -299,5 +299,8 @@
         "pdf": "Please choose at least one product",
         "noLength": "No available products",
         "loading": "Loading..."
+      },
+      "quality": {
+        "parag": "Quality management is in lived all areas of our company. The processes and products should not only meet the demands of the market – it is our goal to know the needs of our customers exactly and fulfil these in their entirety. To guarantee this at all times, our company is subjected to permanent monitoring by IAF and is certified in accordance with ISO 9001:2015. Our constant drive for innovate products and the increased quality awareness of our customers demand for continuous improvement of the product quality and productivity. All employees of our company are committed to exercise the maximum possible diligence and permanent controls and checks at all levels in order to ensure the highest level of quality."
       }
   }

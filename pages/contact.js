@@ -15,6 +15,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaLocationDot, FaRegMessage } from "react-icons/fa6";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaLink } from "react-icons/fa6";
+import { NextSeo } from 'next-seo';
+import seoConfig from '../next-seo.config';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -118,6 +120,11 @@ const ContactUs = () => {
 
     return (
         <div className="contact-us-page-container">
+
+            <NextSeo
+                {...seoConfig}
+                title="Contact Us - Flennor Automotive Parts"
+            />
 
             {/* Header Animation */}
             <motion.div

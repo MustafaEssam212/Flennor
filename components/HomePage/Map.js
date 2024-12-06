@@ -54,6 +54,8 @@ const Map = () => {
             fill
             alt="Flennor Parts Spread Map"
             title="Flennor Parts Spread Map"
+            sizes="(min-width: 580px) 75vw, 100vw"
+            loading="lazy"
           />
           {/* Location marks with jump and rotate animation */}
           {["CANADA", "TURKEY", "GERMANY", "UAE"].map((location) => (

@@ -19,7 +19,7 @@ const CarImages = () => {
 
             <div className="inner-cars-container">
                 <div className="car-container">
-                    <div className="car-img-container"><Image src={BackgroundOne} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
+                    <div className="car-img-container"><Image sizes="(min-width: 2060px) 850px, (min-width: 1940px) 750px, (min-width: 1720px) 700px, (min-width: 1540px) 620px, (min-width: 1280px) 560px, (min-width: 920px) 500px, 95vw" loading="lazy" src={BackgroundOne} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
                     <div className="layer-on-car">
                         <h3>{t('homepage.carImages.imgOne.firstHeadline')}</h3>
                         <h1>{t('homepage.carImages.imgOne.secondHeadline')}</h1>
@@ -28,7 +28,7 @@ const CarImages = () => {
                 </div>
 
                 <div className="car-container">
-                    <div className="car-img-container"><Image src={BackgroundTwo} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
+                    <div className="car-img-container"><Image sizes="(min-width: 2060px) 850px, (min-width: 1940px) 750px, (min-width: 1720px) 700px, (min-width: 1540px) 620px, (min-width: 1280px) 560px, (min-width: 920px) 500px, 95vw" loading="lazy" src={BackgroundTwo} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
                     <div className="layer-on-car">
                         <h3>{t('homepage.carImages.imgTwo.firstHeadline')}</h3>
                         <h1>{t('homepage.carImages.imgTwo.secondHeadline')}</h1>
@@ -37,7 +37,7 @@ const CarImages = () => {
                 </div>
 
                 <div className="car-container">
-                    <div className="car-img-container"><Image src={BackgroundThree} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
+                    <div className="car-img-container"><Image sizes="(min-width: 2060px) 850px, (min-width: 1940px) 750px, (min-width: 1720px) 700px, (min-width: 1540px) 620px, (min-width: 1280px) 560px, (min-width: 920px) 500px, 95vw" loading="lazy" src={BackgroundThree} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
                     <div className="layer-on-car">
                         <h3>{t('homepage.carImages.imgThree.firstHeadline')}</h3>
                         <h1>{t('homepage.carImages.imgThree.secondHeadline')}</h1>
@@ -46,7 +46,7 @@ const CarImages = () => {
                 </div>
 
                 <div className="car-container">
-                    <div className="car-img-container"><Image src={BackgroundFour} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
+                    <div className="car-img-container"><Image sizes="(min-width: 2060px) 850px, (min-width: 1940px) 750px, (min-width: 1720px) 700px, (min-width: 1540px) 620px, (min-width: 1280px) 560px, (min-width: 920px) 500px, 95vw" loading="lazy" src={BackgroundFour} fill alt="Flennor Parts Cars" title="Flennor Parts Cars" /></div>
                     <div className="layer-on-car">
                         <h3>{t('homepage.carImages.imgFour.firstHeadline')}</h3>
                         <h1>{t('homepage.carImages.imgFour.secondHeadline')}</h1>

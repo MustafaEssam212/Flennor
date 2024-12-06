@@ -1,7 +1,10 @@
 
 body[dir="rtl"]{
     .quality-management-container{
-        direction: ltr;
+
+        h2{
+            font-family: 'Cairo-Medium';
+        }
     }
 }
 

@@ -303,5 +303,8 @@
       "pdf": "Bitte wählen Sie mindestens ein Produkt aus",
         "noLength": "Keine verfügbaren Produkte",
         "loading": "Laden..."
+    },
+    "quality": {
+      "parag": "Qualitätsmanagement wird in allen Bereichen unseres Unternehmens gelebt. Die Prozesse und Produkte sollen nicht nur den Anforderungen des Marktes entsprechen – unser Ziel ist es, die Bedürfnisse unserer Kunden genau zu kennen und diese in vollem Umfang zu erfüllen. Um dies jederzeit zu gewährleisten, unterliegt unser Unternehmen der permanenten Überwachung durch die IAF und ist nach ISO 9001:2015 zertifiziert. Unser stetiges Streben nach innovativen Produkten und das gesteigerte Qualitätsbewusstsein unserer Kunden erfordern eine kontinuierliche Verbesserung der Produktqualität und Produktivität. Alle Mitarbeiter unseres Unternehmens verpflichten sich zu größtmöglicher Sorgfalt und permanenten Kontrollen und Prüfungen auf allen Ebenen, um ein Höchstmaß an Qualität sicherzustellen."
     }
 }

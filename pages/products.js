@@ -16,6 +16,8 @@ import { jsPDF } from "jspdf";
 import LengthGIF from '../public/length.gif';
 import { motion } from 'framer-motion';
 import FlennorLogo from '../public/flennor-parts-logo.png';
+import { NextSeo } from 'next-seo';
+import seoConfig from '../next-seo.config';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -374,10 +376,15 @@ const Products = () => {
 
     return(
         <div  className="products-page-container">
+
+            <NextSeo
+                {...seoConfig}
+                title="Online Catalog - Flennor Automotive Parts"
+            />
     
             <div className='products-header'>
                 <div className='img-container'>
-                    <Image src={FlennorProductsImg} fill style={{objectFit: 'cover'}} alt='Flennor Parts Cover' title='Flennor Parts Cover' />
+                    <Image sizes="100vw" priority src={FlennorProductsImg} fill style={{objectFit: 'cover'}} alt='Flennor Parts Cover' title='Flennor Parts Cover' />
                 </div>
 
                 <div className='input-container'>

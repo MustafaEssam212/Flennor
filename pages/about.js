@@ -12,6 +12,8 @@ import Counter from '@/components/HomePage/Counter';
 import Map from '../public/map2.png';
 import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
+import { NextSeo } from 'next-seo';
+import seoConfig from '../next-seo.config';
 
 export async function getStaticProps({ locale }) {
     return {
@@ -40,6 +42,11 @@ const About = () => {
 
     return (
         <div className="about-page-container">
+
+            <NextSeo
+                {...seoConfig}
+                title="About - Flennor Automotive Parts"
+            />
             {/* Header Section */}
             <motion.div
                 className="about-page-header"
@@ -54,6 +61,8 @@ const About = () => {
                         style={{ objectFit: 'cover' }}
                         alt="Flennor Parts about page pic"
                         title="Flennor Parts about page pic"
+                        sizes="(min-width: 440px) 90vw, calc(15.83vw + 312px)"
+                        priority
                     />
                 </div>
                 <div className="layer-on-image">

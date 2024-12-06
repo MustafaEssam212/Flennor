@@ -111,6 +111,7 @@ const Brands = () => {
           fill
           alt="Cars Brands in Flennor Parts"
           title="Cars Brands in Flennor Parts"
+          sizes="(min-width: 2060px) 4214px, (min-width: 1940px) 3978px, (min-width: 1720px) 3511px, (min-width: 1540px) 3204px, (min-width: 1280px) 2704px, (min-width: 920px) 2292px, (min-width: 460px) 1542px, 1175px"
         />
       </div>
 
@@ -137,6 +138,8 @@ const Brands = () => {
                   title={`${brand.name} Brand in Flennor Parts`}
                   alt={`${brand.name} Brand in Flennor Parts`}
                   draggable={false}
+                  sizes="(min-width: 2060px) 150px, (min-width: 1940px) 140px, (min-width: 1720px) 130px, (min-width: 1540px) 120px, (min-width: 1280px) 110px, (min-width: 920px) 90px, 70px"
+                  loading="lazy"
                 />
               </div>
               <h1>{brand.name}</h1>

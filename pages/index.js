@@ -6,6 +6,8 @@ import AboutFlennor from '@/components/HomePage/About-Flennor';
 import Counter from '@/components/HomePage/Counter';
 import CarImages from '@/components/HomePage/Cars-Images';
 import Map from '@/components/HomePage/Map';
+import { NextSeo } from 'next-seo';
+import seoConfig from '../next-seo.config';
 
 export async function getStaticProps({ locale }) {  
   return {
@@ -20,6 +22,9 @@ export default function Home() {
 
   return (
     <div className='homepage-container'>
+      <NextSeo
+        {...seoConfig}
+      />
       <IntroHomepage />
       <Categories />
       <Brands />

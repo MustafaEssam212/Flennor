@@ -73,15 +73,15 @@ const Header = () => {
     const getLang = {
         "en": <div className="parag-img-container">
                 <p>{t('header.langs.en')}</p>
-                <div className="flag-image-container"><Image src={EnFlag} fill alt="English Flag" /></div>
+                <div className="flag-image-container"><Image sizes="(min-width: 2060px) 30px, (min-width: 1940px) 28px, (min-width: 1720px) 25px, (min-width: 1540px) 22px, 20px" src={EnFlag} fill alt="English Flag" /></div>
               </div>,
         "de": <div className="parag-img-container">
                 <p>{t('header.langs.de')}</p>
-                <div className="flag-image-container"><Image src={DeFlag} fill alt="Deutch Flag" /></div>
+                <div className="flag-image-container"><Image sizes="(min-width: 2060px) 30px, (min-width: 1940px) 28px, (min-width: 1720px) 25px, (min-width: 1540px) 22px, 20px" src={DeFlag} fill alt="Deutch Flag" /></div>
              </div>,
         "ar": <div className="parag-img-container">
                 <p>{t('header.langs.ar')}</p>
-                <div className="flag-image-container"><Image src={ArFlag} fill alt="Arabic Flag" /></div>
+                <div className="flag-image-container"><Image sizes="(min-width: 2060px) 30px, (min-width: 1940px) 28px, (min-width: 1720px) 25px, (min-width: 1540px) 22px, 20px" src={ArFlag} fill alt="Arabic Flag" /></div>
               </div>
     }
 
@@ -122,7 +122,7 @@ const Header = () => {
         <header className={isSticky ? "sticky-header" : ""}>
 
                 <div className="logo-container">
-                    <Link href={`/`}><Image src={FlennorPartsLogo} fill title="Flennor Parts" alt="Flennor Parts"></Image></Link>
+                    <Link href={`/`}><Image sizes="(min-width: 2060px) 250px, (min-width: 1940px) 230px, (min-width: 1720px) 210px, (min-width: 1540px) 185px, (min-width: 1100px) 165px, 140px" src={FlennorPartsLogo} fill title="Flennor Parts" alt="Flennor Parts"></Image></Link>
                 </div>
 
 
@@ -137,7 +137,7 @@ const Header = () => {
 
                     <FaBars onClick={()=> setOpenMobileMenu(!openMobileMenu)} className="bars-icon" />
 
-                    <Link href={`/products`} title={t('header.styled-link')} aria-label="Flennor Parts Products" className="styled-link"><span className="icon-container"><Image src={SpareIcon} fill alt="Spare Part Icon" /></span> <span className="title-link">{t('header.styled-link')}</span></Link>
+                    <Link href={`/products`} title={t('header.styled-link')} aria-label="Flennor Parts Products" className="styled-link"><span className="icon-container"><Image sizes="(min-width: 2060px) 40px, (min-width: 1940px) 35px, (min-width: 1720px) 33px, (min-width: 1540px) 30px, (min-width: 1100px) 28px, 23px" src={SpareIcon} fill alt="Spare Part Icon" /></span> <span className="title-link">{t('header.styled-link')}</span></Link>
 
                     <div className={openLangMenu ? "languages active-languages" : "languages"}>
 
@@ -154,11 +154,11 @@ const Header = () => {
                         {
                             openLangMenu && <div className="lang-menu" ref={langMenuRef}>
 
-                                    <div onClick={() => changeLanguage('en')} aria-label="Change Language To English" title="Change Language To English" className="lang-choice"><p>{t('header.langs.en')}</p> <div className="img-container"><Image src={EnFlag} fill alt="English Flag" /></div></div>
+                                    <div onClick={() => changeLanguage('en')} aria-label="Change Language To English" title="Change Language To English" className="lang-choice"><p>{t('header.langs.en')}</p> <div className="img-container"><Image loading="lazy" src={EnFlag} fill alt="English Flag" /></div></div>
                                     
-                                    <div onClick={() => changeLanguage('de')} aria-label="Change Language To Deutch" title="Change Language To Deutch" className="lang-choice"><p>{t('header.langs.de')}</p> <div className="img-container"><Image src={DeFlag} fill alt="Deutch Flag" /></div></div>
+                                    <div onClick={() => changeLanguage('de')} aria-label="Change Language To Deutch" title="Change Language To Deutch" className="lang-choice"><p>{t('header.langs.de')}</p> <div className="img-container"><Image loading="lazy" src={DeFlag} fill alt="Deutch Flag" /></div></div>
 
-                                    <div onClick={() => changeLanguage('ar')} aria-label="Change Language To ARABIC" title="Change Language To ARABIC" className="lang-choice"><p>{t('header.langs.ar')}</p> <div className="img-container"><Image src={ArFlag} fill alt="Arabic flag" /></div></div>
+                                    <div onClick={() => changeLanguage('ar')} aria-label="Change Language To ARABIC" title="Change Language To ARABIC" className="lang-choice"><p>{t('header.langs.ar')}</p> <div className="img-container"><Image loading="lazy" src={ArFlag} fill alt="Arabic flag" /></div></div>
 
                             </div>
                         }

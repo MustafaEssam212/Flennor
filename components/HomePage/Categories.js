@@ -57,7 +57,7 @@ const Categories = () => {
                     viewport={{ once: false }}
                 >
                     <div className="category-img">
-                        <Image src={CategoryOnePic} fill alt={`Flennor Parts ${t('homepage.categories.productOne.name')}`} title={`Flennor Parts ${t('homepage.categories.productOne.name')}`} />
+                        <Image sizes="(min-width: 2060px) 383px, (min-width: 1940px) 338px, (min-width: 1720px) 315px, (min-width: 1540px) 270px, (min-width: 1280px) 234px, (min-width: 920px) 216px, (min-width: 520px) 40.53vw, 45vw" loading="lazy" src={CategoryOnePic} fill alt={`Flennor Parts ${t('homepage.categories.productOne.name')}`} title={`Flennor Parts ${t('homepage.categories.productOne.name')}`} />
                     </div>
                     <div className="category-info">
                         <FiveStars />
@@ -76,7 +76,7 @@ const Categories = () => {
                     viewport={{ once: false }}
                 >
                     <div className="category-img">
-                        <Image src={CategoryTwoPic} fill alt={`Flennor Parts ${t('homepage.categories.productTwo.name')}`} title={`Flennor Parts ${t('homepage.categories.productTwo.name')}`} />
+                        <Image sizes="(min-width: 2060px) 383px, (min-width: 1940px) 338px, (min-width: 1720px) 315px, (min-width: 1540px) 270px, (min-width: 1280px) 234px, (min-width: 920px) 216px, (min-width: 520px) 40.53vw, 45vw" loading="lazy" src={CategoryTwoPic} fill alt={`Flennor Parts ${t('homepage.categories.productTwo.name')}`} title={`Flennor Parts ${t('homepage.categories.productTwo.name')}`} />
                     </div>
                     <div className="category-info">
                         <FiveStars />
@@ -95,7 +95,7 @@ const Categories = () => {
                     viewport={{ once: false }}
                 >
                     <div className="category-img">
-                        <Image src={CategoryThreePic} fill alt={`Flennor Parts ${t('homepage.categories.productThree.name')}`} title={`Flennor Parts ${t('homepage.categories.productThree.name')}`} />
+                        <Image sizes="(min-width: 2060px) 383px, (min-width: 1940px) 338px, (min-width: 1720px) 315px, (min-width: 1540px) 270px, (min-width: 1280px) 234px, (min-width: 920px) 216px, (min-width: 520px) 40.53vw, 45vw" loading="lazy" src={CategoryThreePic} fill alt={`Flennor Parts ${t('homepage.categories.productThree.name')}`} title={`Flennor Parts ${t('homepage.categories.productThree.name')}`} />
                     </div>
                     <div className="category-info">
                         <FiveStars />
@@ -114,7 +114,7 @@ const Categories = () => {
                     viewport={{ once: false }}
                 >
                     <div className="category-img">
-                        <Image src={CategoryFourPic} fill alt={`Flennor Parts ${t('homepage.categories.productFour.name')}`} title={`Flennor Parts ${t('homepage.categories.productFour.name')}`} />
+                        <Image sizes="(min-width: 2060px) 383px, (min-width: 1940px) 338px, (min-width: 1720px) 315px, (min-width: 1540px) 270px, (min-width: 1280px) 234px, (min-width: 920px) 216px, (min-width: 520px) 40.53vw, 45vw" loading="lazy" src={CategoryFourPic} fill alt={`Flennor Parts ${t('homepage.categories.productFour.name')}`} title={`Flennor Parts ${t('homepage.categories.productFour.name')}`} />
                     </div>
                     <div className="category-info">
                         <FiveStars />
@@ -123,7 +123,7 @@ const Categories = () => {
                         <Link href={`/products`}>{t('homepage.categories.btn')} <FaArrowAltCircleRight className="icon" /></Link>
                     </div>
                 </motion.div>
-            </div>
+            </div>  
         </div>
     );
 }

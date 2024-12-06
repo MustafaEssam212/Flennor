@@ -22,7 +22,7 @@ const AboutFlennor = () => {
                     transition={{ duration: 1.2 }}
                     className="left-about-flennor"  
                 >
-                    <Image src={FlennorMotive} fill alt='Flennor Parts Motive' title='Flennor Parts Motive' />
+                    <Image sizes="(min-width: 2060px) 35vw, (min-width: 1280px) calc(39.08vw - 103px), (min-width: 920px) 50vw, (min-width: 520px) 90vw, 100vw" loading='lazy' src={FlennorMotive} fill alt='Flennor Parts Motive' title='Flennor Parts Motive' />
                 </motion.div>
 
                 <motion.div
